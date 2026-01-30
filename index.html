@@ -28,7 +28,7 @@
     <!-- TODO: Same as description above -->
     <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
     <!-- TODO: Replace with your actual website URL -->
-    <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+    <meta property="og:url" content="https://jana-z.github.io/mentis-oculis.github.io/">
     <!-- TODO: Create a 1200x630px preview image and update path -->
     <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
     <meta property="og:image:width" content="1200">
@@ -201,8 +201,8 @@
       "@type": "Organization",
       "name": ""
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "url": "https://jana-z.github.io/mentis-oculis.github.io/",
+    "image": "https://jana-z.github.io/mentis-oculis.github.io/static/images/social_preview.png",
     "keywords": ["mental imagery", "visual reasoning", "reasoning", "llms", "mllms", "umms", "video models"],
     "abstract": "Frontier models are transitioning from multimodal large language models (MLLMs) that merely ingest visual information to unified multimodal models (UMMs) capable of native interleaved generation. This shift has sparked interest in using intermediate visualizations as a reasoning aid, akin to human mental imagery. Central to this idea is the ability to form, maintain, and manipulate visual representations in a goal-oriented manner. To evaluate and probe this capability, we develop MentisOculi, a procedural, stratified suite of multi-step reasoning problems amenable to visual solution, tuned to challenge frontier models. Evaluating visual strategies ranging from latent tokens to explicit generated imagery, we find they generally fail to improve performance. Analysis of UMMs specifically exposes a critical limitation: While they possess the textual reasoning capacity to solve a task and can sometimes generate correct visuals, they suffer from compounding generation errors and fail to leverage even ground-truth visualizations. Our findings suggest that despite their inherent appeal, visual thoughts do not yet benefit model reasoning. MentisOculi establishes the necessary foundation to analyze and close this gap across diverse model families.",
     "citation": "BIBTEX_CITATION_HERE",
@@ -244,7 +244,7 @@
     "@type": "Organization",
     "name": "MPI for Intelligent Systems",
     "url": "https://is.mpg.de",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "logo": "https://jana-z.github.io/mentis-oculis.github.io/static/images/favicon.ico",
     "sameAs": [
       "https://x.com/MPI_IS"
     ]
@@ -387,8 +387,25 @@
         </section>
         <!-- End teaser video -->
 
+        <section class="hero teaser">
+            <div class="container is-max-desktop is-centered is-light">
+                <div class="hero-body has-text-centered">
+                    <h2 class="title is-3"><span style="font-variant: small-caps;">MentisOculi</span> comprises five
+                        visual reasoning tasks designed to be best-solved with mental imagery</h2>
+                    <img src="static/images/mentis-oculi-teaser.png" alt="Teaser image" loading="lazy" />
+                    Collectively, the tasks require models to solve multi-step reasoning problems with geometric
+                    constraints.
+                    Success hinges on the ability to maintain a visual representation with high fidelity and
+                    consistent geometry under affine transformations.
+                    Each task is procedurally generated across five difficulty levels, scaling with the number of
+                    operations required from one (left) to five (right)
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Paper abstract -->
-        <section class="section hero is-light">
+        <section class="section hero">
             <div class="container is-max-desktop">
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-four-fifths">
@@ -422,30 +439,11 @@
         </section>
         <!-- End paper abstract -->
 
-        <!-- Teaser video-->
-        <section class="hero teaser">
-            <div class="container is-max-desktop is-centered">
-                <div class="hero-body">
-                    <h2 class="title is-3"><span style="font-variant: small-caps;">MentisOculi</span> comprises five
-                        visual reasoning tasks designed to be best-solved with mental imagery</h2>
-                    <img src="static/images/mentis-oculi-teaser.png" alt="Teaser image" loading="lazy" />
-                    Collectively, the tasks require models to solve multi-step reasoning problems with geometric
-                    constraints.
-                    Success hinges on the ability to maintain a visual representation with high fidelity and
-                    consistent geometry under affine transformations.
-                    Each task is procedurally generated across five difficulty levels, scaling with the number of
-                    operations required from one (left) to five (right)
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- End teaser video -->
-
 
         <!-- Image carousel -->
         <section class="hero is-small is-light">
             <div class="hero-body">
-                <div class="container">
+                <div class="container has-text-centered">
                     <h2 class="title is-3">Results</h2>
                     <div id="results-carousel" class="carousel results-carousel">
                         <div class="item">
@@ -486,7 +484,7 @@
                                 counterparts.
                                 The
                                 <span style="color:#C42E88; font-weight:bold;">video model</span>
-                                VeO-3, which operates purely in pixel space, breaks down rapidly as task difficulty
+                                Veo-3, which operates purely in pixel space, breaks down rapidly as task difficulty
                                 increases.
                                 Overall, we find no evidence that explicit visual thought—whether latent, interleaved,
                                 or video-based—meaningfully improves text-only reasoning in multi-step visual problems.
@@ -549,7 +547,7 @@
   author={Zeller, Jana and Wiedemer, Thaddäus and Li, Fanfei and Klein, Thomas and Bethge, Matthias and Wichmann, Felix and Cotterell, Ryan and Brendel, Wieland},
   journal={arXiv preprint},
   year={2026},
-  url={}
+  url={https://jana-z.github.io/mentis-oculis.github.io/}
 }</code></pre>
             </div>
         </section>
