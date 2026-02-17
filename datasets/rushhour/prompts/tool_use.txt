@@ -1,0 +1,20 @@
+Attached is an image, showing the initial configuration of a congested parking lot. Each colored rectangle with a letter and arrow represents a vehicle. Black rectangles without a letter represent immovable obstacles. The light green area at the border indicates the exit. The goal is to move the red vehicle (marked with a R) to the exit.
+<image initial.png>
+
+Rules:
+1. Each vehicle can only move forward or backward along its own axis (indicated in the image as a dashed line) — no rotation is allowed. The arrow on each vehicle indicates the forward direction.
+2. A vehicle continues to move in the chosen direction until it touches another vehicle, an immovable object or the image’s boundary (marked with a light black line).
+3. Only one vehicle moves per action.
+4. The red vehicle must reach the exit on the edge of the grid.
+
+Task:
+Plan the minimal sequence of moves needed to free the red car and allow it to exit the parking lot.
+Each move should specify which vehicle moves and in which direction (forward or backward).
+
+Output:
+Respond in JSON format as follows:
+{"answer": "A forward, C backward, E forward, R forward"}
+Each pair specifies the vehicle label and the direction of its move.
+If multiple sequences lead to a valid solution, output any one valid sequence that allows the red car to exit.
+
+Use your python tool to solve this question.

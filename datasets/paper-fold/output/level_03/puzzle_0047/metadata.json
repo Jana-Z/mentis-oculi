@@ -1,0 +1,118 @@
+{
+  "puzzle_id": 47,
+  "grid_size": 2,
+  "num_folds": 3,
+  "fold_types": [
+    "horizontal",
+    "vertical",
+    "diag_pos"
+  ],
+  "question_image": "question.png",
+  "silhouette_image": "silhouette.png",
+  "combined_image": "combined.png",
+  "answers_grid_image": "answers_grid.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png",
+    "cot_02.png"
+  ],
+  "wrong_choices": [
+    "wrong_0.png",
+    "wrong_1.png",
+    "wrong_2.png",
+    "wrong_3.png"
+  ],
+  "correct_choice": "D",
+  "correct_choice_index": 3,
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+  "distinguishability_metrics": {
+    "min_required_distance": 0.3,
+    "wrong_to_correct_distances": [
+      0.776,
+      1.011,
+      0.776,
+      0.965
+    ],
+    "min_pairwise_distance": 0.413,
+    "all_pairwise_distances": [
+      {
+        "answer_pair": [
+          0,
+          1
+        ],
+        "distance": 0.776
+      },
+      {
+        "answer_pair": [
+          0,
+          2
+        ],
+        "distance": 1.011
+      },
+      {
+        "answer_pair": [
+          0,
+          3
+        ],
+        "distance": 0.776
+      },
+      {
+        "answer_pair": [
+          0,
+          4
+        ],
+        "distance": 0.965
+      },
+      {
+        "answer_pair": [
+          1,
+          2
+        ],
+        "distance": 0.552
+      },
+      {
+        "answer_pair": [
+          1,
+          3
+        ],
+        "distance": 0.413
+      },
+      {
+        "answer_pair": [
+          1,
+          4
+        ],
+        "distance": 0.488
+      },
+      {
+        "answer_pair": [
+          2,
+          3
+        ],
+        "distance": 0.462
+      },
+      {
+        "answer_pair": [
+          2,
+          4
+        ],
+        "distance": 0.413
+      },
+      {
+        "answer_pair": [
+          3,
+          4
+        ],
+        "distance": 0.462
+      }
+    ],
+    "note": "Answer 0 is correct, answers 1-4 are wrong"
+  }
+}

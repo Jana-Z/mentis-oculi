@@ -1,0 +1,29 @@
+{
+  "puzzle_id": "puzzle_0026",
+  "num_pieces": 2,
+  "num_hinges": 1,
+  "shape_chain": [
+    "square",
+    "rectangle"
+  ],
+  "rotation_angles": [
+    270
+  ],
+  "rotation_steps": [
+    {
+      "hinge_id": "A",
+      "angle": 270
+    }
+  ],
+  "rotation_sequence": "A 270",
+  "piece_colors": [
+    "#0090C1",
+    "#E85D75"
+  ],
+  "initial_image": "puzzle_0026/initial.png",
+  "target_image": "puzzle_0026/target.png",
+  "combined_image": "puzzle_0026/combined.png",
+  "cot_images": [
+    "puzzle_0026/cot_00.png"
+  ]
+}

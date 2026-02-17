@@ -1,0 +1,72 @@
+{
+  "puzzle_id": 41,
+  "level": 1,
+  "num_cot_images": 1,
+  "num_actions": 1,
+  "seed": 82,
+  "initial_state_image": "initial.png",
+  "cot_images": [
+    "cot_00.png"
+  ],
+  "actions": [
+    {
+      "object_id": "red_car",
+      "direction": 1,
+      "distance": 8.1
+    }
+  ],
+  "solution_length": 1,
+  "board": {
+    "width": 10.0,
+    "height": 10.0,
+    "exits": [
+      {
+        "side": "right",
+        "x": 10.0,
+        "y": 6.116372443283974,
+        "w": 0.0,
+        "h": 1.0,
+        "opening_start": 6.116372443283974,
+        "opening_end": 7.116372443283974
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "red_car",
+      "shape": "rectangle",
+      "size": [
+        1.8,
+        0.9
+      ],
+      "pose": {
+        "x": 1.0,
+        "y": 6.616372443283974,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#E85D75",
+      "drive_segment": {
+        "t_min": -0.099609375,
+        "t_max": 8.099609375,
+        "line": [
+          [
+            0.900390625,
+            6.616372443283974
+          ],
+          [
+            9.099609375,
+            6.616372443283974
+          ]
+        ]
+      }
+    }
+  ],
+  "obviousness_metrics": {
+    "max_margin_px": 41.796875
+  }
+}

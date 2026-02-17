@@ -1,0 +1,245 @@
+{
+  "puzzle_id": 3,
+  "level": 4,
+  "num_cot_images": 4,
+  "num_actions": 4,
+  "seed": 160,
+  "initial_state_image": "initial.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png",
+    "cot_02.png",
+    "cot_03.png"
+  ],
+  "actions": [
+    {
+      "object_id": "distractor_0",
+      "direction": -1,
+      "distance": 3.25
+    },
+    {
+      "object_id": "blocker_B",
+      "direction": 1,
+      "distance": 8.178
+    },
+    {
+      "object_id": "blocker_A",
+      "direction": -1,
+      "distance": 3.451
+    },
+    {
+      "object_id": "red_car",
+      "direction": -1,
+      "distance": 8.1
+    }
+  ],
+  "solution_length": 4,
+  "board": {
+    "width": 10.0,
+    "height": 10.0,
+    "exits": [
+      {
+        "side": "left",
+        "x": 0.0,
+        "y": 4.52568082555453,
+        "w": 0.0,
+        "h": 1.0,
+        "opening_start": 4.52568082555453,
+        "opening_end": 5.52568082555453
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "red_car",
+      "shape": "rectangle",
+      "size": [
+        1.8,
+        0.9
+      ],
+      "pose": {
+        "x": 9.0,
+        "y": 5.02568082555453,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#E85D75",
+      "drive_segment": {
+        "t_min": -8.099609375,
+        "t_max": 0.099609375,
+        "line": [
+          [
+            0.900390625,
+            5.02568082555453
+          ],
+          [
+            9.099609375,
+            5.02568082555453
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_A",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 5.641611024767349,
+        "y": 5.02568082555453,
+        "theta": 0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#C46A2E",
+      "label": "D",
+      "drive_segment": {
+        "t_min": -1.080078125,
+        "t_max": 1.408203125,
+        "line": [
+          [
+            4.706235930445485,
+            4.48564176305453
+          ],
+          [
+            6.861150704705983,
+            5.72978238805453
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_B",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 1.8258643036566493,
+        "y": 5.02568082555453,
+        "theta": -0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        -0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#5A4FCF",
+      "label": "B",
+      "drive_segment": {
+        "t_min": -0.84765625,
+        "t_max": 1.322265625,
+        "line": [
+          [
+            1.0917724574799963,
+            5.44950895055453
+          ],
+          [
+            2.9709799254575575,
+            4.36454801305453
+          ]
+        ]
+      }
+    },
+    {
+      "id": "static_obs_0",
+      "shape": "rectangle",
+      "size": [
+        1.8645082595789406,
+        0.8685904749818809
+      ],
+      "pose": {
+        "x": 2.2877782091816696,
+        "y": 7.0323658273881895,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": false,
+      "color_hex": "#1B263B"
+    },
+    {
+      "id": "distractor_0",
+      "shape": "rectangle",
+      "size": [
+        1.7514176496848575,
+        0.8463932873561582
+      ],
+      "pose": {
+        "x": 4.096265013091186,
+        "y": 3.1659342230044243,
+        "theta": 0.2617993877991494
+      },
+      "local_axis": [
+        0.9659258262890683,
+        0.25881904510252074
+      ],
+      "movable": true,
+      "color_hex": "#C42E88",
+      "label": "C",
+      "drive_segment": {
+        "t_min": -3.25,
+        "t_max": 3.35546875,
+        "line": [
+          [
+            0.9570060776517137,
+            2.3247723264212317
+          ],
+          [
+            7.337398938022083,
+            4.034393440750773
+          ]
+        ]
+      }
+    },
+    {
+      "id": "distractor_1",
+      "shape": "rectangle",
+      "size": [
+        2.362891630564268,
+        0.9624303081076624
+      ],
+      "pose": {
+        "x": 6.949351902301093,
+        "y": 7.494365460761439,
+        "theta": -0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        -0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#FFD670",
+      "label": "E",
+      "drive_segment": {
+        "t_min": -2.99609375,
+        "t_max": 2.021484375,
+        "line": [
+          [
+            4.35465860268131,
+            8.992412335761438
+          ],
+          [
+            8.700008724404402,
+            6.483623273261439
+          ]
+        ]
+      }
+    }
+  ],
+  "obviousness_metrics": {
+    "max_margin_px": 10.9375
+  }
+}

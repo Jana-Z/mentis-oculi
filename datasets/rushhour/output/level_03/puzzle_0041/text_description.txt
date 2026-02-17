@@ -1,0 +1,10 @@
+The parking lot has a size of 10 by 10.
+
+There is an exit on the left (x=0) edge, from y=6.43 to y=7.43.
+
+There is a red car (R) at center (9.00, 6.93) with length 1.80 and width 0.90, rotated by 0.0 degrees, i.e. the car can move forwards along the (1.00, 0.00) axis and backwards along (-1.00, -0.00).
+There is a car (A) at center (6.05, 6.93) with length 2.00 and width 0.90, rotated by -30.0 degrees, i.e. the car can move forwards along the (0.87, -0.50) axis and backwards along (-0.87, 0.50).
+There is a car (B) at center (4.29, 2.89) with length 2.18 and width 0.93, rotated by 30.0 degrees, i.e. the car can move forwards along the (0.87, 0.50) axis and backwards along (-0.87, -0.50).
+There is a car (C) at center (2.12, 6.93) with length 2.00 and width 0.90, rotated by 15.0 degrees, i.e. the car can move forwards along the (0.97, 0.26) axis and backwards along (-0.97, -0.26).
+There is a car (E) at center (7.84, 2.20) with length 2.10 and width 1.10, rotated by -15.0 degrees, i.e. the car can move forwards along the (0.97, -0.26) axis and backwards along (-0.97, 0.26).
+There is a static, immovable object at ((4.21, 4.89), (6.51, 5.92)).

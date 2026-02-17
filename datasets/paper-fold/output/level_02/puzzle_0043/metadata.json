@@ -1,0 +1,116 @@
+{
+  "puzzle_id": 43,
+  "grid_size": 2,
+  "num_folds": 2,
+  "fold_types": [
+    "diag_pos",
+    "vertical"
+  ],
+  "question_image": "question.png",
+  "silhouette_image": "silhouette.png",
+  "combined_image": "combined.png",
+  "answers_grid_image": "answers_grid.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png"
+  ],
+  "wrong_choices": [
+    "wrong_0.png",
+    "wrong_1.png",
+    "wrong_2.png",
+    "wrong_3.png"
+  ],
+  "correct_choice": "B",
+  "correct_choice_index": 1,
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+  "distinguishability_metrics": {
+    "min_required_distance": 0.3,
+    "wrong_to_correct_distances": [
+      0.867,
+      1.259,
+      1.077,
+      0.865
+    ],
+    "min_pairwise_distance": 0.317,
+    "all_pairwise_distances": [
+      {
+        "answer_pair": [
+          0,
+          1
+        ],
+        "distance": 0.867
+      },
+      {
+        "answer_pair": [
+          0,
+          2
+        ],
+        "distance": 1.259
+      },
+      {
+        "answer_pair": [
+          0,
+          3
+        ],
+        "distance": 1.077
+      },
+      {
+        "answer_pair": [
+          0,
+          4
+        ],
+        "distance": 0.865
+      },
+      {
+        "answer_pair": [
+          1,
+          2
+        ],
+        "distance": 0.961
+      },
+      {
+        "answer_pair": [
+          1,
+          3
+        ],
+        "distance": 0.592
+      },
+      {
+        "answer_pair": [
+          1,
+          4
+        ],
+        "distance": 0.483
+      },
+      {
+        "answer_pair": [
+          2,
+          3
+        ],
+        "distance": 0.633
+      },
+      {
+        "answer_pair": [
+          2,
+          4
+        ],
+        "distance": 0.491
+      },
+      {
+        "answer_pair": [
+          3,
+          4
+        ],
+        "distance": 0.317
+      }
+    ],
+    "note": "Answer 0 is correct, answers 1-4 are wrong"
+  }
+}

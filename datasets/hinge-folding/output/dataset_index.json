@@ -1,0 +1,15 @@
+{
+  "total_samples": 2,
+  "min_pieces": 2,
+  "max_pieces": 3,
+  "samples": [
+    {
+      "sample_id": "instance_0000",
+      "sample_path": "instance_0000"
+    },
+    {
+      "sample_id": "instance_0001",
+      "sample_path": "instance_0001"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+The parking lot has a size of 10 by 10.
+
+There is an exit on the left (x=0) edge, from y=3.90 to y=4.90.
+
+There is a red car (R) at center (9.00, 4.40) with length 1.80 and width 0.90, rotated by 0.0 degrees, i.e. the car can move forwards along the (1.00, 0.00) axis and backwards along (-1.00, -0.00).

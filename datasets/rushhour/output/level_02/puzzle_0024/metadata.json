@@ -1,0 +1,112 @@
+{
+  "puzzle_id": 24,
+  "level": 2,
+  "num_cot_images": 2,
+  "num_actions": 2,
+  "seed": 118,
+  "initial_state_image": "initial.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png"
+  ],
+  "actions": [
+    {
+      "object_id": "blocker_A",
+      "direction": -1,
+      "distance": 4.215
+    },
+    {
+      "object_id": "red_car",
+      "direction": 1,
+      "distance": 8.1
+    }
+  ],
+  "solution_length": 2,
+  "board": {
+    "width": 10.0,
+    "height": 10.0,
+    "exits": [
+      {
+        "side": "right",
+        "x": 10.0,
+        "y": 3.3730238869346243,
+        "w": 0.0,
+        "h": 1.0,
+        "opening_start": 3.3730238869346243,
+        "opening_end": 4.373023886934624
+      }
+    ]
+  },
+  "objects": [
+    {
+      "id": "red_car",
+      "shape": "rectangle",
+      "size": [
+        1.8,
+        0.9
+      ],
+      "pose": {
+        "x": 1.0,
+        "y": 3.8730238869346243,
+        "theta": 0.0
+      },
+      "local_axis": [
+        1.0,
+        0.0
+      ],
+      "movable": true,
+      "color_hex": "#E85D75",
+      "drive_segment": {
+        "t_min": -0.099609375,
+        "t_max": 8.099609375,
+        "line": [
+          [
+            0.900390625,
+            3.8730238869346243
+          ],
+          [
+            9.099609375,
+            3.8730238869346243
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blocker_A",
+      "shape": "rectangle",
+      "size": [
+        2.0,
+        0.9
+      ],
+      "pose": {
+        "x": 4.742840924489993,
+        "y": 3.8730238869346243,
+        "theta": -0.5235987755982988
+      },
+      "local_axis": [
+        0.8660254037844387,
+        -0.49999999999999994
+      ],
+      "movable": true,
+      "color_hex": "#C46A2E",
+      "label": "A",
+      "drive_segment": {
+        "t_min": -4.21484375,
+        "t_max": 4.810546875,
+        "line": [
+          [
+            1.0926791640079254,
+            5.980445761934623
+          ],
+          [
+            8.908896724335838,
+            1.4677504494346247
+          ]
+        ]
+      }
+    }
+  ],
+  "obviousness_metrics": {
+    "max_margin_px": 28.90625
+  }
+}

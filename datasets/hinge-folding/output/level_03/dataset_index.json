@@ -1,0 +1,207 @@
+{
+  "total_samples": 50,
+  "min_pieces": 4,
+  "max_pieces": 4,
+  "samples": [
+    {
+      "puzzle_id": "puzzle_0001",
+      "puzzle_path": "puzzle_0001"
+    },
+    {
+      "puzzle_id": "puzzle_0002",
+      "puzzle_path": "puzzle_0002"
+    },
+    {
+      "puzzle_id": "puzzle_0003",
+      "puzzle_path": "puzzle_0003"
+    },
+    {
+      "puzzle_id": "puzzle_0004",
+      "puzzle_path": "puzzle_0004"
+    },
+    {
+      "puzzle_id": "puzzle_0005",
+      "puzzle_path": "puzzle_0005"
+    },
+    {
+      "puzzle_id": "puzzle_0006",
+      "puzzle_path": "puzzle_0006"
+    },
+    {
+      "puzzle_id": "puzzle_0007",
+      "puzzle_path": "puzzle_0007"
+    },
+    {
+      "puzzle_id": "puzzle_0008",
+      "puzzle_path": "puzzle_0008"
+    },
+    {
+      "puzzle_id": "puzzle_0009",
+      "puzzle_path": "puzzle_0009"
+    },
+    {
+      "puzzle_id": "puzzle_0010",
+      "puzzle_path": "puzzle_0010"
+    },
+    {
+      "puzzle_id": "puzzle_0011",
+      "puzzle_path": "puzzle_0011"
+    },
+    {
+      "puzzle_id": "puzzle_0012",
+      "puzzle_path": "puzzle_0012"
+    },
+    {
+      "puzzle_id": "puzzle_0013",
+      "puzzle_path": "puzzle_0013"
+    },
+    {
+      "puzzle_id": "puzzle_0014",
+      "puzzle_path": "puzzle_0014"
+    },
+    {
+      "puzzle_id": "puzzle_0015",
+      "puzzle_path": "puzzle_0015"
+    },
+    {
+      "puzzle_id": "puzzle_0016",
+      "puzzle_path": "puzzle_0016"
+    },
+    {
+      "puzzle_id": "puzzle_0017",
+      "puzzle_path": "puzzle_0017"
+    },
+    {
+      "puzzle_id": "puzzle_0018",
+      "puzzle_path": "puzzle_0018"
+    },
+    {
+      "puzzle_id": "puzzle_0019",
+      "puzzle_path": "puzzle_0019"
+    },
+    {
+      "puzzle_id": "puzzle_0020",
+      "puzzle_path": "puzzle_0020"
+    },
+    {
+      "puzzle_id": "puzzle_0021",
+      "puzzle_path": "puzzle_0021"
+    },
+    {
+      "puzzle_id": "puzzle_0022",
+      "puzzle_path": "puzzle_0022"
+    },
+    {
+      "puzzle_id": "puzzle_0023",
+      "puzzle_path": "puzzle_0023"
+    },
+    {
+      "puzzle_id": "puzzle_0024",
+      "puzzle_path": "puzzle_0024"
+    },
+    {
+      "puzzle_id": "puzzle_0025",
+      "puzzle_path": "puzzle_0025"
+    },
+    {
+      "puzzle_id": "puzzle_0026",
+      "puzzle_path": "puzzle_0026"
+    },
+    {
+      "puzzle_id": "puzzle_0027",
+      "puzzle_path": "puzzle_0027"
+    },
+    {
+      "puzzle_id": "puzzle_0028",
+      "puzzle_path": "puzzle_0028"
+    },
+    {
+      "puzzle_id": "puzzle_0029",
+      "puzzle_path": "puzzle_0029"
+    },
+    {
+      "puzzle_id": "puzzle_0030",
+      "puzzle_path": "puzzle_0030"
+    },
+    {
+      "puzzle_id": "puzzle_0031",
+      "puzzle_path": "puzzle_0031"
+    },
+    {
+      "puzzle_id": "puzzle_0032",
+      "puzzle_path": "puzzle_0032"
+    },
+    {
+      "puzzle_id": "puzzle_0033",
+      "puzzle_path": "puzzle_0033"
+    },
+    {
+      "puzzle_id": "puzzle_0034",
+      "puzzle_path": "puzzle_0034"
+    },
+    {
+      "puzzle_id": "puzzle_0035",
+      "puzzle_path": "puzzle_0035"
+    },
+    {
+      "puzzle_id": "puzzle_0036",
+      "puzzle_path": "puzzle_0036"
+    },
+    {
+      "puzzle_id": "puzzle_0037",
+      "puzzle_path": "puzzle_0037"
+    },
+    {
+      "puzzle_id": "puzzle_0038",
+      "puzzle_path": "puzzle_0038"
+    },
+    {
+      "puzzle_id": "puzzle_0039",
+      "puzzle_path": "puzzle_0039"
+    },
+    {
+      "puzzle_id": "puzzle_0040",
+      "puzzle_path": "puzzle_0040"
+    },
+    {
+      "puzzle_id": "puzzle_0041",
+      "puzzle_path": "puzzle_0041"
+    },
+    {
+      "puzzle_id": "puzzle_0042",
+      "puzzle_path": "puzzle_0042"
+    },
+    {
+      "puzzle_id": "puzzle_0043",
+      "puzzle_path": "puzzle_0043"
+    },
+    {
+      "puzzle_id": "puzzle_0044",
+      "puzzle_path": "puzzle_0044"
+    },
+    {
+      "puzzle_id": "puzzle_0045",
+      "puzzle_path": "puzzle_0045"
+    },
+    {
+      "puzzle_id": "puzzle_0046",
+      "puzzle_path": "puzzle_0046"
+    },
+    {
+      "puzzle_id": "puzzle_0047",
+      "puzzle_path": "puzzle_0047"
+    },
+    {
+      "puzzle_id": "puzzle_0048",
+      "puzzle_path": "puzzle_0048"
+    },
+    {
+      "puzzle_id": "puzzle_0049",
+      "puzzle_path": "puzzle_0049"
+    },
+    {
+      "puzzle_id": "puzzle_0050",
+      "puzzle_path": "puzzle_0050"
+    }
+  ]
+}

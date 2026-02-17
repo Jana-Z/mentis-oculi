@@ -1,0 +1,20 @@
+Look at this image:
+Below is the first image, showing the initial configuration of a congested parking lot. Each colored rectangle represents a vehicle, and the red car is the one that must reach the exit. The exit is marked with a green area at the border:
+
+Rules:
+1. Each vehicle can only move forward or backward with straight sliding motion along its own axis
+2. No rotation is allowed at any time
+3. A vehicle continues to move in the chosen direction until it touches another vehicle or a boundary.
+4. Only one vehicle moves per action.
+5. The goal is for the red car to reach the exit located on the edge of the grid.
+6. Vehicle shapes, colors, exit and outlines must not change throughout the solution.
+7. No camera motion: no zoom, no pan, no rotate, no tilt, no dolly.
+8. Do not add or remove anything: no new objects, labels, lights, shadows, reflections, textures, markings, or UI elements.
+9. The background, grid, exit and all pieces remain perfectly static, except for the piece currently sliding.
+
+Task:
+Plan the minimal sequence of moves needed to free the red car and allow it to exit the parking lot.
+Output:
+A video demonstrating the full solution to the puzzle, one move at a time.
+
+<image initial.png>

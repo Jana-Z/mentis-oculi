@@ -1,0 +1,19 @@
+{
+  "total_samples": 3,
+  "min_pieces": 2,
+  "max_pieces": 2,
+  "samples": [
+    {
+      "puzzle_path": "puzzle_0001",
+      "puzzle_id": "puzzle_0001"
+    },
+    {
+      "puzzle_path": "puzzle_0002",
+      "puzzle_id": "puzzle_0002"
+    },
+    {
+      "puzzle_path": "puzzle_0003",
+      "puzzle_id": "puzzle_0003"
+    }
+  ]
+}

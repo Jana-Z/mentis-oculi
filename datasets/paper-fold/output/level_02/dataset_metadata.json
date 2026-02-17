@@ -1,0 +1,5815 @@
+{
+  "description": "Paper folding puzzle dataset",
+  "total_instances": 50,
+  "grid_size": 2,
+  "min_folds": 2,
+  "max_folds": 2,
+  "min_distinguishable_distance": 0.3,
+  "distinguishability_stats": {
+    "puzzles_meeting_threshold": 50,
+    "puzzles_below_threshold": 0,
+    "average_min_pairwise_distance": 0.426
+  },
+  "puzzles": [
+    {
+      "puzzle_id": 1,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "vertical",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.84,
+          1.18,
+          1.18,
+          0.971
+        ],
+        "min_pairwise_distance": 0.325,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.84
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.18
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.18
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.971
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.828
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.695
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.783
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.325
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.828
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.704
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 2,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.013,
+          0.887,
+          1.845,
+          1.721
+        ],
+        "min_pairwise_distance": 0.323,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.013
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.887
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.845
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.721
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.887
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.845
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.721
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.075
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.875
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.323
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 3,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.869,
+          0.918,
+          0.946,
+          1.142
+        ],
+        "min_pairwise_distance": 0.428,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.869
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.918
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.946
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.142
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.918
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.121
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.142
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.428
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.624
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.05
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 4,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.522,
+          0.858,
+          1.164,
+          0.67
+        ],
+        "min_pairwise_distance": 0.522,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.522
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.858
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.164
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.67
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.633
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.698
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.591
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.559
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.993
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.93
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 5,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "vertical",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.751,
+          1.448,
+          0.734,
+          1.225
+        ],
+        "min_pairwise_distance": 0.381,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.751
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.448
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.734
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.225
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.107
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.381
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.599
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.791
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.654
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.507
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 6,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "vertical",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.063,
+          1.063,
+          1.063,
+          1.402
+        ],
+        "min_pairwise_distance": 0.607,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.063
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.063
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.063
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.402
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.061
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.607
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.608
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.084
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.244
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.608
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 7,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.995,
+          1.342,
+          1.3,
+          0.802
+        ],
+        "min_pairwise_distance": 0.357,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.995
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.342
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.3
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.802
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.016
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.671
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.642
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.357
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.653
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.506
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 8,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.033,
+          0.473,
+          1.63,
+          0.838
+        ],
+        "min_pairwise_distance": 0.473,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.033
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.473
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.63
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.838
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.033
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.716
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.473
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.645
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.838
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.808
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 9,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.361,
+          0.703,
+          0.703,
+          0.326
+        ],
+        "min_pairwise_distance": 0.326,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.361
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.703
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.703
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.326
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.703
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.703
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.361
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.557
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.024
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.024
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 10,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.531,
+          2.149,
+          1.275,
+          1.362
+        ],
+        "min_pairwise_distance": 0.788,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.531
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 2.149
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.275
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.362
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.55
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.902
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.068
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.508
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.788
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.068
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 11,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "B",
+      "correct_choice_index": 1,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.45,
+          0.663,
+          1.044,
+          0.663
+        ],
+        "min_pairwise_distance": 0.438,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.45
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.663
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.044
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.663
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.663
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.789
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.663
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.044
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.438
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.663
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 12,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.011,
+          0.973,
+          0.432,
+          1.045
+        ],
+        "min_pairwise_distance": 0.432,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.011
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.973
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.432
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.045
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.973
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.259
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.045
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.334
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.518
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.264
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 13,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.454,
+          1.033,
+          1.033,
+          0.587
+        ],
+        "min_pairwise_distance": 0.454,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.454
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.033
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.033
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.587
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.033
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.033
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.698
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.055
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.462
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.033
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 14,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "B",
+      "correct_choice_index": 1,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.001,
+          0.849,
+          0.718,
+          1.271
+        ],
+        "min_pairwise_distance": 0.466,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.001
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.849
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.718
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.271
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.892
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.557
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.975
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.466
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.789
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.557
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 15,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "vertical",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.782,
+          1.283,
+          1.084,
+          1.223
+        ],
+        "min_pairwise_distance": 0.385,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.782
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.283
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.084
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.223
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.681
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.385
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.007
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.51
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.619
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.01
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 16,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.794,
+          1.441,
+          1.109,
+          0.747
+        ],
+        "min_pairwise_distance": 0.489,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.794
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.441
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.109
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.747
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.34
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.641
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.489
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.34
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.095
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.641
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 17,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.315,
+          0.524,
+          0.583,
+          1.171
+        ],
+        "min_pairwise_distance": 0.524,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.315
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.524
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.583
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.171
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.365
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.923
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.998
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.583
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.171
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.619
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 18,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.2,
+          1.505,
+          1.129,
+          1.492
+        ],
+        "min_pairwise_distance": 0.347,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.2
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.505
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.129
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.492
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.261
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.805
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.98
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.491
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.347
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.364
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 19,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.351,
+          1.414,
+          1.733,
+          1.414
+        ],
+        "min_pairwise_distance": 0.404,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.351
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.414
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.733
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.414
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.568
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.615
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.568
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.463
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.404
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.64
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 20,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.904,
+          0.31,
+          1.6,
+          1.218
+        ],
+        "min_pairwise_distance": 0.31,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.904
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.31
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.6
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.218
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.654
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.6
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.218
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.313
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.931
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.013
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 21,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.453,
+          0.787,
+          1.842,
+          1.42
+        ],
+        "min_pairwise_distance": 0.491,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.453
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.787
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.842
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.42
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.079
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.842
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.42
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.377
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.123
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.491
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 22,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.274,
+          0.556,
+          0.911,
+          1.573
+        ],
+        "min_pairwise_distance": 0.396,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.274
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.556
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.911
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.573
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.974
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.678
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.176
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.396
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.017
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.743
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 23,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.093,
+          0.941,
+          0.402,
+          1.58
+        ],
+        "min_pairwise_distance": 0.402,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.093
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.941
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.402
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.58
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.941
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.024
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.58
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.647
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.002
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.496
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 24,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "B",
+      "correct_choice_index": 1,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.775,
+          0.856,
+          0.585,
+          1.415
+        ],
+        "min_pairwise_distance": 0.408,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.775
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.856
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.585
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.415
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.856
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.585
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.415
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.408
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.59
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.863
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 25,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.619,
+          1.77,
+          0.859,
+          1.255
+        ],
+        "min_pairwise_distance": 0.558,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.619
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.77
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.859
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.255
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.77
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.859
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.255
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.77
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.77
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.558
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 26,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.111,
+          1.107,
+          0.864,
+          1.06
+        ],
+        "min_pairwise_distance": 0.325,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.111
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.107
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.864
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.06
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.107
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.864
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.134
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.325
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.714
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.469
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 27,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.465,
+          1.428,
+          1.571,
+          1.336
+        ],
+        "min_pairwise_distance": 0.491,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.465
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.428
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.571
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.336
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.216
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.113
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.491
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.428
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.726
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.703
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 28,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "B",
+      "correct_choice_index": 1,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.385,
+          1.008,
+          0.901,
+          1.039
+        ],
+        "min_pairwise_distance": 0.385,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.385
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.008
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.901
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.039
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.008
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.901
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.039
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.407
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.511
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.87
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 29,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.25,
+          0.523,
+          0.544,
+          0.888
+        ],
+        "min_pairwise_distance": 0.379,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.25
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.523
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.544
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.888
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.292
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.769
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.616
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.544
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.888
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.379
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 30,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.625,
+          1.408,
+          1.041,
+          1.131
+        ],
+        "min_pairwise_distance": 0.36,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.625
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.408
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.041
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.131
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.262
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.031
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.907
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.262
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.36
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.907
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 31,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "B",
+      "correct_choice_index": 1,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.748,
+          1.195,
+          1.144,
+          1.199
+        ],
+        "min_pairwise_distance": 0.404,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.748
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.195
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.144
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.199
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.622
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.404
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.77
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.436
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.922
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.489
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 32,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.381,
+          0.96,
+          0.984,
+          1.554
+        ],
+        "min_pairwise_distance": 0.466,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.381
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.96
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.984
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.554
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.723
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.96
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.263
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.466
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.594
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.828
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 33,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.608,
+          1.023,
+          1.194,
+          0.537
+        ],
+        "min_pairwise_distance": 0.478,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.608
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.023
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.194
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.537
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.632
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.404
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.478
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.423
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.5
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.296
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 34,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.061,
+          1.634,
+          1.56,
+          1.216
+        ],
+        "min_pairwise_distance": 0.644,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.061
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.634
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.56
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.216
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.775
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.908
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.644
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.08
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.775
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.983
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 35,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.744,
+          1.592,
+          0.814,
+          1.142
+        ],
+        "min_pairwise_distance": 0.326,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.744
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.592
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.814
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.142
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.148
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.326
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.459
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.901
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.701
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.327
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 36,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.981,
+          0.766,
+          1.022,
+          1.261
+        ],
+        "min_pairwise_distance": 0.348,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.981
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.766
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.022
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.261
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.355
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.578
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.925
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.943
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.289
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.348
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 37,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.277,
+          1.181,
+          0.314,
+          0.818
+        ],
+        "min_pairwise_distance": 0.314,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.277
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.181
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.314
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.818
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.181
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.402
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.983
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.403
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.592
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.114
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 38,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.405,
+          1.972,
+          1.344,
+          1.405
+        ],
+        "min_pairwise_distance": 0.489,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.405
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.972
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.344
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.405
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.385
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.058
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.489
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.629
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.935
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.594
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 39,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.321,
+          1.414,
+          1.517,
+          1.414
+        ],
+        "min_pairwise_distance": 0.334,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.321
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.414
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.517
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.414
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.574
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.446
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.431
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.531
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.334
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.446
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 40,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "vertical",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.941,
+          1.758,
+          1.053,
+          1.019
+        ],
+        "min_pairwise_distance": 0.371,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.941
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.758
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.053
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.019
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.485
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.388
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.371
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.485
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.114
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.381
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 41,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.701,
+          1.508,
+          1.314,
+          1.059
+        ],
+        "min_pairwise_distance": 0.36,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.701
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.508
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.314
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.059
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.852
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.822
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.474
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.481
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.466
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.36
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 42,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.381,
+          0.951,
+          0.735,
+          0.951
+        ],
+        "min_pairwise_distance": 0.381,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.381
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.951
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.735
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.951
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.951
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.735
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.951
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.951
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.387
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.057
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 43,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_pos",
+        "vertical"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "B",
+      "correct_choice_index": 1,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.867,
+          1.259,
+          1.077,
+          0.865
+        ],
+        "min_pairwise_distance": 0.317,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.867
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.259
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.077
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.865
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.961
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.592
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.483
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.633
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.491
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.317
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 44,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.455,
+          1.094,
+          0.818,
+          1.861
+        ],
+        "min_pairwise_distance": 0.455,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.455
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.094
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.818
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.861
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.094
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.818
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.861
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.733
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.881
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.168
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 45,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "vertical",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.027,
+          1.418,
+          1.255,
+          0.79
+        ],
+        "min_pairwise_distance": 0.472,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.027
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.418
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.255
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.79
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.271
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.688
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.718
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.605
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.735
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.472
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 46,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "vertical",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.614,
+          1.686,
+          0.932,
+          1.197
+        ],
+        "min_pairwise_distance": 0.614,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.614
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.686
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.932
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.197
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.57
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.664
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.846
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.909
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.57
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.846
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 47,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "horizontal",
+        "diag_neg"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "E",
+      "correct_choice_index": 4,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          1.382,
+          0.706,
+          1.303,
+          1.688
+        ],
+        "min_pairwise_distance": 0.385,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 1.382
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.706
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.303
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.688
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.3
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 1.142
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 1.423
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.987
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.321
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.385
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 48,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "diag_pos"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "D",
+      "correct_choice_index": 3,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.675,
+          1.138,
+          1.043,
+          1.369
+        ],
+        "min_pairwise_distance": 0.361,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.675
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.138
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 1.043
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 1.369
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.547
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.679
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.701
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 0.653
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.361
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.556
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 49,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "C",
+      "correct_choice_index": 2,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.731,
+          1.374,
+          0.858,
+          0.417
+        ],
+        "min_pairwise_distance": 0.417,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.731
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 1.374
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.858
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.417
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 1.374
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.858
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.417
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.374
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 1.374
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 0.594
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    },
+    {
+      "puzzle_id": 50,
+      "grid_size": 2,
+      "num_folds": 2,
+      "fold_types": [
+        "diag_neg",
+        "horizontal"
+      ],
+      "question_image": "question.png",
+      "silhouette_image": "silhouette.png",
+      "combined_image": "combined.png",
+      "answers_grid_image": "answers_grid.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png"
+      ],
+      "wrong_choices": [
+        "wrong_0.png",
+        "wrong_1.png",
+        "wrong_2.png",
+        "wrong_3.png"
+      ],
+      "correct_choice": "A",
+      "correct_choice_index": 0,
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+      "distinguishability_metrics": {
+        "min_required_distance": 0.3,
+        "wrong_to_correct_distances": [
+          0.373,
+          0.833,
+          0.833,
+          0.468
+        ],
+        "min_pairwise_distance": 0.373,
+        "all_pairwise_distances": [
+          {
+            "answer_pair": [
+              0,
+              1
+            ],
+            "distance": 0.373
+          },
+          {
+            "answer_pair": [
+              0,
+              2
+            ],
+            "distance": 0.833
+          },
+          {
+            "answer_pair": [
+              0,
+              3
+            ],
+            "distance": 0.833
+          },
+          {
+            "answer_pair": [
+              0,
+              4
+            ],
+            "distance": 0.468
+          },
+          {
+            "answer_pair": [
+              1,
+              2
+            ],
+            "distance": 0.833
+          },
+          {
+            "answer_pair": [
+              1,
+              3
+            ],
+            "distance": 0.981
+          },
+          {
+            "answer_pair": [
+              1,
+              4
+            ],
+            "distance": 0.468
+          },
+          {
+            "answer_pair": [
+              2,
+              3
+            ],
+            "distance": 1.115
+          },
+          {
+            "answer_pair": [
+              2,
+              4
+            ],
+            "distance": 0.833
+          },
+          {
+            "answer_pair": [
+              3,
+              4
+            ],
+            "distance": 1.112
+          }
+        ],
+        "note": "Answer 0 is correct, answers 1-4 are wrong"
+      }
+    }
+  ]
+}

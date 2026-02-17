@@ -1,0 +1,2859 @@
+{
+  "description": "Form Board Test puzzles",
+  "num_shapes": 12,
+  "total_instances": 50,
+  "min_solution_pieces": 5,
+  "max_solution_pieces": 5,
+  "puzzles": [
+    {
+      "puzzle_id": 1,
+      "shape_name": "rectangle",
+      "instance_idx": 0,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "1_cot_00.png",
+        "1_cot_01.png",
+        "1_cot_02.png",
+        "1_cot_03.png",
+        "1_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 2,
+      "shape_name": "square",
+      "instance_idx": 1,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "2_cot_00.png",
+        "2_cot_01.png",
+        "2_cot_02.png",
+        "2_cot_03.png",
+        "2_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 3,
+      "shape_name": "L_shape",
+      "instance_idx": 2,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "3_cot_00.png",
+        "3_cot_01.png",
+        "3_cot_02.png",
+        "3_cot_03.png",
+        "3_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 4,
+      "shape_name": "T_shape",
+      "instance_idx": 3,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "4_cot_00.png",
+        "4_cot_01.png",
+        "4_cot_02.png",
+        "4_cot_03.png",
+        "4_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 5,
+      "shape_name": "cross",
+      "instance_idx": 4,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "5_cot_00.png",
+        "5_cot_01.png",
+        "5_cot_02.png",
+        "5_cot_03.png",
+        "5_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 6,
+      "shape_name": "U_shape",
+      "instance_idx": 5,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "6_cot_00.png",
+        "6_cot_01.png",
+        "6_cot_02.png",
+        "6_cot_03.png",
+        "6_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 7,
+      "shape_name": "trapezoid",
+      "instance_idx": 6,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "7_cot_00.png",
+        "7_cot_01.png",
+        "7_cot_02.png",
+        "7_cot_03.png",
+        "7_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 8,
+      "shape_name": "pentagon",
+      "instance_idx": 7,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "8_cot_00.png",
+        "8_cot_01.png",
+        "8_cot_02.png",
+        "8_cot_03.png",
+        "8_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 9,
+      "shape_name": "stairs",
+      "instance_idx": 8,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "9_cot_00.png",
+        "9_cot_01.png",
+        "9_cot_02.png",
+        "9_cot_03.png",
+        "9_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 10,
+      "shape_name": "arrow",
+      "instance_idx": 9,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "10_cot_00.png",
+        "10_cot_01.png",
+        "10_cot_02.png",
+        "10_cot_03.png",
+        "10_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 11,
+      "shape_name": "diamond",
+      "instance_idx": 10,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "11_cot_00.png",
+        "11_cot_01.png",
+        "11_cot_02.png",
+        "11_cot_03.png",
+        "11_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 12,
+      "shape_name": "hexagon",
+      "instance_idx": 11,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "12_cot_00.png",
+        "12_cot_01.png",
+        "12_cot_02.png",
+        "12_cot_03.png",
+        "12_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 13,
+      "shape_name": "rectangle",
+      "instance_idx": 12,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "13_cot_00.png",
+        "13_cot_01.png",
+        "13_cot_02.png",
+        "13_cot_03.png",
+        "13_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 14,
+      "shape_name": "square",
+      "instance_idx": 13,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "14_cot_00.png",
+        "14_cot_01.png",
+        "14_cot_02.png",
+        "14_cot_03.png",
+        "14_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 15,
+      "shape_name": "L_shape",
+      "instance_idx": 14,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "15_cot_00.png",
+        "15_cot_01.png",
+        "15_cot_02.png",
+        "15_cot_03.png",
+        "15_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 16,
+      "shape_name": "T_shape",
+      "instance_idx": 15,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "16_cot_00.png",
+        "16_cot_01.png",
+        "16_cot_02.png",
+        "16_cot_03.png",
+        "16_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 17,
+      "shape_name": "cross",
+      "instance_idx": 16,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "17_cot_00.png",
+        "17_cot_01.png",
+        "17_cot_02.png",
+        "17_cot_03.png",
+        "17_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 18,
+      "shape_name": "U_shape",
+      "instance_idx": 17,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "18_cot_00.png",
+        "18_cot_01.png",
+        "18_cot_02.png",
+        "18_cot_03.png",
+        "18_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 19,
+      "shape_name": "trapezoid",
+      "instance_idx": 18,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "19_cot_00.png",
+        "19_cot_01.png",
+        "19_cot_02.png",
+        "19_cot_03.png",
+        "19_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 20,
+      "shape_name": "pentagon",
+      "instance_idx": 19,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "20_cot_00.png",
+        "20_cot_01.png",
+        "20_cot_02.png",
+        "20_cot_03.png",
+        "20_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 21,
+      "shape_name": "stairs",
+      "instance_idx": 20,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "21_cot_00.png",
+        "21_cot_01.png",
+        "21_cot_02.png",
+        "21_cot_03.png",
+        "21_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 22,
+      "shape_name": "arrow",
+      "instance_idx": 21,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "22_cot_00.png",
+        "22_cot_01.png",
+        "22_cot_02.png",
+        "22_cot_03.png",
+        "22_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 23,
+      "shape_name": "diamond",
+      "instance_idx": 22,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "23_cot_00.png",
+        "23_cot_01.png",
+        "23_cot_02.png",
+        "23_cot_03.png",
+        "23_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 24,
+      "shape_name": "hexagon",
+      "instance_idx": 23,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "24_cot_00.png",
+        "24_cot_01.png",
+        "24_cot_02.png",
+        "24_cot_03.png",
+        "24_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 25,
+      "shape_name": "rectangle",
+      "instance_idx": 24,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "25_cot_00.png",
+        "25_cot_01.png",
+        "25_cot_02.png",
+        "25_cot_03.png",
+        "25_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 26,
+      "shape_name": "square",
+      "instance_idx": 25,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "26_cot_00.png",
+        "26_cot_01.png",
+        "26_cot_02.png",
+        "26_cot_03.png",
+        "26_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 27,
+      "shape_name": "L_shape",
+      "instance_idx": 26,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "27_cot_00.png",
+        "27_cot_01.png",
+        "27_cot_02.png",
+        "27_cot_03.png",
+        "27_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 28,
+      "shape_name": "T_shape",
+      "instance_idx": 27,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "28_cot_00.png",
+        "28_cot_01.png",
+        "28_cot_02.png",
+        "28_cot_03.png",
+        "28_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 29,
+      "shape_name": "cross",
+      "instance_idx": 28,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "29_cot_00.png",
+        "29_cot_01.png",
+        "29_cot_02.png",
+        "29_cot_03.png",
+        "29_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 30,
+      "shape_name": "U_shape",
+      "instance_idx": 29,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "30_cot_00.png",
+        "30_cot_01.png",
+        "30_cot_02.png",
+        "30_cot_03.png",
+        "30_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 31,
+      "shape_name": "trapezoid",
+      "instance_idx": 30,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "31_cot_00.png",
+        "31_cot_01.png",
+        "31_cot_02.png",
+        "31_cot_03.png",
+        "31_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 32,
+      "shape_name": "pentagon",
+      "instance_idx": 31,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "32_cot_00.png",
+        "32_cot_01.png",
+        "32_cot_02.png",
+        "32_cot_03.png",
+        "32_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 33,
+      "shape_name": "stairs",
+      "instance_idx": 32,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "33_cot_00.png",
+        "33_cot_01.png",
+        "33_cot_02.png",
+        "33_cot_03.png",
+        "33_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 34,
+      "shape_name": "arrow",
+      "instance_idx": 33,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "34_cot_00.png",
+        "34_cot_01.png",
+        "34_cot_02.png",
+        "34_cot_03.png",
+        "34_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 35,
+      "shape_name": "diamond",
+      "instance_idx": 34,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "35_cot_00.png",
+        "35_cot_01.png",
+        "35_cot_02.png",
+        "35_cot_03.png",
+        "35_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 36,
+      "shape_name": "hexagon",
+      "instance_idx": 35,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "36_cot_00.png",
+        "36_cot_01.png",
+        "36_cot_02.png",
+        "36_cot_03.png",
+        "36_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 37,
+      "shape_name": "rectangle",
+      "instance_idx": 36,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "37_cot_00.png",
+        "37_cot_01.png",
+        "37_cot_02.png",
+        "37_cot_03.png",
+        "37_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 38,
+      "shape_name": "square",
+      "instance_idx": 37,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "38_cot_00.png",
+        "38_cot_01.png",
+        "38_cot_02.png",
+        "38_cot_03.png",
+        "38_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 39,
+      "shape_name": "L_shape",
+      "instance_idx": 38,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "39_cot_00.png",
+        "39_cot_01.png",
+        "39_cot_02.png",
+        "39_cot_03.png",
+        "39_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 40,
+      "shape_name": "T_shape",
+      "instance_idx": 39,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "40_cot_00.png",
+        "40_cot_01.png",
+        "40_cot_02.png",
+        "40_cot_03.png",
+        "40_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 41,
+      "shape_name": "cross",
+      "instance_idx": 40,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "41_cot_00.png",
+        "41_cot_01.png",
+        "41_cot_02.png",
+        "41_cot_03.png",
+        "41_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 42,
+      "shape_name": "U_shape",
+      "instance_idx": 41,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "42_cot_00.png",
+        "42_cot_01.png",
+        "42_cot_02.png",
+        "42_cot_03.png",
+        "42_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 43,
+      "shape_name": "trapezoid",
+      "instance_idx": 42,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "43_cot_00.png",
+        "43_cot_01.png",
+        "43_cot_02.png",
+        "43_cot_03.png",
+        "43_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 44,
+      "shape_name": "pentagon",
+      "instance_idx": 43,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "44_cot_00.png",
+        "44_cot_01.png",
+        "44_cot_02.png",
+        "44_cot_03.png",
+        "44_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 45,
+      "shape_name": "stairs",
+      "instance_idx": 44,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "45_cot_00.png",
+        "45_cot_01.png",
+        "45_cot_02.png",
+        "45_cot_03.png",
+        "45_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 46,
+      "shape_name": "arrow",
+      "instance_idx": 45,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "46_cot_00.png",
+        "46_cot_01.png",
+        "46_cot_02.png",
+        "46_cot_03.png",
+        "46_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 47,
+      "shape_name": "diamond",
+      "instance_idx": 46,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "47_cot_00.png",
+        "47_cot_01.png",
+        "47_cot_02.png",
+        "47_cot_03.png",
+        "47_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 48,
+      "shape_name": "hexagon",
+      "instance_idx": 47,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "48_cot_00.png",
+        "48_cot_01.png",
+        "48_cot_02.png",
+        "48_cot_03.png",
+        "48_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 49,
+      "shape_name": "rectangle",
+      "instance_idx": 48,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "49_cot_00.png",
+        "49_cot_01.png",
+        "49_cot_02.png",
+        "49_cot_03.png",
+        "49_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    },
+    {
+      "puzzle_id": 50,
+      "shape_name": "square",
+      "instance_idx": 49,
+      "silhouette_image": "silhouette.png",
+      "bordered_image": "bordered.png",
+      "combined_image": "combined.png",
+      "cot_images": [
+        "50_cot_00.png",
+        "50_cot_01.png",
+        "50_cot_02.png",
+        "50_cot_03.png",
+        "50_cot_04.png"
+      ],
+      "choices_image": "choices.png",
+      "pieces": [
+        {
+          "piece_id": 1,
+          "image": "piece_1.png",
+          "is_solution": true,
+          "label": "A"
+        },
+        {
+          "piece_id": 2,
+          "image": "piece_2.png",
+          "is_solution": true,
+          "label": "B"
+        },
+        {
+          "piece_id": 3,
+          "image": "piece_3.png",
+          "is_solution": true,
+          "label": "C"
+        },
+        {
+          "piece_id": 4,
+          "image": "piece_4.png",
+          "is_solution": true,
+          "label": "D"
+        },
+        {
+          "piece_id": 5,
+          "image": "piece_5.png",
+          "is_solution": true,
+          "label": "E"
+        }
+      ],
+      "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+      "solution_pieces": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "num_solution_pieces": 5
+    }
+  ]
+}

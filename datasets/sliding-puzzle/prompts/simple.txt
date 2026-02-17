@@ -1,0 +1,19 @@
+Look at the image:
+Below is a scrambled sliding tile puzzle where a natural image has been cut into an n × n grid with one blank (black) tile:
+<image initial.png>
+
+Rules:
+1. The puzzle consists of an n × n grid with one blank tile and n²-1 image tiles.
+2. You can move the blank tile in four directions: up, down, left, right.
+3. Each action swaps the blank with the adjacent tile in the specified direction.
+4. Only valid moves are allowed (the blank cannot move outside the grid boundaries).
+5. The goal is to reconstruct the original, coherent image by rearranging the scrambled tiles.
+
+Task:
+Determine the shortest sequence of moves needed to solve the puzzle and restore the original image.
+
+Output: Respond in JSON format as follows:
+{"answer": "up right down left up"}
+
+Each word specifies a direction to move the blank tile.
+You may guess the most plausible move even if uncertain. Small mistakes are acceptable.

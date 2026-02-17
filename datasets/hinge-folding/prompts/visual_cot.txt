@@ -1,0 +1,26 @@
+Look at this image:
+<image combined.png>
+The left side shows several rigid shapes connected by labeled hinges (A, B, C, ...).
+On the right side is a target folded configuration.
+
+Rules:
+1. Shapes are connected in a kinematic chain - each hinge connects two adjacent shapes.
+2. Rotating hinge N causes the shape on the right side of the hinge in the original configuration to rotate anti-clockwise.
+    All shapes are connected, all shapes to the right of the right shape rotate with it.
+    All shapes to the left of the hinge remain fixed.
+3. Rotations must be multiples of 90° (i.e., 90°, 180°, 270°).
+4. Shapes maintain their connections throughout all rotations.
+5. The goal is to find the sequence of hinge rotations that transforms the initial configuration into the target.
+
+Task:
+Determine the rotation angle (in degrees) for each numbered hinge to achieve the target configuration.
+
+Output: Respond in JSON format as follows:
+{"answer": "A 90, B 90, C 180"}
+
+Each pair specifies the hinge number and its rotation angle in degrees.
+
+If multiple solutions exist, output any valid sequence that produces the target configuration.
+
+The following images correspond to intermediate images in the reasoning process. You must use them to obtain your answer:
+<images visual cot>

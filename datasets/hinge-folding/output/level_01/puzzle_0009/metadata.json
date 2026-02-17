@@ -1,0 +1,29 @@
+{
+  "puzzle_id": "puzzle_0009",
+  "num_pieces": 2,
+  "num_hinges": 1,
+  "shape_chain": [
+    "square",
+    "triangle"
+  ],
+  "rotation_angles": [
+    180
+  ],
+  "rotation_steps": [
+    {
+      "hinge_id": "A",
+      "angle": 180
+    }
+  ],
+  "rotation_sequence": "A 180",
+  "piece_colors": [
+    "#0090C1",
+    "#E85D75"
+  ],
+  "initial_image": "puzzle_0009/initial.png",
+  "target_image": "puzzle_0009/target.png",
+  "combined_image": "puzzle_0009/combined.png",
+  "cot_images": [
+    "puzzle_0009/cot_00.png"
+  ]
+}

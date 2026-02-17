@@ -1,0 +1,52 @@
+{
+  "puzzle_id": 12,
+  "grid_size": 2,
+  "num_scramble_moves": 5,
+  "num_solution_moves": 5,
+  "scramble_moves": [
+    "up",
+    "left",
+    "down",
+    "right",
+    "up"
+  ],
+  "solution_moves": [
+    "down",
+    "left",
+    "up",
+    "right",
+    "down"
+  ],
+  "initial_state": [
+    [
+      3,
+      -1
+    ],
+    [
+      2,
+      1
+    ]
+  ],
+  "target_state": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      -1
+    ]
+  ],
+  "initial_image": "initial.png",
+  "target_image": "target.png",
+  "cot_images": [
+    "cot_00.png",
+    "cot_01.png",
+    "cot_02.png",
+    "cot_03.png",
+    "cot_04.png"
+  ],
+  "source_image": "ILSVRC2012_val_00001115_n07871810.JPEG",
+  "is_solvable": true,
+  "parity_valid": true
+}

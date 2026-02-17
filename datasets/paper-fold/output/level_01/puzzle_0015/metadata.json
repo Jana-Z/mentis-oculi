@@ -1,0 +1,114 @@
+{
+  "puzzle_id": 15,
+  "grid_size": 2,
+  "num_folds": 1,
+  "fold_types": [
+    "horizontal"
+  ],
+  "question_image": "question.png",
+  "silhouette_image": "silhouette.png",
+  "combined_image": "combined.png",
+  "answers_grid_image": "answers_grid.png",
+  "cot_images": [
+    "cot_00.png"
+  ],
+  "wrong_choices": [
+    "wrong_0.png",
+    "wrong_1.png",
+    "wrong_2.png",
+    "wrong_3.png"
+  ],
+  "correct_choice": "E",
+  "correct_choice_index": 4,
+  "choices": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "question": "If you fold the paper as shown, punch a hole, and unfold it, where will all the holes be?",
+  "distinguishability_metrics": {
+    "min_required_distance": 0.3,
+    "wrong_to_correct_distances": [
+      1.219,
+      1.4,
+      1.363,
+      1.324
+    ],
+    "min_pairwise_distance": 0.458,
+    "all_pairwise_distances": [
+      {
+        "answer_pair": [
+          0,
+          1
+        ],
+        "distance": 1.219
+      },
+      {
+        "answer_pair": [
+          0,
+          2
+        ],
+        "distance": 1.4
+      },
+      {
+        "answer_pair": [
+          0,
+          3
+        ],
+        "distance": 1.363
+      },
+      {
+        "answer_pair": [
+          0,
+          4
+        ],
+        "distance": 1.324
+      },
+      {
+        "answer_pair": [
+          1,
+          2
+        ],
+        "distance": 0.919
+      },
+      {
+        "answer_pair": [
+          1,
+          3
+        ],
+        "distance": 1.232
+      },
+      {
+        "answer_pair": [
+          1,
+          4
+        ],
+        "distance": 0.458
+      },
+      {
+        "answer_pair": [
+          2,
+          3
+        ],
+        "distance": 0.935
+      },
+      {
+        "answer_pair": [
+          2,
+          4
+        ],
+        "distance": 1.159
+      },
+      {
+        "answer_pair": [
+          3,
+          4
+        ],
+        "distance": 1.16
+      }
+    ],
+    "note": "Answer 0 is correct, answers 1-4 are wrong"
+  }
+}

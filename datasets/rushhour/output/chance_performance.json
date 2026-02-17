@@ -1,0 +1,961 @@
+{
+  "num_trials": 1000,
+  "max_moves": 6,
+  "max_instances_per_level": 30,
+  "seed": 42,
+  "method": "sampled",
+  "levels": {
+    "level_01": {
+      "level": 1,
+      "num_instances": 30,
+      "success_rate": 1.0,
+      "successes": 30000,
+      "trials": 30000,
+      "instances": [
+        {
+          "instance_id": 0,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 1,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 2,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 3,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 4,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 5,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 6,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 7,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 8,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 9,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 10,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 11,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 12,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 13,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 14,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 15,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 16,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 17,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 18,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 19,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 20,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 21,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 22,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 23,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 24,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 25,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 26,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 27,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 28,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 29,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        }
+      ]
+    },
+    "level_02": {
+      "level": 2,
+      "num_instances": 30,
+      "success_rate": 0.5838,
+      "successes": 17514,
+      "trials": 30000,
+      "instances": [
+        {
+          "instance_id": 0,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 1,
+          "success_rate": 0.49,
+          "successes": 490,
+          "trials": 1000
+        },
+        {
+          "instance_id": 2,
+          "success_rate": 0.433,
+          "successes": 433,
+          "trials": 1000
+        },
+        {
+          "instance_id": 3,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 4,
+          "success_rate": 0.298,
+          "successes": 298,
+          "trials": 1000
+        },
+        {
+          "instance_id": 5,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 6,
+          "success_rate": 0.205,
+          "successes": 205,
+          "trials": 1000
+        },
+        {
+          "instance_id": 7,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 8,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 9,
+          "success_rate": 0.112,
+          "successes": 112,
+          "trials": 1000
+        },
+        {
+          "instance_id": 10,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 11,
+          "success_rate": 0.187,
+          "successes": 187,
+          "trials": 1000
+        },
+        {
+          "instance_id": 12,
+          "success_rate": 0.504,
+          "successes": 504,
+          "trials": 1000
+        },
+        {
+          "instance_id": 13,
+          "success_rate": 0.416,
+          "successes": 416,
+          "trials": 1000
+        },
+        {
+          "instance_id": 14,
+          "success_rate": 0.48,
+          "successes": 480,
+          "trials": 1000
+        },
+        {
+          "instance_id": 15,
+          "success_rate": 0.168,
+          "successes": 168,
+          "trials": 1000
+        },
+        {
+          "instance_id": 16,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 17,
+          "success_rate": 0.431,
+          "successes": 431,
+          "trials": 1000
+        },
+        {
+          "instance_id": 18,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 19,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 20,
+          "success_rate": 0.238,
+          "successes": 238,
+          "trials": 1000
+        },
+        {
+          "instance_id": 21,
+          "success_rate": 0.739,
+          "successes": 739,
+          "trials": 1000
+        },
+        {
+          "instance_id": 22,
+          "success_rate": 0.186,
+          "successes": 186,
+          "trials": 1000
+        },
+        {
+          "instance_id": 23,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        },
+        {
+          "instance_id": 24,
+          "success_rate": 0.176,
+          "successes": 176,
+          "trials": 1000
+        },
+        {
+          "instance_id": 25,
+          "success_rate": 0.49,
+          "successes": 490,
+          "trials": 1000
+        },
+        {
+          "instance_id": 26,
+          "success_rate": 0.188,
+          "successes": 188,
+          "trials": 1000
+        },
+        {
+          "instance_id": 27,
+          "success_rate": 0.523,
+          "successes": 523,
+          "trials": 1000
+        },
+        {
+          "instance_id": 28,
+          "success_rate": 0.25,
+          "successes": 250,
+          "trials": 1000
+        },
+        {
+          "instance_id": 29,
+          "success_rate": 1.0,
+          "successes": 1000,
+          "trials": 1000
+        }
+      ]
+    },
+    "level_03": {
+      "level": 3,
+      "num_instances": 30,
+      "success_rate": 0.028666666666666667,
+      "successes": 860,
+      "trials": 30000,
+      "instances": [
+        {
+          "instance_id": 0,
+          "success_rate": 0.039,
+          "successes": 39,
+          "trials": 1000
+        },
+        {
+          "instance_id": 1,
+          "success_rate": 0.045,
+          "successes": 45,
+          "trials": 1000
+        },
+        {
+          "instance_id": 2,
+          "success_rate": 0.031,
+          "successes": 31,
+          "trials": 1000
+        },
+        {
+          "instance_id": 3,
+          "success_rate": 0.014,
+          "successes": 14,
+          "trials": 1000
+        },
+        {
+          "instance_id": 4,
+          "success_rate": 0.076,
+          "successes": 76,
+          "trials": 1000
+        },
+        {
+          "instance_id": 5,
+          "success_rate": 0.006,
+          "successes": 6,
+          "trials": 1000
+        },
+        {
+          "instance_id": 6,
+          "success_rate": 0.05,
+          "successes": 50,
+          "trials": 1000
+        },
+        {
+          "instance_id": 7,
+          "success_rate": 0.034,
+          "successes": 34,
+          "trials": 1000
+        },
+        {
+          "instance_id": 8,
+          "success_rate": 0.013,
+          "successes": 13,
+          "trials": 1000
+        },
+        {
+          "instance_id": 9,
+          "success_rate": 0.028,
+          "successes": 28,
+          "trials": 1000
+        },
+        {
+          "instance_id": 10,
+          "success_rate": 0.008,
+          "successes": 8,
+          "trials": 1000
+        },
+        {
+          "instance_id": 11,
+          "success_rate": 0.017,
+          "successes": 17,
+          "trials": 1000
+        },
+        {
+          "instance_id": 12,
+          "success_rate": 0.02,
+          "successes": 20,
+          "trials": 1000
+        },
+        {
+          "instance_id": 13,
+          "success_rate": 0.027,
+          "successes": 27,
+          "trials": 1000
+        },
+        {
+          "instance_id": 14,
+          "success_rate": 0.019,
+          "successes": 19,
+          "trials": 1000
+        },
+        {
+          "instance_id": 15,
+          "success_rate": 0.085,
+          "successes": 85,
+          "trials": 1000
+        },
+        {
+          "instance_id": 16,
+          "success_rate": 0.01,
+          "successes": 10,
+          "trials": 1000
+        },
+        {
+          "instance_id": 17,
+          "success_rate": 0.015,
+          "successes": 15,
+          "trials": 1000
+        },
+        {
+          "instance_id": 18,
+          "success_rate": 0.035,
+          "successes": 35,
+          "trials": 1000
+        },
+        {
+          "instance_id": 19,
+          "success_rate": 0.014,
+          "successes": 14,
+          "trials": 1000
+        },
+        {
+          "instance_id": 20,
+          "success_rate": 0.043,
+          "successes": 43,
+          "trials": 1000
+        },
+        {
+          "instance_id": 21,
+          "success_rate": 0.027,
+          "successes": 27,
+          "trials": 1000
+        },
+        {
+          "instance_id": 22,
+          "success_rate": 0.036,
+          "successes": 36,
+          "trials": 1000
+        },
+        {
+          "instance_id": 23,
+          "success_rate": 0.013,
+          "successes": 13,
+          "trials": 1000
+        },
+        {
+          "instance_id": 24,
+          "success_rate": 0.022,
+          "successes": 22,
+          "trials": 1000
+        },
+        {
+          "instance_id": 25,
+          "success_rate": 0.019,
+          "successes": 19,
+          "trials": 1000
+        },
+        {
+          "instance_id": 26,
+          "success_rate": 0.015,
+          "successes": 15,
+          "trials": 1000
+        },
+        {
+          "instance_id": 27,
+          "success_rate": 0.07,
+          "successes": 70,
+          "trials": 1000
+        },
+        {
+          "instance_id": 28,
+          "success_rate": 0.011,
+          "successes": 11,
+          "trials": 1000
+        },
+        {
+          "instance_id": 29,
+          "success_rate": 0.018,
+          "successes": 18,
+          "trials": 1000
+        }
+      ]
+    },
+    "level_04": {
+      "level": 4,
+      "num_instances": 30,
+      "success_rate": 0.005333333333333333,
+      "successes": 160,
+      "trials": 30000,
+      "instances": [
+        {
+          "instance_id": 0,
+          "success_rate": 0.003,
+          "successes": 3,
+          "trials": 1000
+        },
+        {
+          "instance_id": 1,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        },
+        {
+          "instance_id": 2,
+          "success_rate": 0.005,
+          "successes": 5,
+          "trials": 1000
+        },
+        {
+          "instance_id": 3,
+          "success_rate": 0.005,
+          "successes": 5,
+          "trials": 1000
+        },
+        {
+          "instance_id": 4,
+          "success_rate": 0.016,
+          "successes": 16,
+          "trials": 1000
+        },
+        {
+          "instance_id": 5,
+          "success_rate": 0.009,
+          "successes": 9,
+          "trials": 1000
+        },
+        {
+          "instance_id": 6,
+          "success_rate": 0.006,
+          "successes": 6,
+          "trials": 1000
+        },
+        {
+          "instance_id": 7,
+          "success_rate": 0.005,
+          "successes": 5,
+          "trials": 1000
+        },
+        {
+          "instance_id": 8,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 9,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        },
+        {
+          "instance_id": 10,
+          "success_rate": 0.008,
+          "successes": 8,
+          "trials": 1000
+        },
+        {
+          "instance_id": 11,
+          "success_rate": 0.004,
+          "successes": 4,
+          "trials": 1000
+        },
+        {
+          "instance_id": 12,
+          "success_rate": 0.007,
+          "successes": 7,
+          "trials": 1000
+        },
+        {
+          "instance_id": 13,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 14,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 15,
+          "success_rate": 0.018,
+          "successes": 18,
+          "trials": 1000
+        },
+        {
+          "instance_id": 16,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 17,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 18,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        },
+        {
+          "instance_id": 19,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        },
+        {
+          "instance_id": 20,
+          "success_rate": 0.011,
+          "successes": 11,
+          "trials": 1000
+        },
+        {
+          "instance_id": 21,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        },
+        {
+          "instance_id": 22,
+          "success_rate": 0.005,
+          "successes": 5,
+          "trials": 1000
+        },
+        {
+          "instance_id": 23,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 24,
+          "success_rate": 0.01,
+          "successes": 10,
+          "trials": 1000
+        },
+        {
+          "instance_id": 25,
+          "success_rate": 0.007,
+          "successes": 7,
+          "trials": 1000
+        },
+        {
+          "instance_id": 26,
+          "success_rate": 0.008,
+          "successes": 8,
+          "trials": 1000
+        },
+        {
+          "instance_id": 27,
+          "success_rate": 0.011,
+          "successes": 11,
+          "trials": 1000
+        },
+        {
+          "instance_id": 28,
+          "success_rate": 0.005,
+          "successes": 5,
+          "trials": 1000
+        },
+        {
+          "instance_id": 29,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        }
+      ]
+    },
+    "level_05": {
+      "level": 5,
+      "num_instances": 30,
+      "success_rate": 0.0004,
+      "successes": 12,
+      "trials": 30000,
+      "instances": [
+        {
+          "instance_id": 0,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 1,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 2,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 3,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 4,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 5,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 6,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 7,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 8,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 9,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 10,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 11,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 12,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 13,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 14,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 15,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 16,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        },
+        {
+          "instance_id": 17,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 18,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 19,
+          "success_rate": 0.002,
+          "successes": 2,
+          "trials": 1000
+        },
+        {
+          "instance_id": 20,
+          "success_rate": 0.001,
+          "successes": 1,
+          "trials": 1000
+        },
+        {
+          "instance_id": 21,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 22,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 23,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 24,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 25,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 26,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 27,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 28,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        },
+        {
+          "instance_id": 29,
+          "success_rate": 0.0,
+          "successes": 0,
+          "trials": 1000
+        }
+      ]
+    }
+  },
+  "overall": {
+    "success_rate": 0.32364,
+    "successes": 48546,
+    "trials": 150000,
+    "num_levels": 5,
+    "total_instances": 150
+  }
+}

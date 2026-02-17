@@ -1,0 +1,29 @@
+{
+  "num_pieces": 2,
+  "num_hinges": 1,
+  "shape_chain": [
+    "diamond",
+    "square"
+  ],
+  "rotation_angles": [
+    0
+  ],
+  "rotation_steps": [
+    {
+      "hinge_id": "A",
+      "angle": 0
+    }
+  ],
+  "rotation_sequence": "A 0",
+  "piece_colors": [
+    "#E85D75",
+    "#0090C1"
+  ],
+  "initial_image": "initial.png",
+  "target_image": "target.png",
+  "combined_image": "combined.png",
+  "cot_images": [
+    "cot_00.png"
+  ],
+  "puzzle_id": "puzzle_0002"
+}

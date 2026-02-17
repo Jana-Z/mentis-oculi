@@ -1,0 +1,53 @@
+{
+  "puzzle_id": 12,
+  "shape_name": "hexagon",
+  "instance_idx": 11,
+  "silhouette_image": "silhouette.png",
+  "bordered_image": "bordered.png",
+  "combined_image": "combined.png",
+  "cot_images": [
+    "12_cot_00.png",
+    "12_cot_01.png",
+    "12_cot_02.png"
+  ],
+  "choices_image": "choices.png",
+  "pieces": [
+    {
+      "piece_id": 1,
+      "image": "piece_1.png",
+      "is_solution": false,
+      "label": "A"
+    },
+    {
+      "piece_id": 2,
+      "image": "piece_2.png",
+      "is_solution": false,
+      "label": "B"
+    },
+    {
+      "piece_id": 3,
+      "image": "piece_3.png",
+      "is_solution": true,
+      "label": "C"
+    },
+    {
+      "piece_id": 4,
+      "image": "piece_4.png",
+      "is_solution": true,
+      "label": "D"
+    },
+    {
+      "piece_id": 5,
+      "image": "piece_5.png",
+      "is_solution": true,
+      "label": "E"
+    }
+  ],
+  "question": "Which pieces in (2) are necessary to form the figure of (1)?",
+  "solution_pieces": [
+    "C",
+    "D",
+    "E"
+  ],
+  "num_solution_pieces": 3
+}

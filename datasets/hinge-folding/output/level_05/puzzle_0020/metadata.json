@@ -1,0 +1,61 @@
+{
+  "puzzle_id": "puzzle_0020",
+  "num_pieces": 6,
+  "num_hinges": 5,
+  "shape_chain": [
+    "diamond",
+    "rectangle",
+    "rectangle",
+    "diamond",
+    "square",
+    "rectangle"
+  ],
+  "rotation_angles": [
+    270,
+    270,
+    90,
+    90,
+    90
+  ],
+  "rotation_steps": [
+    {
+      "hinge_id": "A",
+      "angle": 270
+    },
+    {
+      "hinge_id": "B",
+      "angle": 270
+    },
+    {
+      "hinge_id": "C",
+      "angle": 90
+    },
+    {
+      "hinge_id": "D",
+      "angle": 90
+    },
+    {
+      "hinge_id": "E",
+      "angle": 90
+    }
+  ],
+  "rotation_sequence": "A 270, B 270, C 90, D 90, E 90",
+  "piece_colors": [
+    "#FFD670",
+    "#0090C1",
+    "#2EC4B6",
+    "#E85D75",
+    "#0090C1",
+    "#E85D75"
+  ],
+  "initial_image": "puzzle_0020/initial.png",
+  "target_image": "puzzle_0020/target.png",
+  "combined_image": "puzzle_0020/combined.png",
+  "cot_images": [
+    "puzzle_0020/cot_00.png",
+    "puzzle_0020/cot_01.png",
+    "puzzle_0020/cot_02.png",
+    "puzzle_0020/cot_03.png",
+    "puzzle_0020/cot_04.png"
+  ]
+}

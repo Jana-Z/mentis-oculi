@@ -1,0 +1,45 @@
+{
+  "puzzle_id": "puzzle_0027",
+  "num_pieces": 4,
+  "num_hinges": 3,
+  "shape_chain": [
+    "square",
+    "diamond",
+    "rectangle",
+    "triangle"
+  ],
+  "rotation_angles": [
+    270,
+    270,
+    270
+  ],
+  "rotation_steps": [
+    {
+      "hinge_id": "A",
+      "angle": 270
+    },
+    {
+      "hinge_id": "B",
+      "angle": 270
+    },
+    {
+      "hinge_id": "C",
+      "angle": 270
+    }
+  ],
+  "rotation_sequence": "A 270, B 270, C 270",
+  "piece_colors": [
+    "#0090C1",
+    "#E85D75",
+    "#FFD670",
+    "#2EC4B6"
+  ],
+  "initial_image": "puzzle_0027/initial.png",
+  "target_image": "puzzle_0027/target.png",
+  "combined_image": "puzzle_0027/combined.png",
+  "cot_images": [
+    "puzzle_0027/cot_00.png",
+    "puzzle_0027/cot_01.png",
+    "puzzle_0027/cot_02.png"
+  ]
+}
