@@ -6,7 +6,7 @@ Generate hinge folding puzzles where a chain of shapes connected by labeled hing
 
 This generator creates visual reasoning puzzles where:
 - A chain of 2-5 shapes are connected by labeled hinges (A, B, C, ...)
-- Each hinge can be rotated by a specific angle (typically 90° or 180°)
+- Each hinge can be rotated by a specific angle (90°, 180°, or 270°)
 - The task is to determine the rotation sequence to transform the chain into a target shape
 - Similar to tangram but uses rotation instead of translation
 
@@ -87,7 +87,7 @@ uv run main.py --seed 123
 
 ## Difficulty Levels
 
-The complexity of hinge folding puzzles is controlled by the **number of pieces** (and thus hinges). Each hinge rotation = 1 CoT step:
+The complexity of hinge folding puzzles is controlled by the **number of pieces** (and thus hinges).
 
 | Level | Pieces | Hinges | CoT Steps | Output Directory |
 |-------|--------|--------|-----------|------------------|
@@ -97,7 +97,6 @@ The complexity of hinge folding puzzles is controlled by the **number of pieces*
 | **4** | 5 | 4 | 4 | `output/level_04` |
 | **5** | 6 | 5 | 5 | `output/level_05` |
 
-More hinges = more rotations to track = more complex spatial reasoning required.
 
 ## How It Works
 
@@ -107,7 +106,7 @@ The generator creates a chain of 2-5 pieces arranged in a straight line, connect
 
 ### 2. Rotation Solution
 
-Each hinge is assigned a random rotation angle from **{0°, 90°, 180°, 270°}** (anti-clockwise). The generator uses rejection sampling to ensure that the final folded configuration has good visibility (no piece is more than 80% overlapped by others).
+Each hinge is assigned a random rotation angle from **{90°, 180°, 270°}** (anti-clockwise). The generator uses rejection sampling to ensure that the final folded configuration has good visibility (no piece is more than 70% overlapped by others).
 
 ### 3. Chain-of-Thought Visualization
 
@@ -156,55 +155,3 @@ Multiple visualizations are generated:
   "puzzle_id": "puzzle_0001"
 }
 ```
-
-## Example Question Format
-
-```
-Given: A chain of shapes connected by labeled hinges A, B, C (see initial.png)
-Target: The folded configuration (see target.png)
-
-Question: What rotation angles (in degrees) should be applied to each hinge 
-          to transform the initial configuration into the target shape?
-
-Answer Format: hinge_label angle, hinge_label angle, ...
-Example Answer: A 90, B 90, C 270
-```
-
-### Visual Chain-of-Thought
-
-Each puzzle includes a visual chain-of-thought showing the folding process:
-
-1. **Step 0** (`cot_00.png`): After rotating hinge A
-2. **Step 1** (`cot_01.png`): After rotating hinges A and B
-3. **Step N** (`cot_NN.png`): After all rotations (matches target)
-
-This helps understand how each rotation contributes to forming the target shape.
-
-## Dependencies
-
-- `matplotlib>=3.10.6` - Rendering
-- `numpy>=2.3.3` - Numerical operations
-- `pillow>=11.3.0` - Image manipulation
-- `tqdm>=4.66.0` - Progress bars
-
-All dependencies are managed via `uv` and specified in `pyproject.toml`.
-
-## Shape Types
-
-The generator supports four base shapes:
-
-1. **Square** - Regular square with 90° corners
-2. **Diamond** - Square rotated 45°
-3. **Triangle** - Equilateral triangle
-4. **Rectangle** - Rectangular shape with 2:1 aspect ratio
-
-## Notes
-
-- Hinges are labeled sequentially from left to right (A, B, C, ...)
-- All rotations are anti-clockwise (positive angle direction)
-- Rotation angles are multiples of 90° (0°, 90°, 180°, 270°)
-- The first piece in the chain remains fixed
-- Each subsequent piece rotates around the hinge connecting it to the previous piece
-- Rejection sampling ensures the final configuration has good visibility (no piece >70% occluded)
-- Images maintain consistent scale and style
-

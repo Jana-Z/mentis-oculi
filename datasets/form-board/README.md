@@ -58,17 +58,6 @@ uv run main.py --instances 50 --min-pieces 5 --max-pieces 5 --output-dir output/
 cd .. && ./generate_all_datasets.sh --task form-board
 ```
 
-### Visualize Puzzles
-
-To inspect a generated puzzle:
-
-```bash
-# View a specific puzzle
-uv run visualize_puzzle.py output/puzzle_0001
-```
-
-This will display the target shape and all pieces with solution information.
-
 ### Available Shapes
 
 The generator includes 12 different target shapes:
@@ -183,57 +172,3 @@ Multiple visualizations are generated for each puzzle:
   "num_solution_pieces": 3
 }
 ```
-
-## Example Question Format
-
-Like the VZ1 example:
-
-```
-Form Board Test
-
-(1) [Target shape image]
-
-(2) [Five pieces: A B C D E]
-
-Question: Which pieces in (2) are necessary to form the figure of (1)?
-Answer: [List of necessary pieces]
-```
-
-### Visual Chain-of-Thought
-
-Each puzzle includes a visual chain-of-thought showing how the solution pieces progressively fill the target shape:
-
-1. **Step 0** (`cot_00.png`): First solution piece
-2. **Step 1** (`cot_01.png`): First + second solution piece
-3. **Step N** (`cot_N.png`): All solution pieces assembled
-
-This helps understand which pieces are actually needed vs. which are distractors.
-
-## Dependencies
-
-- `shapely` - Geometry operations
-- `matplotlib` - Rendering
-- `numpy` - Numerical operations
-- `pillow` - Image processing
-
-All dependencies are managed via `uv` and specified in `pyproject.toml`.
-
-## Development
-
-### Adding New Shapes
-
-Edit `main.py` and add to the `TARGET_SHAPES` dictionary:
-
-```python
-TARGET_SHAPES = {
-    ...
-    "my_shape": "0,0-0,3; 0,3-3,3; 3,3-3,0; 3,0-0,0",
-}
-```
-
-### Adjusting Parameters
-
-Key parameters in `generate.py`:
-- `ALLOWED_SLOPES` - Permitted cut line slopes
-- `DEFAULT_PPU` - Pixels per grid unit (default: 100)
-- `DPI` - Render resolution (default: 300)

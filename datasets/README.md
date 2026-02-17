@@ -127,28 +127,6 @@ The evaluation script outputs:
 - Per-level breakdown (if applicable)
 - Visualization plots saved alongside the responses file
 
-## Dataset Details
-
-### Form Board
-
-Spatial reasoning task where pieces must be matched to silhouettes. Tests ability to mentally rotate and fit shapes.
-
-### Hinge Folding
-
-A chain of shapes connected by numbered hinges must be folded to form a target shape. Tests sequential spatial transformation reasoning.
-
-### Paper Fold
-
-Predict the pattern that results from folding and cutting paper. Tests mental simulation of folding operations.
-
-### Rush Hour
-
-Classic sliding block puzzle where cars must be moved to allow the red car to exit. Tests sequential planning with spatial constraints.
-
-### Sliding Puzzle
-
-Rearrange scrambled tiles to reconstruct an image. Tests sequential move planning and state tracking.
-
 ## Citation
 
 If you use this benchmark in your research, please cite:

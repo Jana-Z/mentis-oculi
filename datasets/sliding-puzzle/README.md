@@ -5,9 +5,9 @@ Generate sliding tile puzzles where a scrambled image must be reconstructed thro
 ## Overview
 
 This generator creates visual reasoning puzzles where:
-- A natural image is divided into an **n×n grid** of tiles
-- One tile is replaced by a **blank space** (black)
-- Remaining tiles are **randomly permuted** to create a scrambled initial state
+- A natural image is divided into an **n×n grid** of tiles (default: 2×2)
+- One tile is replaced by a **blank space** (black) at a **randomly sampled position**
+- The puzzle is **scrambled** and verified with BFS to ensure the solution is **optimal**
 - The task is to **reconstruct the original image** through valid tile movements
 - Each move swaps the blank with an adjacent tile (up, down, left, right)
 
@@ -87,12 +87,6 @@ Puzzle difficulty is controlled by the **number of moves** required to solve. Ea
 | **4** | 4 | 4 | 2×2 | `output/level_04` |
 | **5** | 5 | 5 | 2×2 | `output/level_05` |
 
-### Why Grid Size Matters
-
-- **2×2**: 3 movable tiles, limited configurations (~12 valid states)
-- **3×3**: 8 movable tiles, moderate complexity (~181,440 valid states)
-- **4×4**: 15 movable tiles, exponentially harder (~10¹³ valid states)
-
 ## How It Works
 
 ### 1. Image Selection
@@ -104,22 +98,23 @@ A natural image is selected and cropped to a square aspect ratio.
 The image is divided into an n×n grid of tiles:
 - Total tiles: n²
 - Movable tiles: n² - 1 (one blank space)
-- Blank tile: typically bottom-right corner in solved state
+- Blank tile: **randomly positioned** in the target/solved state (can be anywhere in the grid)
 
-### 3. Scrambling
+### 3. Scrambling and Optimal Solution
 
-Random valid moves are applied to create the initial scrambled state:
-- Move sequence length: random value in [min_moves, max_moves]
-- Each move swaps blank with an adjacent tile
-- All scrambles are **guaranteed solvable** (maintain permutation parity)
+The initial state is created through a two-step process:
+1. **Scrambling**: Random valid moves are applied from the solved state to create candidate initial states
+2. **Optimal solution verification**: BFS (breadth-first search) is used to find the shortest solution path
+3. **Retry loop**: If the optimal solution length doesn't match the target difficulty, a new scramble is attempted
+
+This ensures that:
+- The solution provided is **provably optimal** (minimal number of moves)
+- The difficulty level exactly matches the number of moves required
+- All puzzles are guaranteed solvable
 
 ### 4. Solvability Guarantee
 
-The 15-puzzle and its generalizations have a parity constraint:
-- Only half of all tile permutations are reachable from the solved state
-- Generated puzzles maintain valid parity through:
-  - Scrambling via valid moves from solved state, OR
-  - Correcting parity violations with a single swap
+The 15-puzzle and its generalizations have a parity constraint where only half of all tile permutations are reachable from the solved state. By generating puzzles via random walks from the solved state, all generated puzzles are guaranteed to be solvable. The BFS solver additionally verifies solvability and finds the optimal solution path.
 
 ### 5. Visualization
 
@@ -137,9 +132,9 @@ Multiple visualizations are generated:
 {
   "description": "Sliding tile puzzle dataset",
   "total_instances": 50,
-  "grid_size": 3,
-  "min_moves": 5,
-  "max_moves": 15,
+  "grid_size": 2,
+  "min_moves": 3,
+  "max_moves": 3,
   "puzzles": [...]
 }
 ```
@@ -149,19 +144,22 @@ Multiple visualizations are generated:
 ```json
 {
   "puzzle_id": 1,
-  "grid_size": 3,
-  "num_moves": 8,
-  "moves": ["up", "left", "down", "right", ...],
-  "initial_state": [[1, 2, 3], [4, 5, 6], [7, -1, 8]],
-  "target_state": [[1, 2, 3], [4, 5, 6], [7, 8, -1]],
+  "grid_size": 2,
+  "blank_position": [0, 1],
+  "num_solution_moves": 3,
+  "solution_moves": ["left", "down", "right"],
+  "initial_state": [[2, -1], [1, 3]],
+  "target_state": [[1, -1], [2, 3]],
   "initial_image": "initial.png",
   "target_image": "target.png",
-  "cot_images": ["cot_00.png", "cot_01.png", ..., "cot_07.png"],
-  "solution_moves": ["left", "up", "right", ...],
+  "cot_images": ["cot_00.png", "cot_01.png", "cot_02.png"],
+  "source_image": "example_image.JPEG",
   "is_solvable": true,
   "parity_valid": true
 }
 ```
+
+Note: `blank_position` indicates the [row, col] position of the blank tile in the target state.
 
 Note: In the state representation, `-1` denotes the blank tile position.
 
@@ -178,71 +176,7 @@ The agent interacts with the puzzle through four discrete actions:
 
 Invalid moves (e.g., moving up when blank is in top row) are no-ops or rejected depending on evaluation mode.
 
-## Visual Chain-of-Thought
 
-Each puzzle includes a visual chain-of-thought showing the solution path:
-
-1. **Step 0** (`cot_00.png`): After first move toward solution
-2. **Step 1** (`cot_01.png`): After second move
-3. **Step N** (`cot_N.png`): Final state (matches target)
-
-The CoT sequence shows the **reverse** of the scrambling moves, providing a reference solution path.
-
-## Computational Complexity
-
-The sliding puzzle problem is **NP-complete** for n×n grids with n ≥ 3:
-
-- **State space size**: O((n²)!)
-- **Solution length**: Can be exponential in puzzle size
-- **Optimal solving**: Requires extensive search (A*, IDA*)
-
-This makes it an excellent benchmark for testing:
-- Multi-step planning
-- Mental state tracking
-- Goal-oriented action sequencing
-- Visual working memory
-
-## Evaluation Metrics
-
-Recommended metrics for model evaluation:
-
-1. **Solution Rate**: Percentage of puzzles solved correctly
-2. **Move Efficiency**: Average excess moves beyond optimal solution
-3. **Intermediate State Accuracy**: Similarity of predicted CoT to ground truth
-4. **Action Validity**: Percentage of legal moves generated
-5. **Planning Horizon**: Ability to solve puzzles requiring N-step lookahead
-
-## Example Puzzle
-
-```
-Initial State (scrambled):
-┌───┬───┬───┐
-│ 2 │ 8 │ 3 │
-├───┼───┼───┤
-│ 1 │ 6 │ 4 │
-├───┼───┼───┤
-│ 7 │ 5 │   │  ← blank
-└───┴───┴───┘
-
-Actions: right, up, left, left, up, right, down, right
-
-Target State (solved):
-┌───┬───┬───┐
-│ 1 │ 2 │ 3 │
-├───┼───┼───┤
-│ 4 │ 5 │ 6 │
-├───┼───┼───┤
-│ 7 │ 8 │   │  ← blank
-└───┴───┴───┘
-```
-
-## Dependencies
-
-- `pillow` - Image manipulation
-- `numpy` - Array operations
-- `matplotlib` - Visualization (optional)
-
-All dependencies are managed via `uv` and specified in `pyproject.toml`.
 
 ## Technical Details
 
@@ -263,28 +197,14 @@ All generated puzzles are verified to maintain valid parity.
 
 ### Scrambling Strategy
 
-Two scrambling methods are supported:
+Puzzles are generated using a **scramble-and-verify** approach:
 
-1. **Random walks** (default): Apply random valid moves from solved state
-   - Guarantees solvability
-   - May create easier-than-expected puzzles (stays near solved state)
+1. **Random blank position**: The blank tile location in the goal state is randomly sampled
+2. **Random walk scrambling**: Apply random valid moves from the solved state, avoiding immediate reversals
+3. **BFS optimal solution**: Find the shortest path back to the goal state using breadth-first search
+4. **Retry until exact match**: If the optimal solution length doesn't match the target difficulty, retry with a different scramble
 
-2. **Random permutation with parity correction**: 
-   - Generate random permutation
-   - Check and correct parity if needed
-   - Produces uniformly difficult scrambles
-
-## References
-
-- Ratner, D., & Warmuth, M. (1986). Finding a Shortest Solution for the (N×N)-Extension of the 15-Puzzle is Intractable. *AAAI*, 86, 168-172.
-- The sliding puzzle is NP-complete for n≥3 (Ratner & Warmuth, 1986)
-
-## Related Benchmarks
-
-See also:
-- **Form Board** - Spatial decomposition and assembly
-- **Tangram** - Shape composition reasoning
-- **Paper Folding** - Transformation tracking
-
-Together, these benchmarks test different aspects of visual mental imagery and spatial reasoning.
-
+This ensures:
+- **Optimal solutions**: The provided solution is provably minimal
+- **Exact difficulty**: Each puzzle requires exactly the specified number of moves
+- **Varied blank positions**: The blank can appear anywhere in the goal state, not just bottom-right

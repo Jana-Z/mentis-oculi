@@ -146,7 +146,7 @@ cd datasets
 Each dataset includes an evaluation script:
 
 ```bash
-python evaluate_responses.py --responses path/to/responses.json
+uv run evaluate_responses.py --responses path/to/responses.json
 ```
 
 See [datasets/README.md](datasets/README.md) for the expected input format.
@@ -164,12 +164,8 @@ If you use MentisOculi in your research, please cite our paper:
 }
 ```
 
-## Acknowledgments
-
-This work was supported by the International Max Planck Research School for Intelligent Systems (IMPRS-IS), the ELLIS Institute Tübingen, and ETH Zurich.
-
 ## Links
 
 - **Paper**: [arXiv:2602.02465](https://arxiv.org/abs/2602.02465)
-- **Project Page**: [jana-z.github.io/mentis-oculis](https://jana-z.github.io/mentis-oculis)
+- **Project Page**: [jana-z.github.io/mentis-oculi](https://jana-z.github.io/mentis-oculi)
 - **Datasets**: [datasets/](datasets/)
