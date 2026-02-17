@@ -1,11 +1,11 @@
 {
   "puzzle_id": 42,
   "grid_size": 2,
-  "num_scramble_moves": 1,
-  "num_solution_moves": 1,
-  "scramble_moves": [
-    "left"
+  "blank_position": [
+    1,
+    1
   ],
+  "num_solution_moves": 1,
   "solution_moves": [
     "right"
   ],

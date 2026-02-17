@@ -9,38 +9,35 @@
     {
       "puzzle_id": 1,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up",
+        "left"
       ],
       "initial_state": [
         [
-          3,
-          1
+          -1,
+          3
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
-          1,
-          2
+          -1,
+          1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -58,38 +55,35 @@
     {
       "puzzle_id": 2,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -107,14 +101,11 @@
     {
       "puzzle_id": 3,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
         "left",
@@ -156,19 +147,16 @@
     {
       "puzzle_id": 4,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "right",
         "up",
         "left",
-        "down",
-        "right"
+        "down"
       ],
       "initial_state": [
         [
@@ -176,8 +164,8 @@
           3
         ],
         [
-          1,
-          -1
+          -1,
+          1
         ]
       ],
       "target_state": [
@@ -186,8 +174,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -205,38 +193,35 @@
     {
       "puzzle_id": 5,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up",
+        "left"
       ],
       "initial_state": [
         [
-          3,
-          1
+          -1,
+          3
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
-          1,
-          2
+          -1,
+          1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -254,14 +239,11 @@
     {
       "puzzle_id": 6,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
         "left",
@@ -303,19 +285,16 @@
     {
       "puzzle_id": 7,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "right",
         "up",
         "left",
-        "down",
-        "right"
+        "down"
       ],
       "initial_state": [
         [
@@ -323,8 +302,8 @@
           3
         ],
         [
-          1,
-          -1
+          -1,
+          1
         ]
       ],
       "target_state": [
@@ -333,8 +312,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -352,27 +331,24 @@
     {
       "puzzle_id": 8,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
+      "solution_moves": [
         "left",
         "up",
         "right",
         "down"
       ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
+          2,
           -1
         ]
       ],
@@ -401,19 +377,16 @@
     {
       "puzzle_id": 9,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "right",
         "up",
         "left",
-        "down",
-        "right"
+        "down"
       ],
       "initial_state": [
         [
@@ -421,8 +394,8 @@
           3
         ],
         [
-          1,
-          -1
+          -1,
+          1
         ]
       ],
       "target_state": [
@@ -431,8 +404,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -450,27 +423,24 @@
     {
       "puzzle_id": 10,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
+      "solution_moves": [
         "left",
         "up",
         "right",
         "down"
       ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
+          2,
           -1
         ]
       ],
@@ -499,28 +469,25 @@
     {
       "puzzle_id": 11,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
-        "left",
+        "right",
         "down",
-        "right"
+        "left"
       ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
-          -1
+          -1,
+          2
         ]
       ],
       "target_state": [
@@ -529,8 +496,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -548,38 +515,35 @@
     {
       "puzzle_id": 12,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up",
+        "left"
       ],
       "initial_state": [
         [
-          3,
-          1
+          -1,
+          3
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
-          1,
-          2
+          -1,
+          1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -597,38 +561,35 @@
     {
       "puzzle_id": 13,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
         "right",
-        "down"
+        "down",
+        "left",
+        "up"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
-          2,
-          -1
-        ]
-      ],
-      "target_state": [
-        [
-          1,
+          -1,
           2
         ],
         [
           3,
-          -1
+          1
+        ]
+      ],
+      "target_state": [
+        [
+          -1,
+          1
+        ],
+        [
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -646,38 +607,35 @@
     {
       "puzzle_id": 14,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up",
+        "left"
       ],
       "initial_state": [
         [
-          3,
-          1
+          -1,
+          3
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
-          1,
-          2
+          -1,
+          1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -695,38 +653,35 @@
     {
       "puzzle_id": 15,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "down",
         "left",
         "up",
-        "right",
-        "down"
+        "right"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
           2,
           -1
+        ],
+        [
+          3,
+          1
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -744,38 +699,35 @@
     {
       "puzzle_id": 16,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -793,38 +745,35 @@
     {
       "puzzle_id": 17,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
         "right",
-        "down"
+        "down",
+        "left",
+        "up"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
-          2,
-          -1
-        ]
-      ],
-      "target_state": [
-        [
-          1,
+          -1,
           2
         ],
         [
           3,
-          -1
+          1
+        ]
+      ],
+      "target_state": [
+        [
+          -1,
+          1
+        ],
+        [
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -842,38 +791,35 @@
     {
       "puzzle_id": 18,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "down",
         "left",
         "up",
-        "right",
-        "down"
+        "right"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
           2,
           -1
+        ],
+        [
+          3,
+          1
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -891,38 +837,35 @@
     {
       "puzzle_id": 19,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "down",
         "left",
         "up",
-        "right",
-        "down"
+        "right"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
           2,
           -1
+        ],
+        [
+          3,
+          1
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -940,38 +883,35 @@
     {
       "puzzle_id": 20,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -989,19 +929,16 @@
     {
       "puzzle_id": 21,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "right",
         "up",
         "left",
-        "down",
-        "right"
+        "down"
       ],
       "initial_state": [
         [
@@ -1009,8 +946,8 @@
           3
         ],
         [
-          1,
-          -1
+          -1,
+          1
         ]
       ],
       "target_state": [
@@ -1019,8 +956,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1038,38 +975,35 @@
     {
       "puzzle_id": 22,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up",
+        "left"
       ],
       "initial_state": [
         [
-          3,
-          1
+          -1,
+          3
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
-          1,
-          2
+          -1,
+          1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1087,38 +1021,35 @@
     {
       "puzzle_id": 23,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up",
+        "left"
       ],
       "initial_state": [
         [
-          3,
-          1
+          -1,
+          3
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
-          1,
-          2
+          -1,
+          1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1136,28 +1067,25 @@
     {
       "puzzle_id": 24,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
-        "left",
+        "right",
         "down",
-        "right"
+        "left"
       ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
-          -1
+          -1,
+          2
         ]
       ],
       "target_state": [
@@ -1166,8 +1094,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1185,38 +1113,35 @@
     {
       "puzzle_id": 25,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1234,38 +1159,35 @@
     {
       "puzzle_id": 26,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1283,28 +1205,25 @@
     {
       "puzzle_id": 27,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
-        "left",
+        "right",
         "down",
-        "right"
+        "left"
       ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
-          -1
+          -1,
+          2
         ]
       ],
       "target_state": [
@@ -1313,8 +1232,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1332,27 +1251,24 @@
     {
       "puzzle_id": 28,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
+      "solution_moves": [
         "left",
         "up",
         "right",
         "down"
       ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
+          2,
           -1
         ]
       ],
@@ -1381,38 +1297,35 @@
     {
       "puzzle_id": 29,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "down",
         "left",
         "up",
-        "right",
-        "down"
+        "right"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
           2,
           -1
+        ],
+        [
+          3,
+          1
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1430,27 +1343,24 @@
     {
       "puzzle_id": 30,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
+      "solution_moves": [
         "left",
         "up",
         "right",
         "down"
       ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
+          2,
           -1
         ]
       ],
@@ -1479,38 +1389,35 @@
     {
       "puzzle_id": 31,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1528,38 +1435,35 @@
     {
       "puzzle_id": 32,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
         "right",
-        "down"
+        "down",
+        "left",
+        "up"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
-          2,
-          -1
-        ]
-      ],
-      "target_state": [
-        [
-          1,
+          -1,
           2
         ],
         [
           3,
-          -1
+          1
+        ]
+      ],
+      "target_state": [
+        [
+          -1,
+          1
+        ],
+        [
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1577,19 +1481,16 @@
     {
       "puzzle_id": 33,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "right",
         "up",
         "left",
-        "down",
-        "right"
+        "down"
       ],
       "initial_state": [
         [
@@ -1597,8 +1498,8 @@
           3
         ],
         [
-          1,
-          -1
+          -1,
+          1
         ]
       ],
       "target_state": [
@@ -1607,8 +1508,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1626,38 +1527,35 @@
     {
       "puzzle_id": 34,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1675,27 +1573,24 @@
     {
       "puzzle_id": 35,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
+      "solution_moves": [
         "left",
         "up",
         "right",
         "down"
       ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
+          2,
           -1
         ]
       ],
@@ -1724,38 +1619,35 @@
     {
       "puzzle_id": 36,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
         "right",
-        "down"
+        "down",
+        "left",
+        "up"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
-          2,
-          -1
-        ]
-      ],
-      "target_state": [
-        [
-          1,
+          -1,
           2
         ],
         [
           3,
-          -1
+          1
+        ]
+      ],
+      "target_state": [
+        [
+          -1,
+          1
+        ],
+        [
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1773,38 +1665,35 @@
     {
       "puzzle_id": 37,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1822,38 +1711,35 @@
     {
       "puzzle_id": 38,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
-        "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up",
+        "left"
       ],
       "initial_state": [
         [
-          3,
-          1
+          -1,
+          3
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
-          1,
-          2
+          -1,
+          1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1871,38 +1757,35 @@
     {
       "puzzle_id": 39,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "down",
         "left",
         "up",
-        "right",
-        "down"
+        "right"
       ],
       "initial_state": [
         [
-          3,
-          1
-        ],
-        [
           2,
           -1
+        ],
+        [
+          3,
+          1
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -1920,27 +1803,24 @@
     {
       "puzzle_id": 40,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
+      "solution_moves": [
         "left",
         "up",
         "right",
         "down"
       ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
+          2,
           -1
         ]
       ],
@@ -1969,38 +1849,35 @@
     {
       "puzzle_id": 41,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -2018,28 +1895,25 @@
     {
       "puzzle_id": 42,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
-        "left",
+        "right",
         "down",
-        "right"
+        "left"
       ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
-          -1
+          -1,
+          2
         ]
       ],
       "target_state": [
@@ -2048,8 +1922,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -2067,19 +1941,16 @@
     {
       "puzzle_id": 43,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "right",
         "up",
         "left",
-        "down",
-        "right"
+        "down"
       ],
       "initial_state": [
         [
@@ -2087,8 +1958,8 @@
           3
         ],
         [
-          1,
-          -1
+          -1,
+          1
         ]
       ],
       "target_state": [
@@ -2097,8 +1968,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -2116,38 +1987,35 @@
     {
       "puzzle_id": 44,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
+      "blank_position": [
+        0,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "left",
-        "up",
+        "down",
         "right",
-        "down"
+        "up"
       ],
       "initial_state": [
         [
           3,
-          1
+          -1
         ],
         [
-          2,
-          -1
+          1,
+          2
         ]
       ],
       "target_state": [
         [
           1,
-          2
+          -1
         ],
         [
-          3,
-          -1
+          2,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -2165,27 +2033,24 @@
     {
       "puzzle_id": 45,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
+      "solution_moves": [
         "left",
         "up",
         "right",
         "down"
       ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
+          2,
           -1
         ]
       ],
@@ -2214,28 +2079,25 @@
     {
       "puzzle_id": 46,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
-        "left",
+        "right",
         "down",
-        "right"
+        "left"
       ],
       "initial_state": [
         [
-          2,
-          3
+          3,
+          1
         ],
         [
-          1,
-          -1
+          -1,
+          2
         ]
       ],
       "target_state": [
@@ -2244,8 +2106,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",
@@ -2263,14 +2125,11 @@
     {
       "puzzle_id": 47,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        1
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
         "up",
         "left",
@@ -2312,63 +2171,11 @@
     {
       "puzzle_id": 48,
       "grid_size": 2,
-      "num_scramble_moves": 4,
+      "blank_position": [
+        1,
+        1
+      ],
       "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
-      ],
-      "solution_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
-      "initial_state": [
-        [
-          2,
-          3
-        ],
-        [
-          1,
-          -1
-        ]
-      ],
-      "target_state": [
-        [
-          1,
-          2
-        ],
-        [
-          3,
-          -1
-        ]
-      ],
-      "initial_image": "initial.png",
-      "target_image": "target.png",
-      "cot_images": [
-        "cot_00.png",
-        "cot_01.png",
-        "cot_02.png",
-        "cot_03.png"
-      ],
-      "source_image": "ILSVRC2012_val_00007417_n03691459.JPEG",
-      "is_solvable": true,
-      "parity_valid": true
-    },
-    {
-      "puzzle_id": 49,
-      "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "up",
-        "left",
-        "down",
-        "right"
-      ],
       "solution_moves": [
         "left",
         "up",
@@ -2403,6 +2210,52 @@
         "cot_02.png",
         "cot_03.png"
       ],
+      "source_image": "ILSVRC2012_val_00007417_n03691459.JPEG",
+      "is_solvable": true,
+      "parity_valid": true
+    },
+    {
+      "puzzle_id": 49,
+      "grid_size": 2,
+      "blank_position": [
+        0,
+        1
+      ],
+      "num_solution_moves": 4,
+      "solution_moves": [
+        "left",
+        "down",
+        "right",
+        "up"
+      ],
+      "initial_state": [
+        [
+          3,
+          -1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "target_state": [
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "initial_image": "initial.png",
+      "target_image": "target.png",
+      "cot_images": [
+        "cot_00.png",
+        "cot_01.png",
+        "cot_02.png",
+        "cot_03.png"
+      ],
       "source_image": "ILSVRC2012_val_00042242_n02606052.JPEG",
       "is_solvable": true,
       "parity_valid": true
@@ -2410,19 +2263,16 @@
     {
       "puzzle_id": 50,
       "grid_size": 2,
-      "num_scramble_moves": 4,
-      "num_solution_moves": 4,
-      "scramble_moves": [
-        "left",
-        "up",
-        "right",
-        "down"
+      "blank_position": [
+        1,
+        0
       ],
+      "num_solution_moves": 4,
       "solution_moves": [
+        "right",
         "up",
         "left",
-        "down",
-        "right"
+        "down"
       ],
       "initial_state": [
         [
@@ -2430,8 +2280,8 @@
           3
         ],
         [
-          1,
-          -1
+          -1,
+          1
         ]
       ],
       "target_state": [
@@ -2440,8 +2290,8 @@
           2
         ],
         [
-          3,
-          -1
+          -1,
+          3
         ]
       ],
       "initial_image": "initial.png",

@@ -10,17 +10,34 @@ import numpy as np
 from PIL import Image
 from pathlib import Path
 from tqdm import tqdm
+from collections import deque
 
 
-def create_goal_state(dimensions):
-    """Create the solved/goal state for the puzzle"""
+def create_goal_state(dimensions, blank_position=None):
+    """Create the solved/goal state for the puzzle.
+    
+    Args:
+        dimensions: Size of the grid (n×n)
+        blank_position: Tuple (row, col) for blank position, or None for random
+        
+    Returns:
+        2D list representing the goal state with -1 as the blank tile
+    """
+    if blank_position is None:
+        # Randomly sample blank position
+        blank_row = random.randint(0, dimensions - 1)
+        blank_col = random.randint(0, dimensions - 1)
+        blank_position = (blank_row, blank_col)
+    
+    blank_r, blank_c = blank_position
+    
     goal = []
     num = 1
     for i in range(dimensions):
         row = []
         for j in range(dimensions):
-            if i == dimensions - 1 and j == dimensions - 1:
-                row.append(-1)  # Blank tile at bottom-right
+            if i == blank_r and j == blank_c:
+                row.append(-1)  # Blank tile
             else:
                 row.append(num)
                 num += 1
@@ -86,6 +103,61 @@ def apply_move(grid, move):
     return new_grid
 
 
+def grid_to_tuple(grid):
+    """Convert grid to a hashable tuple for BFS visited set."""
+    return tuple(tuple(row) for row in grid)
+
+
+def tuple_to_grid(t):
+    """Convert tuple back to grid."""
+    return [list(row) for row in t]
+
+
+def bfs_solve(initial_state, goal_state, max_depth=None):
+    """
+    Find the optimal (shortest) solution using BFS.
+    
+    Args:
+        initial_state: Starting puzzle state
+        goal_state: Target puzzle state
+        max_depth: Maximum search depth (None for unlimited)
+        
+    Returns:
+        List of moves representing the optimal solution, or None if unsolvable
+    """
+    initial_tuple = grid_to_tuple(initial_state)
+    goal_tuple = grid_to_tuple(goal_state)
+    
+    if initial_tuple == goal_tuple:
+        return []
+    
+    # BFS queue: (state_tuple, move_sequence)
+    queue = deque([(initial_tuple, [])])
+    visited = {initial_tuple}
+    
+    while queue:
+        current_tuple, moves = queue.popleft()
+        
+        # Check depth limit
+        if max_depth is not None and len(moves) >= max_depth:
+            continue
+        
+        current_grid = tuple_to_grid(current_tuple)
+        
+        for move in get_valid_moves(current_grid):
+            new_grid = apply_move(current_grid, move)
+            new_tuple = grid_to_tuple(new_grid)
+            
+            if new_tuple == goal_tuple:
+                return moves + [move]
+            
+            if new_tuple not in visited:
+                visited.add(new_tuple)
+                queue.append((new_tuple, moves + [move]))
+    
+    return None  # No solution found
+
+
 def scramble_puzzle(goal_state, num_moves, seed=None):
     """
     Scramble the puzzle by applying random valid moves.
@@ -114,7 +186,16 @@ def scramble_puzzle(goal_state, num_moves, seed=None):
 
 
 def grid_to_image(grid, tile_images, tile_size=128):
-    """Convert grid state to an image"""
+    """Convert grid state to an image.
+    
+    Args:
+        grid: 2D list representing puzzle state (tile numbers, -1 for blank)
+        tile_images: Dictionary mapping tile numbers to PIL Images
+        tile_size: Size of each tile in pixels
+        
+    Returns:
+        PIL Image representing the puzzle state
+    """
     dimensions = len(grid)
     img_size = dimensions * tile_size
     result = Image.new('RGB', (img_size, img_size), color='black')
@@ -123,7 +204,7 @@ def grid_to_image(grid, tile_images, tile_size=128):
         for c in range(dimensions):
             tile_num = grid[r][c]
             if tile_num != -1:  # Not blank
-                tile_img = tile_images[tile_num - 1]  # tile_num is 1-indexed
+                tile_img = tile_images[tile_num]  # tile_images is a dict
                 x = c * tile_size
                 y = r * tile_size
                 result.paste(tile_img, (x, y))
@@ -131,25 +212,49 @@ def grid_to_image(grid, tile_images, tile_size=128):
     return result
 
 
-def create_tile_images(source_image, dimensions, tile_size=128):
-    """Split source image into tiles"""
+def create_tile_images(source_image, dimensions, tile_size=128, blank_position=None):
+    """Split source image into tiles.
+    
+    The tiles are stored in a dictionary mapping tile number to tile image.
+    Tile numbers correspond to positions in the goal state (1-indexed),
+    where the blank position is skipped.
+    
+    Args:
+        source_image: PIL Image to split
+        dimensions: Grid size (n×n)
+        tile_size: Size of each tile in pixels
+        blank_position: Tuple (row, col) for the blank tile, or None for bottom-right
+        
+    Returns:
+        Dictionary mapping tile number (1 to n²-1) to PIL Image
+    """
+    if blank_position is None:
+        blank_position = (dimensions - 1, dimensions - 1)
+    
+    blank_r, blank_c = blank_position
+    
     # Resize source image to fit grid
     img_size = dimensions * tile_size
     source_image = source_image.resize((img_size, img_size), Image.Resampling.LANCZOS)
     
-    tiles = []
+    # Create a mapping from tile number to tile image
+    # Tile numbers are assigned sequentially, skipping the blank position
+    tile_images = {}
+    tile_num = 1
+    
     for r in range(dimensions):
         for c in range(dimensions):
-            if r == dimensions - 1 and c == dimensions - 1:
-                # Skip the last tile (will be blank)
+            if r == blank_r and c == blank_c:
+                # This is the blank position, skip it
                 continue
             
             x = c * tile_size
             y = r * tile_size
             tile = source_image.crop((x, y, x + tile_size, y + tile_size))
-            tiles.append(tile)
+            tile_images[tile_num] = tile
+            tile_num += 1
     
-    return tiles
+    return tile_images
 
 
 def generate_puzzle(
@@ -159,21 +264,64 @@ def generate_puzzle(
     dimensions=3,
     num_scramble_moves=10,
     tile_size=128,
-    seed=None
+    seed=None,
+    max_retries=100
 ):
-    """Generate a single sliding puzzle instance"""
+    """Generate a single sliding puzzle instance.
+    
+    Args:
+        source_image_path: Path to source image
+        output_dir: Output directory
+        puzzle_id: Puzzle identifier
+        dimensions: Grid size (n×n)
+        num_scramble_moves: Target number of moves for optimal solution
+        tile_size: Size of each tile in pixels
+        seed: Random seed for reproducibility
+        max_retries: Maximum attempts to find a puzzle with exact move count
+        
+    Returns:
+        Puzzle metadata dictionary
+    """
+    if seed is not None:
+        random.seed(seed)
     
     # Load source image
     source_img = Image.open(source_image_path).convert('RGB')
     
-    # Create tiles
-    tile_images = create_tile_images(source_img, dimensions, tile_size)
+    # Randomly sample blank position
+    blank_row = random.randint(0, dimensions - 1)
+    blank_col = random.randint(0, dimensions - 1)
+    blank_position = (blank_row, blank_col)
     
-    # Create goal state
-    goal_state = create_goal_state(dimensions)
+    # Create tiles with the randomly positioned blank
+    tile_images = create_tile_images(source_img, dimensions, tile_size, blank_position)
     
-    # Scramble puzzle
-    initial_state, scramble_moves = scramble_puzzle(goal_state, num_scramble_moves, seed=seed)
+    # Create goal state with the same blank position
+    goal_state = create_goal_state(dimensions, blank_position)
+    
+    # Scramble and find optimal solution, retrying until we get exact move count
+    initial_state = None
+    scramble_moves = None
+    solution_moves = None
+    
+    for attempt in range(max_retries):
+        # Scramble with more moves than needed to ensure variety
+        scramble_depth = num_scramble_moves + random.randint(0, num_scramble_moves)
+        attempt_seed = seed + attempt if seed is not None else None
+        initial_state, scramble_moves = scramble_puzzle(goal_state, scramble_depth, seed=attempt_seed)
+        
+        # Find optimal solution using BFS
+        solution_moves = bfs_solve(initial_state, goal_state, max_depth=num_scramble_moves + 5)
+        
+        if solution_moves is not None and len(solution_moves) == num_scramble_moves:
+            # Found a puzzle with exactly the target number of moves
+            break
+    else:
+        # If we couldn't find exact match, use closest we have
+        # Re-scramble with exact moves and use reversed scramble as solution
+        initial_state, scramble_moves = scramble_puzzle(goal_state, num_scramble_moves, seed=seed)
+        reverse_map = {"up": "down", "down": "up", "left": "right", "right": "left"}
+        solution_moves = [reverse_map[m] for m in reversed(scramble_moves)]
     
     # Generate images
     puzzle_dir = Path(output_dir) / f"puzzle_{puzzle_id:04d}"
@@ -189,13 +337,9 @@ def generate_puzzle(
     target_path = puzzle_dir / "target.png"
     target_img.save(target_path)
     
-    # Generate CoT images (reverse of scramble moves)
+    # Generate CoT images showing the solution path
     cot_images = []
     current_state = [row[:] for row in initial_state]
-    
-    # Reverse moves to get solution
-    reverse_map = {"up": "down", "down": "up", "left": "right", "right": "left"}
-    solution_moves = [reverse_map[m] for m in reversed(scramble_moves)]
     
     for i, move in enumerate(solution_moves):
         current_state = apply_move(current_state, move)
@@ -208,9 +352,8 @@ def generate_puzzle(
     metadata = {
         "puzzle_id": puzzle_id,
         "grid_size": dimensions,
-        "num_scramble_moves": num_scramble_moves,
+        "blank_position": list(blank_position),  # [row, col] of blank in goal state
         "num_solution_moves": len(solution_moves),
-        "scramble_moves": scramble_moves,
         "solution_moves": solution_moves,
         "initial_state": initial_state,
         "target_state": goal_state,

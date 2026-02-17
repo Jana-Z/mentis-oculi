@@ -1,29 +1,25 @@
 {
   "puzzle_id": 38,
   "grid_size": 2,
-  "num_scramble_moves": 5,
-  "num_solution_moves": 5,
-  "scramble_moves": [
-    "left",
-    "up",
-    "right",
-    "down",
-    "left"
+  "blank_position": [
+    1,
+    0
   ],
+  "num_solution_moves": 5,
   "solution_moves": [
+    "down",
     "right",
     "up",
     "left",
-    "down",
-    "right"
+    "down"
   ],
   "initial_state": [
     [
-      2,
+      -1,
       3
     ],
     [
-      -1,
+      2,
       1
     ]
   ],
@@ -33,8 +29,8 @@
       2
     ],
     [
-      3,
-      -1
+      -1,
+      3
     ]
   ],
   "initial_image": "initial.png",
