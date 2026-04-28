@@ -177,6 +177,8 @@ See [datasets/README.md](datasets/README.md) for the expected input format.
 
 Baseline results for all models and strategies reported in the paper are in [`results/results_table.csv`](results/results_table.csv). Raw model responses are in [`results/responses/`](results/responses/), organised as `responses/<model>/<strategy>/<task>/<level>/responses_0.json`. See [results/README.md](results/README.md) for column descriptions and notes on sample counts.
 
+Intermediate images (generate_images strategy) and generated videos (Veo, Wan) are not included in this repository due to their size. To request them, please contact [jana.zeller@tuebingen.mpg.de](mailto:jana.zeller@tuebingen.mpg.de).
+
 ## Citation
 
 If you use MentisOculi in your research, please cite our paper:
