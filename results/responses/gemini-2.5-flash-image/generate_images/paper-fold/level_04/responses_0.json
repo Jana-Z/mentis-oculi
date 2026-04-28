@@ -10,7 +10,14 @@
       "output_parsed": {
         "answer": "E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/1/generated_image_0.png",
+        "generated_images/1/generated_image_1.png",
+        "generated_images/1/generated_image_2.png",
+        "generated_images/1/generated_image_3.png",
+        "generated_images/1/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0002",
@@ -18,7 +25,13 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/2/generated_image_0.png",
+        "generated_images/2/generated_image_1.png",
+        "generated_images/2/generated_image_2.png",
+        "generated_images/2/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0003",
@@ -26,7 +39,12 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/3/generated_image_0.png",
+        "generated_images/3/generated_image_1.png",
+        "generated_images/3/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0004",
@@ -34,7 +52,14 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/4/generated_image_0.png",
+        "generated_images/4/generated_image_1.png",
+        "generated_images/4/generated_image_2.png",
+        "generated_images/4/generated_image_3.png",
+        "generated_images/4/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0005",
@@ -42,7 +67,13 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/5/generated_image_0.png",
+        "generated_images/5/generated_image_1.png",
+        "generated_images/5/generated_image_2.png",
+        "generated_images/5/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0006",
@@ -50,7 +81,13 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/6/generated_image_0.png",
+        "generated_images/6/generated_image_1.png",
+        "generated_images/6/generated_image_2.png",
+        "generated_images/6/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0007",
@@ -58,7 +95,12 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/7/generated_image_0.png",
+        "generated_images/7/generated_image_1.png",
+        "generated_images/7/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0008",
@@ -66,7 +108,14 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/8/generated_image_0.png",
+        "generated_images/8/generated_image_1.png",
+        "generated_images/8/generated_image_2.png",
+        "generated_images/8/generated_image_3.png",
+        "generated_images/8/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0009",
@@ -74,7 +123,13 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/9/generated_image_0.png",
+        "generated_images/9/generated_image_1.png",
+        "generated_images/9/generated_image_2.png",
+        "generated_images/9/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0010",
@@ -82,7 +137,14 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/10/generated_image_0.png",
+        "generated_images/10/generated_image_1.png",
+        "generated_images/10/generated_image_2.png",
+        "generated_images/10/generated_image_3.png",
+        "generated_images/10/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0011",
@@ -90,7 +152,12 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/11/generated_image_0.png",
+        "generated_images/11/generated_image_1.png",
+        "generated_images/11/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0012",
@@ -98,7 +165,14 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/12/generated_image_0.png",
+        "generated_images/12/generated_image_1.png",
+        "generated_images/12/generated_image_2.png",
+        "generated_images/12/generated_image_3.png",
+        "generated_images/12/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0013",
@@ -106,7 +180,13 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/13/generated_image_0.png",
+        "generated_images/13/generated_image_1.png",
+        "generated_images/13/generated_image_2.png",
+        "generated_images/13/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0014",
@@ -114,7 +194,12 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/14/generated_image_0.png",
+        "generated_images/14/generated_image_1.png",
+        "generated_images/14/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0015",
@@ -122,19 +207,38 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/15/generated_image_0.png",
+        "generated_images/15/generated_image_1.png",
+        "generated_images/15/generated_image_2.png",
+        "generated_images/15/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0016",
       "output_text": "Here's the step-by-step unfolding process:\n\n**Step 1: Unfold from E to D**\n\nThe last fold was a horizontal fold that brought the top section down. Unfolding it mirrors the existing hole vertically.\n**Step 2: Unfold from D to C**\n\nThe fold from C to D involved folding the right half of the paper over to the left. Unfolding this mirrors the existing holes horizontally to the right side.\n**Step 3: Unfold from C to B**\n\nThe fold from B to C was a diagonal fold from the top-right corner to the bottom-left corner, bringing the top-right triangle down. Unfolding this mirrors the holes diagonally.\n**Step 4: Unfold from B to A**\n\nThe fold from A to B was a diagonal fold from the bottom-left corner to the top-right corner, bringing the bottom-left triangle up. Unfolding this mirrors the holes diagonally.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/16/generated_image_0.png",
+        "generated_images/16/generated_image_1.png",
+        "generated_images/16/generated_image_2.png",
+        "generated_images/16/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0017",
       "output_text": "Here's the step-by-step unfolding process:\n\n**Unfold 1 (Reverse of Fold E to D):**\n\nLet's start by unfolding the paper from step E to D. In step E, a hole is punched in the top right section of the folded paper. When we unfold it from the triangular shape in E back to the larger triangle in D, that single hole will mirror across the fold line, resulting in two holes.\n\n\n\n**Unfold 2 (Reverse of Fold D to C):**\n\nNow, we'll unfold the paper from step D to C. The previous two holes, located in the bottom triangular section, will mirror upwards as we unfold along the horizontal line, creating four holes in total within the square shape.\n\n**Unfold 3 (Reverse of Fold C to B):**\n\nNext, let's unfold the paper from step C to B. The shape in C is a diamond. Unfolding it to B involves unfolding along a diagonal line, which effectively mirrors the existing holes. The four holes in the diamond shape will now double, creating a total of eight holes in a more rectangular formation.\n\n**Unfold 4 (Reverse of Fold B to A):**\n\nNow we unfold from step B to A. In step B, a corner was folded over. Unfolding it back to the state in A means reflecting the existing holes over that fold line. This will again double the number of visible holes and spread them across the full rectangular shape.\n\n**Unfold 5 (Reverse of Fold A to Original Square):**\n\nFinally, we perform the last unfold from step A back to the original square. This involves unfolding the vertical fold. The existing holes will be mirrored across the central vertical line, resulting in the final pattern of holes on the completely unfolded square paper.\n\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/17/generated_image_0.png",
+        "generated_images/17/generated_image_1.png",
+        "generated_images/17/generated_image_2.png",
+        "generated_images/17/generated_image_3.png",
+        "generated_images/17/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0018",
@@ -142,7 +246,14 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/18/generated_image_0.png",
+        "generated_images/18/generated_image_1.png",
+        "generated_images/18/generated_image_2.png",
+        "generated_images/18/generated_image_3.png",
+        "generated_images/18/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0019",
@@ -150,7 +261,13 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/19/generated_image_0.png",
+        "generated_images/19/generated_image_1.png",
+        "generated_images/19/generated_image_2.png",
+        "generated_images/19/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0020",
@@ -158,7 +275,13 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/20/generated_image_0.png",
+        "generated_images/20/generated_image_1.png",
+        "generated_images/20/generated_image_2.png",
+        "generated_images/20/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0021",
@@ -166,7 +289,14 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/21/generated_image_0.png",
+        "generated_images/21/generated_image_1.png",
+        "generated_images/21/generated_image_2.png",
+        "generated_images/21/generated_image_3.png",
+        "generated_images/21/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0022",
@@ -174,7 +304,13 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/22/generated_image_0.png",
+        "generated_images/22/generated_image_1.png",
+        "generated_images/22/generated_image_2.png",
+        "generated_images/22/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0023",
@@ -182,7 +318,13 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/23/generated_image_0.png",
+        "generated_images/23/generated_image_1.png",
+        "generated_images/23/generated_image_2.png",
+        "generated_images/23/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0024",
@@ -190,7 +332,13 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/24/generated_image_0.png",
+        "generated_images/24/generated_image_1.png",
+        "generated_images/24/generated_image_2.png",
+        "generated_images/24/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0025",
@@ -198,7 +346,14 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/25/generated_image_0.png",
+        "generated_images/25/generated_image_1.png",
+        "generated_images/25/generated_image_2.png",
+        "generated_images/25/generated_image_3.png",
+        "generated_images/25/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0026",
@@ -206,7 +361,13 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/26/generated_image_0.png",
+        "generated_images/26/generated_image_1.png",
+        "generated_images/26/generated_image_2.png",
+        "generated_images/26/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0027",
@@ -214,7 +375,12 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/27/generated_image_0.png",
+        "generated_images/27/generated_image_1.png",
+        "generated_images/27/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0028",
@@ -222,7 +388,13 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/28/generated_image_0.png",
+        "generated_images/28/generated_image_1.png",
+        "generated_images/28/generated_image_2.png",
+        "generated_images/28/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0029",
@@ -230,7 +402,13 @@
       "output_parsed": {
         "answer": "C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/29/generated_image_0.png",
+        "generated_images/29/generated_image_1.png",
+        "generated_images/29/generated_image_2.png",
+        "generated_images/29/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_04/puzzle_0030",
@@ -238,7 +416,14 @@
       "output_parsed": {
         "answer": "A"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/30/generated_image_0.png",
+        "generated_images/30/generated_image_1.png",
+        "generated_images/30/generated_image_2.png",
+        "generated_images/30/generated_image_3.png",
+        "generated_images/30/generated_image_4.png"
+      ]
     }
   ]
 }

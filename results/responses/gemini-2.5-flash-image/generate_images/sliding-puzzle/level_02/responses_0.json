@@ -10,7 +10,17 @@
       "output_parsed": {
         "answer": "down left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/1/generated_image_0.png",
+        "generated_images/1/generated_image_1.png",
+        "generated_images/1/generated_image_2.png",
+        "generated_images/1/generated_image_3.png",
+        "generated_images/1/generated_image_4.png",
+        "generated_images/1/generated_image_5.png",
+        "generated_images/1/generated_image_6.png",
+        "generated_images/1/generated_image_7.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0002",
@@ -18,7 +28,12 @@
       "output_parsed": {
         "answer": "up left down"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/2/generated_image_0.png",
+        "generated_images/2/generated_image_1.png",
+        "generated_images/2/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0003",
@@ -26,7 +41,10 @@
       "output_parsed": {
         "answer": "down"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/3/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0004",
@@ -34,7 +52,11 @@
       "output_parsed": {
         "answer": "up left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/4/generated_image_0.png",
+        "generated_images/4/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0005",
@@ -42,7 +64,15 @@
       "output_parsed": {
         "answer": "up right down left up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/5/generated_image_0.png",
+        "generated_images/5/generated_image_1.png",
+        "generated_images/5/generated_image_2.png",
+        "generated_images/5/generated_image_3.png",
+        "generated_images/5/generated_image_4.png",
+        "generated_images/5/generated_image_5.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0006",
@@ -50,7 +80,10 @@
       "output_parsed": {
         "answer": "right"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/6/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0007",
@@ -58,7 +91,10 @@
       "output_parsed": {
         "answer": "down"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/7/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0008",
@@ -66,7 +102,14 @@
       "output_parsed": {
         "answer": "up right down left up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/8/generated_image_0.png",
+        "generated_images/8/generated_image_1.png",
+        "generated_images/8/generated_image_2.png",
+        "generated_images/8/generated_image_3.png",
+        "generated_images/8/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0009",
@@ -74,7 +117,12 @@
       "output_parsed": {
         "answer": "right down left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/9/generated_image_0.png",
+        "generated_images/9/generated_image_1.png",
+        "generated_images/9/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0010",
@@ -82,7 +130,13 @@
       "output_parsed": {
         "answer": "down left up right"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/10/generated_image_0.png",
+        "generated_images/10/generated_image_1.png",
+        "generated_images/10/generated_image_2.png",
+        "generated_images/10/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0011",
@@ -90,7 +144,11 @@
       "output_parsed": {
         "answer": "down left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/11/generated_image_0.png",
+        "generated_images/11/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0012",
@@ -98,7 +156,11 @@
       "output_parsed": {
         "answer": "down right"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/12/generated_image_0.png",
+        "generated_images/12/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0013",
@@ -106,13 +168,31 @@
       "output_parsed": {
         "answer": "up right down left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/13/generated_image_0.png",
+        "generated_images/13/generated_image_1.png",
+        "generated_images/13/generated_image_2.png",
+        "generated_images/13/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0014",
       "output_text": "Here's the sequence of moves to solve the puzzle, along with the updated puzzle state after each move:\n\n**Initial State:**\n**Move 1: Right**\n\nSwapping the blank tile with the tile to its right.\n**Move 2: Down**\n\nSwapping the blank tile with the tile below it.\n**Move 3: Right**\n\nSwapping the blank tile with the tile to its right.\n**Move 4: Down**\n\nSwapping the blank tile with the tile below it.\n**Move 5: Right**\n\nSwapping the blank tile with the tile to its right.\n**Move 6: Up**\n\nSwapping the blank tile with the tile above it.\n**Move 7: Up**\n\nSwapping the blank tile with the tile above it.\n**Move 8: Left**\n\nSwapping the blank tile with the tile to its left.\n**Move 9: Left**\n\nSwapping the blank tile with the tile to its left.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/14/generated_image_0.png",
+        "generated_images/14/generated_image_1.png",
+        "generated_images/14/generated_image_2.png",
+        "generated_images/14/generated_image_3.png",
+        "generated_images/14/generated_image_4.png",
+        "generated_images/14/generated_image_5.png",
+        "generated_images/14/generated_image_6.png",
+        "generated_images/14/generated_image_7.png",
+        "generated_images/14/generated_image_8.png",
+        "generated_images/14/generated_image_9.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0015",
@@ -120,13 +200,22 @@
       "output_parsed": {
         "answer": "right down left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/15/generated_image_0.png",
+        "generated_images/15/generated_image_1.png",
+        "generated_images/15/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0016",
       "output_text": "Here's the sequence of moves to solve the puzzle, with an image after each step:\n\nMove 1: The original blank tile is in the top right. I will move the blank tile **down**.\n\nMove 2: Now I will move the blank tile **left**.\n\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/16/generated_image_0.png",
+        "generated_images/16/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0017",
@@ -134,7 +223,14 @@
       "output_parsed": {
         "answer": "up right down left up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/17/generated_image_0.png",
+        "generated_images/17/generated_image_1.png",
+        "generated_images/17/generated_image_2.png",
+        "generated_images/17/generated_image_3.png",
+        "generated_images/17/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0018",
@@ -142,7 +238,15 @@
       "output_parsed": {
         "answer": "down left up right down left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/18/generated_image_0.png",
+        "generated_images/18/generated_image_1.png",
+        "generated_images/18/generated_image_2.png",
+        "generated_images/18/generated_image_3.png",
+        "generated_images/18/generated_image_4.png",
+        "generated_images/18/generated_image_5.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0019",
@@ -150,13 +254,24 @@
       "output_parsed": {
         "answer": "right up left down"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/19/generated_image_0.png",
+        "generated_images/19/generated_image_1.png",
+        "generated_images/19/generated_image_2.png",
+        "generated_images/19/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0020",
       "output_text": "The image provided is a 2x2 sliding tile puzzle with a starfish on sand. The bottom right tile is blank. To solve this, I need to move the blank tile to the correct position to reveal the full starfish.\n\nHere's my reasoning for the moves:\n\n1.  **Move 1: Left**\n    The blank tile is in the bottom right. Moving it left will swap it with the bottom left tile, which contains a part of the starfish's leg. This will bring the bottom-left part of the starfish to its correct position.\n    \n\n2.  **Move 2: Up**\n    Now the blank tile is in the bottom left. Moving it up will swap it with the top left tile. This will place the top-left part of the starfish in its correct position.\n    3. **Move 3: Right**\n    The blank tile is now in the top left. Moving it right will swap it with the top right tile. This will place the top-right part of the starfish in its correct position. At this point, the starfish image should be fully reconstructed with the blank tile in the top left.\n    \n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/20/generated_image_0.png",
+        "generated_images/20/generated_image_1.png",
+        "generated_images/20/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0021",
@@ -164,7 +279,11 @@
       "output_parsed": {
         "answer": "up right"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/21/generated_image_0.png",
+        "generated_images/21/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0022",
@@ -172,7 +291,11 @@
       "output_parsed": {
         "answer": "left up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/22/generated_image_0.png",
+        "generated_images/22/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0023",
@@ -180,7 +303,10 @@
       "output_parsed": {
         "answer": "up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/23/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0024",
@@ -188,7 +314,11 @@
       "output_parsed": {
         "answer": "up left"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/24/generated_image_0.png",
+        "generated_images/24/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0025",
@@ -196,7 +326,10 @@
       "output_parsed": {
         "answer": "up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/25/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0026",
@@ -204,7 +337,16 @@
       "output_parsed": {
         "answer": "up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/26/generated_image_0.png",
+        "generated_images/26/generated_image_1.png",
+        "generated_images/26/generated_image_2.png",
+        "generated_images/26/generated_image_3.png",
+        "generated_images/26/generated_image_4.png",
+        "generated_images/26/generated_image_5.png",
+        "generated_images/26/generated_image_6.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0027",
@@ -212,7 +354,13 @@
       "output_parsed": {
         "answer": "right up left down"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/27/generated_image_0.png",
+        "generated_images/27/generated_image_1.png",
+        "generated_images/27/generated_image_2.png",
+        "generated_images/27/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0028",
@@ -220,7 +368,12 @@
       "output_parsed": {
         "answer": "down left up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/28/generated_image_0.png",
+        "generated_images/28/generated_image_1.png",
+        "generated_images/28/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0029",
@@ -228,7 +381,11 @@
       "output_parsed": {
         "answer": "right down"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/29/generated_image_0.png",
+        "generated_images/29/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_02/puzzle_0030",
@@ -236,7 +393,11 @@
       "output_parsed": {
         "answer": "right down left up"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/30/generated_image_0.png",
+        "generated_images/30/generated_image_1.png"
+      ]
     }
   ]
 }

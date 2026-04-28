@@ -10,7 +10,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/1/generated_image_0.png",
+        "generated_images/1/generated_image_1.png",
+        "generated_images/1/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0002",
@@ -18,7 +23,14 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/2/generated_image_0.png",
+        "generated_images/2/generated_image_1.png",
+        "generated_images/2/generated_image_2.png",
+        "generated_images/2/generated_image_3.png",
+        "generated_images/2/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0003",
@@ -26,7 +38,11 @@
       "output_parsed": {
         "answer": "B C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/3/generated_image_0.png",
+        "generated_images/3/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0004",
@@ -34,7 +50,15 @@
       "output_parsed": {
         "answer": "A B C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/4/generated_image_0.png",
+        "generated_images/4/generated_image_1.png",
+        "generated_images/4/generated_image_2.png",
+        "generated_images/4/generated_image_3.png",
+        "generated_images/4/generated_image_4.png",
+        "generated_images/4/generated_image_5.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0005",
@@ -42,13 +66,32 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/5/generated_image_0.png",
+        "generated_images/5/generated_image_1.png",
+        "generated_images/5/generated_image_2.png",
+        "generated_images/5/generated_image_3.png",
+        "generated_images/5/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0006",
       "output_text": "I will start by trying to fit piece A into the target shape.\nNow, I will try to place piece E next to piece A.\nI will now try to place piece C to fill the remaining gap.\nI made a mistake in the previous move; piece C is too large for the remaining gap. I will return piece C to the candidate shapes.\nI realize that pieces A and E, and B and D, are similar in shape but differ slightly. I will try a different combination of pieces. I will remove both A and E from the target shape.\nOkay, I will start by placing piece D in the target shape.\nNow I will place piece A in the target shape.\nI made a mistake in placing piece A. I will remove it and try placing piece E.\nNow I will place piece E in the target shape.\nI will now place piece C in the remaining gap.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/6/generated_image_0.png",
+        "generated_images/6/generated_image_1.png",
+        "generated_images/6/generated_image_2.png",
+        "generated_images/6/generated_image_3.png",
+        "generated_images/6/generated_image_4.png",
+        "generated_images/6/generated_image_5.png",
+        "generated_images/6/generated_image_6.png",
+        "generated_images/6/generated_image_7.png",
+        "generated_images/6/generated_image_8.png",
+        "generated_images/6/generated_image_9.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0007",
@@ -56,7 +99,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/7/generated_image_0.png",
+        "generated_images/7/generated_image_1.png",
+        "generated_images/7/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0008",
@@ -64,7 +112,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/8/generated_image_0.png",
+        "generated_images/8/generated_image_1.png",
+        "generated_images/8/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0009",
@@ -72,7 +125,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/9/generated_image_0.png",
+        "generated_images/9/generated_image_1.png",
+        "generated_images/9/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0010",
@@ -80,7 +138,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/10/generated_image_0.png",
+        "generated_images/10/generated_image_1.png",
+        "generated_images/10/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0011",
@@ -88,7 +151,17 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/11/generated_image_0.png",
+        "generated_images/11/generated_image_1.png",
+        "generated_images/11/generated_image_2.png",
+        "generated_images/11/generated_image_3.png",
+        "generated_images/11/generated_image_4.png",
+        "generated_images/11/generated_image_5.png",
+        "generated_images/11/generated_image_6.png",
+        "generated_images/11/generated_image_7.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0012",
@@ -96,7 +169,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/12/generated_image_0.png",
+        "generated_images/12/generated_image_1.png",
+        "generated_images/12/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0013",
@@ -104,7 +182,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/13/generated_image_0.png",
+        "generated_images/13/generated_image_1.png",
+        "generated_images/13/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0014",
@@ -112,7 +195,12 @@
       "output_parsed": {
         "answer": "B D"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/14/generated_image_0.png",
+        "generated_images/14/generated_image_1.png",
+        "generated_images/14/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0015",
@@ -120,7 +208,14 @@
       "output_parsed": {
         "answer": "B C"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/15/generated_image_0.png",
+        "generated_images/15/generated_image_1.png",
+        "generated_images/15/generated_image_2.png",
+        "generated_images/15/generated_image_3.png",
+        "generated_images/15/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0016",
@@ -128,7 +223,17 @@
       "output_parsed": {
         "answer": "A B E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/16/generated_image_0.png",
+        "generated_images/16/generated_image_1.png",
+        "generated_images/16/generated_image_2.png",
+        "generated_images/16/generated_image_3.png",
+        "generated_images/16/generated_image_4.png",
+        "generated_images/16/generated_image_5.png",
+        "generated_images/16/generated_image_6.png",
+        "generated_images/16/generated_image_7.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0017",
@@ -136,7 +241,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/17/generated_image_0.png",
+        "generated_images/17/generated_image_1.png",
+        "generated_images/17/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0018",
@@ -144,7 +254,17 @@
       "output_parsed": {
         "answer": "C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/18/generated_image_0.png",
+        "generated_images/18/generated_image_1.png",
+        "generated_images/18/generated_image_2.png",
+        "generated_images/18/generated_image_3.png",
+        "generated_images/18/generated_image_4.png",
+        "generated_images/18/generated_image_5.png",
+        "generated_images/18/generated_image_6.png",
+        "generated_images/18/generated_image_7.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0019",
@@ -152,13 +272,30 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/19/generated_image_0.png",
+        "generated_images/19/generated_image_1.png",
+        "generated_images/19/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0020",
       "output_text": "Let's solve this puzzle step by step!\n\nFirst, I will try to place piece B into the target shape.\nPiece B fits perfectly! Now, let's try piece C next.\nThat looks like a good fit for piece C.\nI've noticed a mistake in my previous image. I will correct it by moving the piece A to fit the shape.\nIt appears I made a mistake in placing piece B. Let me correct that. I'll remove piece C for a moment to re-evaluate.\n\nNow, let's try placing piece A first.\nOkay, piece A fits. Now, let's try piece C.\nAnd finally, let's try piece E.\nAh, I see that I made a mistake in placing piece C in the previous step, it was overlapping. Let me move piece A back out and restart.\nLet's try again. I'll place piece A.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/20/generated_image_0.png",
+        "generated_images/20/generated_image_1.png",
+        "generated_images/20/generated_image_2.png",
+        "generated_images/20/generated_image_3.png",
+        "generated_images/20/generated_image_4.png",
+        "generated_images/20/generated_image_5.png",
+        "generated_images/20/generated_image_6.png",
+        "generated_images/20/generated_image_7.png",
+        "generated_images/20/generated_image_8.png",
+        "generated_images/20/generated_image_9.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0021",
@@ -166,7 +303,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/21/generated_image_0.png",
+        "generated_images/21/generated_image_1.png",
+        "generated_images/21/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0022",
@@ -174,7 +316,16 @@
       "output_parsed": {
         "answer": "A C D E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/22/generated_image_0.png",
+        "generated_images/22/generated_image_1.png",
+        "generated_images/22/generated_image_2.png",
+        "generated_images/22/generated_image_3.png",
+        "generated_images/22/generated_image_4.png",
+        "generated_images/22/generated_image_5.png",
+        "generated_images/22/generated_image_6.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0023",
@@ -182,7 +333,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/23/generated_image_0.png",
+        "generated_images/23/generated_image_1.png",
+        "generated_images/23/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0024",
@@ -190,7 +346,17 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/24/generated_image_0.png",
+        "generated_images/24/generated_image_1.png",
+        "generated_images/24/generated_image_2.png",
+        "generated_images/24/generated_image_3.png",
+        "generated_images/24/generated_image_4.png",
+        "generated_images/24/generated_image_5.png",
+        "generated_images/24/generated_image_6.png",
+        "generated_images/24/generated_image_7.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0025",
@@ -198,7 +364,15 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/25/generated_image_0.png",
+        "generated_images/25/generated_image_1.png",
+        "generated_images/25/generated_image_2.png",
+        "generated_images/25/generated_image_3.png",
+        "generated_images/25/generated_image_4.png",
+        "generated_images/25/generated_image_5.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0026",
@@ -206,7 +380,15 @@
       "output_parsed": {
         "answer": "D"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/26/generated_image_0.png",
+        "generated_images/26/generated_image_1.png",
+        "generated_images/26/generated_image_2.png",
+        "generated_images/26/generated_image_3.png",
+        "generated_images/26/generated_image_4.png",
+        "generated_images/26/generated_image_5.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0027",
@@ -214,7 +396,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/27/generated_image_0.png",
+        "generated_images/27/generated_image_1.png",
+        "generated_images/27/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0028",
@@ -222,7 +409,12 @@
       "output_parsed": {
         "answer": "C D E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/28/generated_image_0.png",
+        "generated_images/28/generated_image_1.png",
+        "generated_images/28/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0029",
@@ -230,7 +422,12 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/29/generated_image_0.png",
+        "generated_images/29/generated_image_1.png",
+        "generated_images/29/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/form-board/output/level_01/puzzle_0030",
@@ -238,7 +435,14 @@
       "output_parsed": {
         "answer": "A C E"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/30/generated_image_0.png",
+        "generated_images/30/generated_image_1.png",
+        "generated_images/30/generated_image_2.png",
+        "generated_images/30/generated_image_3.png",
+        "generated_images/30/generated_image_4.png"
+      ]
     }
   ]
 }

@@ -18,7 +18,10 @@
       "output_parsed": {
         "answer": "A forward, D backward, E forward, C backward, F backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/1/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0003",
@@ -26,7 +29,15 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/2/generated_image_0.png",
+        "generated_images/2/generated_image_1.png",
+        "generated_images/2/generated_image_2.png",
+        "generated_images/2/generated_image_3.png",
+        "generated_images/2/generated_image_4.png",
+        "generated_images/2/generated_image_5.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0004",
@@ -34,7 +45,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/3/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0005",
@@ -42,7 +56,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/4/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0006",
@@ -50,7 +67,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/5/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0007",
@@ -58,7 +78,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/6/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0008",
@@ -66,7 +89,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/7/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0009",
@@ -74,7 +100,10 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/8/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0010",
@@ -82,7 +111,10 @@
       "output_parsed": {
         "answer": "B backward, A backward, I backward, H backward, E forward, F forward, C backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/9/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0011",
@@ -90,19 +122,38 @@
       "output_parsed": {
         "answer": "G forward, F backward, E backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/10/generated_image_0.png",
+        "generated_images/10/generated_image_1.png",
+        "generated_images/10/generated_image_2.png",
+        "generated_images/10/generated_image_3.png",
+        "generated_images/10/generated_image_4.png",
+        "generated_images/10/generated_image_5.png",
+        "generated_images/10/generated_image_6.png",
+        "generated_images/10/generated_image_7.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0012",
       "output_text": "The red car 'R' has a clear path to the exit. There are no other vehicles or obstacles blocking its way. Therefore, the only move required is to move the red car forward until it reaches the exit.\n\n1.  Move vehicle R forward. The path is clear, so it will move until it enters the exit area.\n\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/11/generated_image_0.png",
+        "generated_images/11/generated_image_1.png",
+        "generated_images/11/generated_image_2.png",
+        "generated_images/11/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0013",
       "output_text": "The goal is to move the red vehicle (R) to the exit on the right. Let's analyze the situation and plan the moves.\n\nThe red vehicle (R) is positioned on the left side of the parking lot. Its path to the exit, indicated by the dashed line, is completely clear. There are no other vehicles or obstacles blocking its way. Therefore, the only move required is to move the red vehicle forward.\n\n**Move 1:** Move vehicle **R forward**.\nVehicle R will move to the right until it reaches the exit.\n\nLet's generate the image showing the state of the parking lot after this move.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/12/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0014",
@@ -110,7 +161,10 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/13/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0015",
@@ -118,7 +172,10 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/14/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0016",
@@ -126,7 +183,10 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/15/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0017",
@@ -134,7 +194,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/16/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0018",
@@ -142,7 +205,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/17/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0019",
@@ -150,7 +216,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/18/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0020",
@@ -158,13 +227,19 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/19/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0021",
       "output_text": "The red vehicle (R) is positioned on the left side of the parking lot, and its designated path (indicated by the dashed line) leads directly to the exit on the right. There are no other vehicles or obstacles blocking its path. Therefore, the red vehicle can move forward directly to the exit.\n\n**Move 1:**\n*   **Vehicle:** R\n*   **Direction:** Forward\n\nAfter this move, the red vehicle will have reached the exit. The following image shows the final state of the parking lot.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/20/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0022",
@@ -172,7 +247,10 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/21/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0023",
@@ -180,7 +258,10 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/22/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0024",
@@ -188,7 +269,10 @@
       "output_parsed": {
         "answer": "R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/23/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0025",
@@ -196,13 +280,19 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/24/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0026",
       "output_text": "I will now plan the moves to solve the puzzle.\n\nThe goal is to move the red vehicle ('R') to the exit on the left.\nThe path for 'R' to the exit is completely clear of any other vehicles or obstacles.\nThe arrow on 'R' points to the right, so moving to the left (towards the exit) is a \"backward\" move.\nA single backward move will take 'R' from its starting position all the way to the left boundary, where the exit is located.\n\nTherefore, the solution requires only one move.\n\n**Move 1:** Move vehicle **R backward**.\nThis will move the red car to the exit.\nI will now generate the image showing the final state of the parking lot after this move.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/25/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0027",
@@ -210,13 +300,20 @@
       "output_parsed": {
         "answer": "Q backward, R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/26/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0028",
       "output_text": "To solve this puzzle, we need to move the red car 'R' to the exit on the left.\n\nThe red car 'R' is currently facing to the right, as indicated by the arrow. The exit is directly behind it, to the left. Therefore, the only move required is to move the red car backward. According to the rules, it will slide until it reaches the boundary, which in this case is the exit.\n\nHere is the sequence of moves:\n\n**Move 1:** Move the red vehicle (R) backward.\nThe red car slides to the left until it reaches the exit.\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/27/generated_image_0.png",
+        "generated_images/27/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0029",
@@ -224,13 +321,19 @@
       "output_parsed": {
         "answer": "R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/28/generated_image_0.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_01/puzzle_0030",
       "output_text": "The red car 'R' is the only vehicle in the parking lot. Its path to the exit is completely clear.\n\nThe only move required is to move the red car 'R' forward. It will travel from its starting position at the bottom of the lot all the way to the top, where the exit is located.\n\nMove 1: R forward\nThe red car moves forward until it reaches the top boundary of the parking lot, which is the exit.\n\n",
       "output_parsed": {},
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/29/generated_image_0.png"
+      ]
     }
   ]
 }

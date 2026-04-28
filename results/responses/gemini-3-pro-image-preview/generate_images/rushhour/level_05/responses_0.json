@@ -18,7 +18,12 @@
       "output_parsed": {
         "answer": "B backward, D backward, F backward, E backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/1/generated_image_0.png",
+        "generated_images/1/generated_image_1.png",
+        "generated_images/1/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0003",
@@ -26,7 +31,14 @@
       "output_parsed": {
         "answer": "C backward, E backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/2/generated_image_0.png",
+        "generated_images/2/generated_image_1.png",
+        "generated_images/2/generated_image_2.png",
+        "generated_images/2/generated_image_3.png",
+        "generated_images/2/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0004",
@@ -34,7 +46,12 @@
       "output_parsed": {
         "answer": "C backward, E forward, D forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/3/generated_image_0.png",
+        "generated_images/3/generated_image_1.png",
+        "generated_images/3/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0005",
@@ -42,7 +59,13 @@
       "output_parsed": {
         "answer": "B backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/4/generated_image_0.png",
+        "generated_images/4/generated_image_1.png",
+        "generated_images/4/generated_image_2.png",
+        "generated_images/4/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0006",
@@ -50,7 +73,11 @@
       "output_parsed": {
         "answer": "B forward, A forward, C forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/5/generated_image_0.png",
+        "generated_images/5/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0007",
@@ -58,7 +85,13 @@
       "output_parsed": {
         "answer": "E backward, A backward, C backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/6/generated_image_0.png",
+        "generated_images/6/generated_image_1.png",
+        "generated_images/6/generated_image_2.png",
+        "generated_images/6/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0008",
@@ -66,7 +99,13 @@
       "output_parsed": {
         "answer": "D backward, C backward, F forward, E forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/7/generated_image_0.png",
+        "generated_images/7/generated_image_1.png",
+        "generated_images/7/generated_image_2.png",
+        "generated_images/7/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0009",
@@ -74,7 +113,14 @@
       "output_parsed": {
         "answer": "E backward, B backward, A backward, R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/8/generated_image_0.png",
+        "generated_images/8/generated_image_1.png",
+        "generated_images/8/generated_image_2.png",
+        "generated_images/8/generated_image_3.png",
+        "generated_images/8/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0010",
@@ -82,7 +128,13 @@
       "output_parsed": {
         "answer": "E forward, D forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/9/generated_image_0.png",
+        "generated_images/9/generated_image_1.png",
+        "generated_images/9/generated_image_2.png",
+        "generated_images/9/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0011",
@@ -90,7 +142,12 @@
       "output_parsed": {
         "answer": "A forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/10/generated_image_0.png",
+        "generated_images/10/generated_image_1.png",
+        "generated_images/10/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0012",
@@ -98,7 +155,11 @@
       "output_parsed": {
         "answer": "A backward, D forward, E backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/11/generated_image_0.png",
+        "generated_images/11/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0013",
@@ -106,7 +167,13 @@
       "output_parsed": {
         "answer": "A forward, C forward, E forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/12/generated_image_0.png",
+        "generated_images/12/generated_image_1.png",
+        "generated_images/12/generated_image_2.png",
+        "generated_images/12/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0014",
@@ -114,7 +181,13 @@
       "output_parsed": {
         "answer": "C forward, D forward, R backward, B forward, A forward, R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/13/generated_image_0.png",
+        "generated_images/13/generated_image_1.png",
+        "generated_images/13/generated_image_2.png",
+        "generated_images/13/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0015",
@@ -122,7 +195,15 @@
       "output_parsed": {
         "answer": "A forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/14/generated_image_0.png",
+        "generated_images/14/generated_image_1.png",
+        "generated_images/14/generated_image_2.png",
+        "generated_images/14/generated_image_3.png",
+        "generated_images/14/generated_image_4.png",
+        "generated_images/14/generated_image_5.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0016",
@@ -130,7 +211,11 @@
       "output_parsed": {
         "answer": "D forward, B forward, C forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/15/generated_image_0.png",
+        "generated_images/15/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0017",
@@ -138,7 +223,13 @@
       "output_parsed": {
         "answer": "A backward, D backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/16/generated_image_0.png",
+        "generated_images/16/generated_image_1.png",
+        "generated_images/16/generated_image_2.png",
+        "generated_images/16/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0018",
@@ -146,7 +237,12 @@
       "output_parsed": {
         "answer": "E forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/17/generated_image_0.png",
+        "generated_images/17/generated_image_1.png",
+        "generated_images/17/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0019",
@@ -154,7 +250,11 @@
       "output_parsed": {
         "answer": "E forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/18/generated_image_0.png",
+        "generated_images/18/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0020",
@@ -162,7 +262,11 @@
       "output_parsed": {
         "answer": "R backward, E backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/19/generated_image_0.png",
+        "generated_images/19/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0021",
@@ -170,7 +274,12 @@
       "output_parsed": {
         "answer": "E backward, A backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/20/generated_image_0.png",
+        "generated_images/20/generated_image_1.png",
+        "generated_images/20/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0022",
@@ -178,7 +287,12 @@
       "output_parsed": {
         "answer": "C backward, A backward, F forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/21/generated_image_0.png",
+        "generated_images/21/generated_image_1.png",
+        "generated_images/21/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0023",
@@ -186,7 +300,13 @@
       "output_parsed": {
         "answer": "C backward, D forward, A backward, E backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/22/generated_image_0.png",
+        "generated_images/22/generated_image_1.png",
+        "generated_images/22/generated_image_2.png",
+        "generated_images/22/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0024",
@@ -194,7 +314,14 @@
       "output_parsed": {
         "answer": "E backward, B backward, C backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/23/generated_image_0.png",
+        "generated_images/23/generated_image_1.png",
+        "generated_images/23/generated_image_2.png",
+        "generated_images/23/generated_image_3.png",
+        "generated_images/23/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0025",
@@ -202,7 +329,13 @@
       "output_parsed": {
         "answer": "A forward, C backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/24/generated_image_0.png",
+        "generated_images/24/generated_image_1.png",
+        "generated_images/24/generated_image_2.png",
+        "generated_images/24/generated_image_3.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0026",
@@ -210,7 +343,12 @@
       "output_parsed": {
         "answer": "A forward, D backward, F forward, B backward, R backward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/25/generated_image_0.png",
+        "generated_images/25/generated_image_1.png",
+        "generated_images/25/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0027",
@@ -218,7 +356,14 @@
       "output_parsed": {
         "answer": "E backward, F backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/26/generated_image_0.png",
+        "generated_images/26/generated_image_1.png",
+        "generated_images/26/generated_image_2.png",
+        "generated_images/26/generated_image_3.png",
+        "generated_images/26/generated_image_4.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0028",
@@ -226,7 +371,12 @@
       "output_parsed": {
         "answer": "E backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/27/generated_image_0.png",
+        "generated_images/27/generated_image_1.png",
+        "generated_images/27/generated_image_2.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0029",
@@ -234,7 +384,11 @@
       "output_parsed": {
         "answer": "F backward, C forward, B forward, E forward, A backward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/28/generated_image_0.png",
+        "generated_images/28/generated_image_1.png"
+      ]
     },
     {
       "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0030",
@@ -242,7 +396,15 @@
       "output_parsed": {
         "answer": "C backward, F forward, D forward, B forward, R forward"
       },
-      "error": null
+      "error": null,
+      "generated_images": [
+        "generated_images/29/generated_image_0.png",
+        "generated_images/29/generated_image_1.png",
+        "generated_images/29/generated_image_2.png",
+        "generated_images/29/generated_image_3.png",
+        "generated_images/29/generated_image_4.png",
+        "generated_images/29/generated_image_5.png"
+      ]
     }
   ]
 }
