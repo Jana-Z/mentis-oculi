@@ -151,7 +151,7 @@ Query a model on a task using the inference scripts:
 ```bash
 cd inference
 uv sync
-python query_model.py \
+uv run query_model.py \
   --task rushhour \
   --dataset ../datasets/rushhour/output \
   --model gpt-4o \
@@ -166,8 +166,9 @@ See [inference/README.md](inference/README.md) for the full list of arguments an
 Each dataset includes an evaluation script:
 
 ```bash
-python datasets/<task>/evaluate_responses.py \
-  --responses my_responses/<model>/<strategy>/<task>/<level>/responses_0.json
+cd datasets/<task>
+uv run evaluate_responses.py \
+  --responses ../../my_responses/<model>/<strategy>/<task>/<level>/responses_0.json
 ```
 
 See [datasets/README.md](datasets/README.md) for the expected input format.

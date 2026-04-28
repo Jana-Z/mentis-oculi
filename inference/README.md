@@ -77,6 +77,7 @@ python inference/query_model.py \
 Each task has an `evaluate_responses.py` script that scores a `responses_0.json` file:
 
 ```bash
-python datasets/<task>/evaluate_responses.py \
-  --responses my_responses/<model>/<strategy>/<task>/<level>/responses_0.json
+cd datasets/<task>
+uv run evaluate_responses.py \
+  --responses ../../my_responses/<model>/<strategy>/<task>/<level>/responses_0.json
 ```
