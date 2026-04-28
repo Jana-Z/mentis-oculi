@@ -1,0 +1,278 @@
+{
+  "task": "hinge-folding",
+  "model": "emu3.5",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0001",
+      "output_text": "{\"answer\": \"B 90, A 90, C 180\"}",
+      "output_parsed": {
+        "answer": "B 90, A 90, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0002",
+      "output_text": "{\"answer\": \"A 90, B 90, C 180\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0003",
+      "output_text": "{\n  \"answer\": \"B 45, C 45\"\n}",
+      "output_parsed": {
+        "answer": "B 45, C 45"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0004",
+      "output_text": "{\n    \"answer\": \"A 180, C 180\"\n}",
+      "output_parsed": {
+        "answer": "A 180, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0005",
+      "output_text": "{\n  \"answer\": \"A 180, B 45, C 90\"\n}",
+      "output_parsed": {
+        "answer": "A 180, B 45, C 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0006",
+      "output_text": "```json\n{\n  \"answer\": \"A 135, B 90, C 180\"\n}\n```",
+      "output_parsed": {
+        "answer": "A 135, B 90, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0007",
+      "output_text": "```json\n{\n  \"answer\": \"A 45, B 90, C 45\"\n}\n```",
+      "output_parsed": {
+        "answer": "A 45, B 90, C 45"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0008",
+      "output_text": "{\"answer\": \"A 90, C 180\"}",
+      "output_parsed": {
+        "answer": "A 90, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0009",
+      "output_text": "{\n  \"answer\": \"A 90, B 45, C 45\"\n}",
+      "output_parsed": {
+        "answer": "A 90, B 45, C 45"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0010",
+      "output_text": "{\"answer\": \"A 90, B 45, C 45\"}",
+      "output_parsed": {
+        "answer": "A 90, B 45, C 45"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0011",
+      "output_text": "{\n  \"answer\": \"A 90, B 45, C 90, D 90, E 90, F 45\"\n}",
+      "output_parsed": {
+        "answer": "A 90, B 45, C 90, D 90, E 90, F 45"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0012",
+      "output_text": "{\"answer\": \"A 90, B 90, C 0\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 0"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0013",
+      "output_text": "{\n  \"answer\": \"A 45, B 45, C 180\"\n}",
+      "output_parsed": {
+        "answer": "A 45, B 45, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0014",
+      "output_text": "{\n  \"answer\": \"A 90, B 90, C 225\"\n}",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 225"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0015",
+      "output_text": "{\"answer\": \"A 90, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, C 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0016",
+      "output_text": "{\n  \"answer\": \"A 135, B 90, C 135\"\n}",
+      "output_parsed": {
+        "answer": "A 135, B 90, C 135"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0017",
+      "output_text": "{\"answer\": \"A 135, B 90, C 180, D 90\"}",
+      "output_parsed": {
+        "answer": "A 135, B 90, C 180, D 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0018",
+      "output_text": "{\n  \"answer\": \"A 90, C 180\"\n}",
+      "output_parsed": {
+        "answer": "A 90, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0019",
+      "output_text": "```json\n{\"answer\": \"A 90, C 180, B 90\"}\n```",
+      "output_parsed": {
+        "answer": "A 90, C 180, B 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0020",
+      "output_text": "{\n    \"answer\": \"A 180, B 135\"\n}",
+      "output_parsed": {
+        "answer": "A 180, B 135"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0021",
+      "output_text": "```json\n{\n  \"answer\": \"A 90, B 90, C 270\"\n}\n```",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 270"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0022",
+      "output_text": "{\n  \"answer\": \"A 90, C 180\"\n}",
+      "output_parsed": {
+        "answer": "A 90, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0023",
+      "output_text": "{\"answer\": \"A 90, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, C 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0024",
+      "output_text": "```json\n{\n  \"answer\": \"A 45, B 225, C 90\"\n}\n```",
+      "output_parsed": {
+        "answer": "A 45, B 225, C 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0025",
+      "output_text": "{\"answer\": \"A 180, B 90, C 180\"}",
+      "output_parsed": {
+        "answer": "A 180, B 90, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0026",
+      "output_text": "{\n  \"answer\": \"B 180, C 90\"\n}",
+      "output_parsed": {
+        "answer": "B 180, C 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0027",
+      "output_text": "```json\n{\"answer\": \"A 135, B 45, C 135\"}\n```",
+      "output_parsed": {
+        "answer": "A 135, B 45, C 135"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0028",
+      "output_text": "{\"answer\": \"A 225, C 180\"}",
+      "output_parsed": {
+        "answer": "A 225, C 180"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0029",
+      "output_text": "```json\n{\n  \"answer\": \"A 180, B 90, C 90\"\n}\n```",
+      "output_parsed": {
+        "answer": "A 180, B 90, C 90"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_01/puzzle_0030",
+      "output_text": "{\"answer\": \"A 90, B 135, C 270, D 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 135, C 270, D 270"
+      },
+      "generated_images": [],
+      "error": null
+    }
+  ]
+}

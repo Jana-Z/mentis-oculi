@@ -1,0 +1,248 @@
+{
+  "task": "rushhour",
+  "model": "gpt-5.1",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0001",
+      "output_text": "{\"answer\": \"C forward, R backward\"}",
+      "output_parsed": {
+        "answer": "C forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0002",
+      "output_text": "{\"answer\": \"A forward, C forward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, C forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0003",
+      "output_text": "{\"answer\": \"C backward, B forward, R backward\"}",
+      "output_parsed": {
+        "answer": "C backward, B forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0004",
+      "output_text": "{\"answer\": \"D backward, A backward, F backward, R forward\"}",
+      "output_parsed": {
+        "answer": "D backward, A backward, F backward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0005",
+      "output_text": "{\"answer\": \"B forward, D backward, R forward\"}",
+      "output_parsed": {
+        "answer": "B forward, D backward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0006",
+      "output_text": "{\"answer\": \"E forward, R backward\"}",
+      "output_parsed": {
+        "answer": "E forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0007",
+      "output_text": "{\"answer\": \"C backward, D forward, R backward\"}",
+      "output_parsed": {
+        "answer": "C backward, D forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0008",
+      "output_text": "{\"answer\": \"E forward, R forward\"}",
+      "output_parsed": {
+        "answer": "E forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0009",
+      "output_text": "{\"answer\": \"D forward, R forward\"}",
+      "output_parsed": {
+        "answer": "D forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0010",
+      "output_text": "{\"answer\": \"E backward, C forward, R forward\"}",
+      "output_parsed": {
+        "answer": "E backward, C forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0011",
+      "output_text": "{\"answer\": \"F forward, E forward, R forward\"}",
+      "output_parsed": {
+        "answer": "F forward, E forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0012",
+      "output_text": "{\"answer\": \"I\u2019m not able to reliably determine the exact minimal move sequence from this single static image under the continuous\u2011motion rules you specified. The positions, sizes, and exact collision points of the cars and obstacles matter in a way that I can\u2019t measure precisely from the image alone, so any sequence I proposed would just be a guess and might not actually free the red car. To give a correct minimal solution, I\u2019d need either the precise coordinates/sizes of all vehicles and obstacles or an interactive version of the puzzle that I could step through.\"}",
+      "output_parsed": {
+        "answer": "I\u2019m not able to reliably determine the exact minimal move sequence from this single static image under the continuous\u2011motion rules you specified. The positions, sizes, and exact collision points of the cars and obstacles matter in a way that I can\u2019t measure precisely from the image alone, so any sequence I proposed would just be a guess and might not actually free the red car. To give a correct minimal solution, I\u2019d need either the precise coordinates/sizes of all vehicles and obstacles or an interactive version of the puzzle that I could step through."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0013",
+      "output_text": "{\"answer\": \"A backward, F forward, R forward\"}",
+      "output_parsed": {
+        "answer": "A backward, F forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0014",
+      "output_text": "{\"answer\": \"E backward, B backward, R forward\"}",
+      "output_parsed": {
+        "answer": "E backward, B backward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0015",
+      "output_text": "{\"answer\": \"B forward, R forward\"}",
+      "output_parsed": {
+        "answer": "B forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0016",
+      "output_text": "{\"answer\": \"D forward, R forward\"}",
+      "output_parsed": {
+        "answer": "D forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0017",
+      "output_text": "{\"answer\": \"C forward, R backward\"}",
+      "output_parsed": {
+        "answer": "C forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0018",
+      "output_text": "{\"answer\": \"B backward, E backward, C backward, D forward, R backward\"}",
+      "output_parsed": {
+        "answer": "B backward, E backward, C backward, D forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0019",
+      "output_text": "{\"answer\": \"A forward, D backward, E backward, R backward\"}",
+      "output_parsed": {
+        "answer": "A forward, D backward, E backward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0020",
+      "output_text": "{\"answer\": \"C forward, R forward\"}",
+      "output_parsed": {
+        "answer": "C forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0021",
+      "output_text": "{\"answer\": \"B forward, E forward, R backward\"}",
+      "output_parsed": {
+        "answer": "B forward, E forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0022",
+      "output_text": "{\"answer\": \"A backward, E forward, R backward\"}",
+      "output_parsed": {
+        "answer": "A backward, E forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0023",
+      "output_text": "{\"answer\": \"A forward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0024",
+      "output_text": "{\"answer\": \"C backward, E forward, R backward\"}",
+      "output_parsed": {
+        "answer": "C backward, E forward, R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0025",
+      "output_text": "{\"answer\": \"C backward, E forward, R forward\"}",
+      "output_parsed": {
+        "answer": "C backward, E forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0026",
+      "output_text": "{\"answer\": \"R backward\"}",
+      "output_parsed": {
+        "answer": "R backward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0027",
+      "output_text": "{\"answer\": \"D backward, R forward\"}",
+      "output_parsed": {
+        "answer": "D backward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0028",
+      "output_text": "{\"answer\": \"A forward, C backward, E forward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, C backward, E forward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0029",
+      "output_text": "{\"answer\": \"E backward, R forward\"}",
+      "output_parsed": {
+        "answer": "E backward, R forward"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0030",
+      "output_text": "{\"answer\": \"A forward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, R forward"
+      },
+      "error": null
+    }
+  ]
+}

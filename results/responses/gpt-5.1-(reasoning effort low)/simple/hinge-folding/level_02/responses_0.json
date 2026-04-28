@@ -1,0 +1,248 @@
+{
+  "task": "hinge-folding",
+  "model": "gpt-5.1",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0001",
+      "output_text": "{\"answer\": \"A 90, B 0\"}",
+      "output_parsed": {
+        "answer": "A 90, B 0"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0002",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0003",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0004",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0005",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0006",
+      "output_text": "{\"answer\": \"Cannot be determined unambiguously from the provided image alone. The exact relative sizes, positions, and hinge locations of the shapes are insufficiently specified to deduce a unique set of 90\u00b0-multiple rotations for hinges A and B that guarantees the target configuration.\"}",
+      "output_parsed": {
+        "answer": "Cannot be determined unambiguously from the provided image alone. The exact relative sizes, positions, and hinge locations of the shapes are insufficiently specified to deduce a unique set of 90\u00b0-multiple rotations for hinges A and B that guarantees the target configuration."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0007",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0008",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0009",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0010",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0011",
+      "output_text": "{\"answer\": \"I\u2019m not able to reliably determine the exact rotations for hinges A and B from the provided image alone. The final configuration\u2019s precise orientations and hinge locations are too ambiguous for me to compute a unique, correct sequence of 90\u00b0 rotations.\"}",
+      "output_parsed": {
+        "answer": "I\u2019m not able to reliably determine the exact rotations for hinges A and B from the provided image alone. The final configuration\u2019s precise orientations and hinge locations are too ambiguous for me to compute a unique, correct sequence of 90\u00b0 rotations."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0012",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0013",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0014",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0015",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0016",
+      "output_text": "{\"answer\": \"I\u2019m not able to reliably determine the precise rotation angles for hinges A and B from this single image. The target configuration\u2019s relative orientations and contact points between the shapes are ambiguous at this resolution, so any numerical answer I\u2019d give would be a guess rather than a verifiable solution.\"}",
+      "output_parsed": {
+        "answer": "I\u2019m not able to reliably determine the precise rotation angles for hinges A and B from this single image. The target configuration\u2019s relative orientations and contact points between the shapes are ambiguous at this resolution, so any numerical answer I\u2019d give would be a guess rather than a verifiable solution."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0017",
+      "output_text": "{\"answer\": \"I\u2019m not able to reliably determine the exact hinge rotations from the provided image alone. The target configuration\u2019s precise relative positions/orientations of the three shapes (especially overlaps and exact angles) are ambiguous at this resolution, and without that geometric detail I would just be guessing a sequence of rotations. If you can provide a more detailed schematic (e.g., grid coordinates or a higher\u2011resolution/annotated image), I can compute a correct sequence.\"}",
+      "output_parsed": {
+        "answer": "I\u2019m not able to reliably determine the exact hinge rotations from the provided image alone. The target configuration\u2019s precise relative positions/orientations of the three shapes (especially overlaps and exact angles) are ambiguous at this resolution, and without that geometric detail I would just be guessing a sequence of rotations. If you can provide a more detailed schematic (e.g., grid coordinates or a higher\u2011resolution/annotated image), I can compute a correct sequence."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0018",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0019",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0020",
+      "output_text": "{\"answer\": \"A 270, B 90\"}",
+      "output_parsed": {
+        "answer": "A 270, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0021",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0022",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0023",
+      "output_text": "{\"answer\": \"A 270, B 90\"}",
+      "output_parsed": {
+        "answer": "A 270, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0024",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0025",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0026",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0027",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0028",
+      "output_text": "{\"answer\": \"A 90, B 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0029",
+      "output_text": "{\"answer\": \"A 90, B 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_02/puzzle_0030",
+      "output_text": "{\"answer\": \"A 270, B 90\"}",
+      "output_parsed": {
+        "answer": "A 270, B 90"
+      },
+      "error": null
+    }
+  ]
+}

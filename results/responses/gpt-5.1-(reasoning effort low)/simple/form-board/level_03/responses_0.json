@@ -1,0 +1,248 @@
+{
+  "task": "form-board",
+  "model": "gpt-5.1",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0001",
+      "output_text": "{\"answer\": \"B C\"}",
+      "output_parsed": {
+        "answer": "B C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0002",
+      "output_text": "{\"answer\": \"C D\"}",
+      "output_parsed": {
+        "answer": "C D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0003",
+      "output_text": "{\"answer\": \"A B C D E\"}",
+      "output_parsed": {
+        "answer": "A B C D E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0004",
+      "output_text": "{\"answer\": \"A C E\"}",
+      "output_parsed": {
+        "answer": "A C E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0005",
+      "output_text": "{\"answer\": \"A C\"}",
+      "output_parsed": {
+        "answer": "A C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0006",
+      "output_text": "{\"answer\": \"B C E\"}",
+      "output_parsed": {
+        "answer": "B C E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0007",
+      "output_text": "{\"answer\": \"A E\"}",
+      "output_parsed": {
+        "answer": "A E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0008",
+      "output_text": "{\"answer\": \"D\"}",
+      "output_parsed": {
+        "answer": "D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0009",
+      "output_text": "{\"answer\": \"C D\"}",
+      "output_parsed": {
+        "answer": "C D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0010",
+      "output_text": "{\"answer\": \"B D\"}",
+      "output_parsed": {
+        "answer": "B D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0011",
+      "output_text": "{\"answer\": \"B C D\"}",
+      "output_parsed": {
+        "answer": "B C D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0012",
+      "output_text": "{\"answer\": \"D\"}",
+      "output_parsed": {
+        "answer": "D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0013",
+      "output_text": "{\"answer\": \"A D\"}",
+      "output_parsed": {
+        "answer": "A D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0014",
+      "output_text": "{\"answer\": \"A B\"}",
+      "output_parsed": {
+        "answer": "A B"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0015",
+      "output_text": "{\"answer\": \"A C\"}",
+      "output_parsed": {
+        "answer": "A C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0016",
+      "output_text": "{\"answer\": \"B C E\"}",
+      "output_parsed": {
+        "answer": "B C E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0017",
+      "output_text": "{\"answer\": \"A B D\"}",
+      "output_parsed": {
+        "answer": "A B D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0018",
+      "output_text": "{\"answer\": \"A B C D\"}",
+      "output_parsed": {
+        "answer": "A B C D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0019",
+      "output_text": "{\"answer\": \"B C E\"}",
+      "output_parsed": {
+        "answer": "B C E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0020",
+      "output_text": "{\"answer\": \"B C E\"}",
+      "output_parsed": {
+        "answer": "B C E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0021",
+      "output_text": "{\"answer\": \"B E\"}",
+      "output_parsed": {
+        "answer": "B E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0022",
+      "output_text": "{\"answer\": \"D E\"}",
+      "output_parsed": {
+        "answer": "D E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0023",
+      "output_text": "{\"answer\": \"B\"}",
+      "output_parsed": {
+        "answer": "B"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0024",
+      "output_text": "{\"answer\": \"D E\"}",
+      "output_parsed": {
+        "answer": "D E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0025",
+      "output_text": "{\"answer\": \"C D\"}",
+      "output_parsed": {
+        "answer": "C D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0026",
+      "output_text": "{\"answer\": \"A B D E\"}",
+      "output_parsed": {
+        "answer": "A B D E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0027",
+      "output_text": "{\"answer\": \"A B C D\"}",
+      "output_parsed": {
+        "answer": "A B C D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0028",
+      "output_text": "{\"answer\": \"A B C D E\"}",
+      "output_parsed": {
+        "answer": "A B C D E"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0029",
+      "output_text": "{\"answer\": \"B\"}",
+      "output_parsed": {
+        "answer": "B"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/form-board/output/level_03/puzzle_0030",
+      "output_text": "{\"answer\": \"A B C D E\"}",
+      "output_parsed": {
+        "answer": "A B C D E"
+      },
+      "error": null
+    }
+  ]
+}

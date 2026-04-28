@@ -1,0 +1,250 @@
+{
+  "task": "sliding-puzzle",
+  "model": "qwen/qwen3-vl-235b-a22b-thinking",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0001",
+      "output_text": "{\"answer\": \"down left up\"}",
+      "output_parsed": {
+        "answer": "down left up"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0002",
+      "output_text": "{\"answer\": \"left\"}",
+      "output_parsed": {
+        "answer": "left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0003",
+      "output_text": "{\"answer\": \"left up\"}",
+      "output_parsed": {
+        "answer": "left up"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0004",
+      "output_text": "{\"answer\": \"right\"}",
+      "output_parsed": {
+        "answer": "right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0005",
+      "output_text": "{\"answer\": \"left\"}",
+      "output_parsed": {
+        "answer": "left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0006",
+      "output_text": "{\"answer\": \"up left\"}",
+      "output_parsed": {
+        "answer": "up left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0007",
+      "output_text": "{\"answer\": \"up right down\"}",
+      "output_parsed": {
+        "answer": "up right down"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0008",
+      "output_text": "{\"answer\": \"right\"}",
+      "output_parsed": {
+        "answer": "right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0009",
+      "output_text": "{\"answer\": \"right right\"}",
+      "output_parsed": {
+        "answer": "right right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0010",
+      "output_text": "{\"answer\": \"right\"}",
+      "output_parsed": {
+        "answer": "right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0011",
+      "output_text": "{\"answer\": \"right\"}",
+      "output_parsed": {
+        "answer": "right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0012",
+      "output_text": "{\"answer\": \"up left\"}",
+      "output_parsed": {
+        "answer": "up left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0013",
+      "output_text": "{\"answer\": \"up left\"}",
+      "output_parsed": {
+        "answer": "up left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0014",
+      "output_text": "{\"answer\": \"up right\"}",
+      "output_parsed": {
+        "answer": "up right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0015",
+      "output_text": "{\"answer\": \"up\"}",
+      "output_parsed": {
+        "answer": "up"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0016",
+      "output_text": "{\"answer\": \"up left down right up\"}",
+      "output_parsed": {
+        "answer": "up left down right up"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0017",
+      "output_text": "{\"answer\": \"right\"}",
+      "output_parsed": {
+        "answer": "right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0018",
+      "output_text": "{\"answer\": \"down left up right down\"}",
+      "output_parsed": {
+        "answer": "down left up right down"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0019",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0020",
+      "output_text": "{\"answer\": \"left\"}",
+      "output_parsed": {
+        "answer": "left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0021",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0022",
+      "output_text": "{\"answer\": \"down\"}",
+      "output_parsed": {
+        "answer": "down"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0023",
+      "output_text": "{\"answer\": \"down right\"}",
+      "output_parsed": {
+        "answer": "down right"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0024",
+      "output_text": "{\"answer\": \"down\"}",
+      "output_parsed": {
+        "answer": "down"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0025",
+      "output_text": "{\"answer\": \"left\"}",
+      "output_parsed": {
+        "answer": "left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0026",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0027",
+      "output_text": "{\"answer\": \"left\"}",
+      "output_parsed": {
+        "answer": "left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0028",
+      "output_text": "{\"answer\": \"up right down\"}",
+      "output_parsed": {
+        "answer": "up right down"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0029",
+      "output_text": "{\"answer\": \"right down left\"}",
+      "output_parsed": {
+        "answer": "right down left"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_01/puzzle_0030",
+      "output_text": "{\"answer\": \"left\"}",
+      "output_parsed": {
+        "answer": "left"
+      },
+      "error": null
+    }
+  ],
+  "total_input_tokens": 8183,
+  "avg_input_tokens": 272.76666666666665
+}

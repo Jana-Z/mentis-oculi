@@ -1,0 +1,278 @@
+{
+  "task": "sliding-puzzle",
+  "model": "emu3.5",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0001",
+      "output_text": "{\"answer\": \"down right up left down\"}",
+      "output_parsed": {
+        "answer": "down right up left down"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0002",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0003",
+      "output_text": "{\"answer\": \"down right up left\"}",
+      "output_parsed": {
+        "answer": "down right up left"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0004",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0005",
+      "output_text": "{\n  \"answer\": \"down right up left down\"\n}",
+      "output_parsed": {
+        "answer": "down right up left down"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0006",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0007",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0008",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0009",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0010",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0011",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0012",
+      "output_text": "{\n  \"answer\": \"down left up right down\"\n}",
+      "output_parsed": {
+        "answer": "down left up right down"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0013",
+      "output_text": "{\"answer\": \"down left up\"}",
+      "output_parsed": {
+        "answer": "down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0014",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0015",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0016",
+      "output_text": "{\n    \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0017",
+      "output_text": "{\n  \"answer\": \"down right up left\"\n}",
+      "output_parsed": {
+        "answer": "down right up left"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0018",
+      "output_text": "{\n    \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0019",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0020",
+      "output_text": "{\"answer\": \"up left up left\"}",
+      "output_parsed": {
+        "answer": "up left up left"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0021",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0022",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0023",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0024",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0025",
+      "output_text": "{\"answer\": \"down right up left\"}",
+      "output_parsed": {
+        "answer": "down right up left"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0026",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0027",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0028",
+      "output_text": "{\n  \"answer\": \"up right down left up\"\n}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0029",
+      "output_text": "{\"answer\": \"up right down left up\"}",
+      "output_parsed": {
+        "answer": "up right down left up"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_03/puzzle_0030",
+      "output_text": "{\n    \"answer\": \"up left down right\"\n}",
+      "output_parsed": {
+        "answer": "up left down right"
+      },
+      "generated_images": [],
+      "error": null
+    }
+  ]
+}

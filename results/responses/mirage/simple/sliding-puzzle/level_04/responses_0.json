@@ -1,0 +1,257 @@
+{
+  "task": "sliding-puzzle",
+  "model": "checkpoint-15000",
+  "model_path": "/fast/jzeller/mirage/checkpoints/sliding-puzzle/model_stage2/checkpoint-15000/",
+  "data_file": "data/sliding_puzzle/test.jsonl",
+  "num_samples": 30,
+  "num_errors": 0,
+  "timestamp": "2025-12-16T15:20:36.092543",
+  "generation_config": {
+    "max_new_tokens": 1024,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0001",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0002",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0003",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0004",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0005",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0006",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0007",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0008",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0009",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0010",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0011",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0012",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0013",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0014",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0015",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0016",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0017",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0018",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0019",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0020",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0021",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0022",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0023",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0024",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0025",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0026",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, UP, RIGHT, DOWN}",
+      "output_parsed": {
+        "answer": "left up right down",
+        "answer_raw": "LEFT, UP, RIGHT, DOWN"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0027",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0028",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "left down right",
+        "answer_raw": "LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0029",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/sliding-puzzle/output/level_04/puzzle_0030",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{UP, LEFT, DOWN, RIGHT}",
+      "output_parsed": {
+        "answer": "up left down right",
+        "answer_raw": "UP, LEFT, DOWN, RIGHT"
+      }
+    }
+  ]
+}

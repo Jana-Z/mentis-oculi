@@ -1,0 +1,257 @@
+{
+  "task": "rushhour",
+  "model": "model_stage2",
+  "model_path": "/fast/jzeller/mirage/checkpoints/rushhour/model_stage2",
+  "data_file": "./data/rushhour/test.jsonl",
+  "num_samples": 30,
+  "num_errors": 0,
+  "timestamp": "2026-01-13T12:03:44.668542",
+  "generation_config": {
+    "max_new_tokens": 1024,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.9
+  },
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0001",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{C backward, A forward, E forward, D forward, R backward}",
+      "output_parsed": {
+        "answer": "C backward, A forward, E forward, D forward, R backward",
+        "answer_raw": "C backward, A forward, E forward, D forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0002",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{D backward, F backward, E backward, R forward}",
+      "output_parsed": {
+        "answer": "D backward, F backward, E backward, R forward",
+        "answer_raw": "D backward, F backward, E backward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0003",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{C backward, E backward, F backward, B backward, R forward}",
+      "output_parsed": {
+        "answer": "C backward, E backward, F backward, B backward, R forward",
+        "answer_raw": "C backward, E backward, F backward, B backward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0004",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E forward, C backward, D forward, R forward}",
+      "output_parsed": {
+        "answer": "E forward, C backward, D forward, R forward",
+        "answer_raw": "E forward, C backward, D forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0005",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{B backward, A forward, E forward, D forward, R backward}",
+      "output_parsed": {
+        "answer": "B backward, A forward, E forward, D forward, R backward",
+        "answer_raw": "B backward, A forward, E forward, D forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0006",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{B backward, A forward, C forward, R forward}",
+      "output_parsed": {
+        "answer": "B backward, A forward, C forward, R forward",
+        "answer_raw": "B backward, A forward, C forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0007",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E backward, A backward, F forward, C forward, R forward}",
+      "output_parsed": {
+        "answer": "E backward, A backward, F forward, C forward, R forward",
+        "answer_raw": "E backward, A backward, F forward, C forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0008",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{D backward, C backward, F forward, E forward, R forward}",
+      "output_parsed": {
+        "answer": "D backward, C backward, F forward, E forward, R forward",
+        "answer_raw": "D backward, C backward, F forward, E forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0009",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{A forward, B forward, R backward}",
+      "output_parsed": {
+        "answer": "A forward, B forward, R backward",
+        "answer_raw": "A forward, B forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0010",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{F forward, C forward, B forward, D backward, R backward}",
+      "output_parsed": {
+        "answer": "F forward, C forward, B forward, D backward, R backward",
+        "answer_raw": "F forward, C forward, B forward, D backward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0011",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{A forward, D backward, E backward, R backward}",
+      "output_parsed": {
+        "answer": "A forward, D backward, E backward, R backward",
+        "answer_raw": "A forward, D backward, E backward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0012",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{A backward, D forward, E backward, B backward, R forward}",
+      "output_parsed": {
+        "answer": "A backward, D forward, E backward, B backward, R forward",
+        "answer_raw": "A backward, D forward, E backward, B backward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0013",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E backward, A forward, C forward, R forward}",
+      "output_parsed": {
+        "answer": "E backward, A forward, C forward, R forward",
+        "answer_raw": "E backward, A forward, C forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0014",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{D forward, B forward, A forward, R backward}",
+      "output_parsed": {
+        "answer": "D forward, B forward, A forward, R backward",
+        "answer_raw": "D forward, B forward, A forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0015",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{A forward, C forward, E forward, R backward}",
+      "output_parsed": {
+        "answer": "A forward, C forward, E forward, R backward",
+        "answer_raw": "A forward, C forward, E forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0016",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{F backward, B forward, E forward, C forward, R forward}",
+      "output_parsed": {
+        "answer": "F backward, B forward, E forward, C forward, R forward",
+        "answer_raw": "F backward, B forward, E forward, C forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0017",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E forward, D backward, R forward}",
+      "output_parsed": {
+        "answer": "E forward, D backward, R forward",
+        "answer_raw": "E forward, D backward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0018",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E forward, B backward, R forward}",
+      "output_parsed": {
+        "answer": "E forward, B backward, R forward",
+        "answer_raw": "E forward, B backward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0019",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{C backward, D forward, E forward, R backward}",
+      "output_parsed": {
+        "answer": "C backward, D forward, E forward, R backward",
+        "answer_raw": "C backward, D forward, E forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0020",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{A backward, B forward, E forward, R backward}",
+      "output_parsed": {
+        "answer": "A backward, B forward, E forward, R backward",
+        "answer_raw": "A backward, B forward, E forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0021",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{F backward, D forward, A forward, R forward}",
+      "output_parsed": {
+        "answer": "F backward, D forward, A forward, R forward",
+        "answer_raw": "F backward, D forward, A forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0022",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{F backward, B forward, A forward, R forward}",
+      "output_parsed": {
+        "answer": "F backward, B forward, A forward, R forward",
+        "answer_raw": "F backward, B forward, A forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0023",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E backward, A forward, D backward, C backward, R forward}",
+      "output_parsed": {
+        "answer": "E backward, A forward, D backward, C backward, R forward",
+        "answer_raw": "E backward, A forward, D backward, C backward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0024",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{B forward, D forward, C forward, R forward}",
+      "output_parsed": {
+        "answer": "B forward, D forward, C forward, R forward",
+        "answer_raw": "B forward, D forward, C forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0025",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E backward, A forward, B backward, F forward, R backward}",
+      "output_parsed": {
+        "answer": "E backward, A forward, B backward, F forward, R backward",
+        "answer_raw": "E backward, A forward, B backward, F forward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0026",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{F backward, A backward, C backward, B backward, R backward}",
+      "output_parsed": {
+        "answer": "F backward, A backward, C backward, B backward, R backward",
+        "answer_raw": "F backward, A backward, C backward, B backward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0027",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E backward, A backward, C backward, F backward, R backward}",
+      "output_parsed": {
+        "answer": "E backward, A backward, C backward, F backward, R backward",
+        "answer_raw": "E backward, A backward, C backward, F backward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0028",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{D forward, B forward, E forward, R forward}",
+      "output_parsed": {
+        "answer": "D forward, B forward, E forward, R forward",
+        "answer_raw": "D forward, B forward, E forward, R forward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0029",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{E backward, A backward, B forward, C backward, R backward}",
+      "output_parsed": {
+        "answer": "E backward, A backward, B forward, C backward, R backward",
+        "answer_raw": "E backward, A backward, B forward, C backward, R backward"
+      }
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_05/puzzle_0030",
+      "output_text": "<|latent_start|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_pad|><|latent_end|>\\boxed{F backward, E backward, B backward, R forward}",
+      "output_parsed": {
+        "answer": "F backward, E backward, B backward, R forward",
+        "answer_raw": "F backward, E backward, B backward, R forward"
+      }
+    }
+  ]
+}

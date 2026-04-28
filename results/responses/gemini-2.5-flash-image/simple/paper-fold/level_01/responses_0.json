@@ -1,0 +1,248 @@
+{
+  "task": "paper-fold",
+  "model": "gemini-2.5-flash-image",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0001",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0002",
+      "output_text": "```json\n{\"answer\": \"C\"}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0003",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0004",
+      "output_text": "```json\n{\"answer\": \"C\"}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0005",
+      "output_text": "```json\n{\n\"answer\": \"B\"\n}\n```",
+      "output_parsed": {
+        "answer": "B"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0006",
+      "output_text": "```json\n{\n\"answer\": \"B\"\n}\n```",
+      "output_parsed": {
+        "answer": "B"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0007",
+      "output_text": "{\"answer\": \"A\"}",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0008",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0009",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0010",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0011",
+      "output_text": "```json\n{\"answer\": \"C\"}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0012",
+      "output_text": "{\"answer\": \"A\"}",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0013",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0014",
+      "output_text": "```json\n{\n\"answer\": \"A\"\n}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0015",
+      "output_text": "```json\n{\n\"answer\": \"C\"\n}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0016",
+      "output_text": "```json\n{\n\"answer\": \"C\"\n}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0017",
+      "output_text": "```json\n{\"answer\": \"C\"}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0018",
+      "output_text": "```json\n{\"answer\": \"C\"}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0019",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0020",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0021",
+      "output_text": "{\"answer\": \"A\"}",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0022",
+      "output_text": "```json\n{\n\"answer\": \"C\"\n}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0023",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0024",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0025",
+      "output_text": "{\"answer\": \"D\"}",
+      "output_parsed": {
+        "answer": "D"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0026",
+      "output_text": "{\"answer\": \"A\"}",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0027",
+      "output_text": "```json\n{\"answer\": \"A\"}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0028",
+      "output_text": "```json\n{\n\"answer\": \"C\"\n}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0029",
+      "output_text": "```json\n{\"answer\": \"C\"}\n```",
+      "output_parsed": {
+        "answer": "C"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/paper-fold/output/level_01/puzzle_0030",
+      "output_text": "```json\n{\n\"answer\": \"A\"\n}\n```",
+      "output_parsed": {
+        "answer": "A"
+      },
+      "error": null
+    }
+  ]
+}

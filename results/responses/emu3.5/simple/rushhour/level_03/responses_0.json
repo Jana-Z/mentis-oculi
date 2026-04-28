@@ -1,0 +1,278 @@
+{
+  "task": "rushhour",
+  "model": "emu3.5",
+  "num_samples": 30,
+  "num_errors": 0,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0001",
+      "output_text": "```json\n{\"answer\": \"A forward, B backward, E forward, R forward\"}\n```",
+      "output_parsed": {
+        "answer": "A forward, B backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0002",
+      "output_text": "{\n  \"answer\": \"E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0003",
+      "output_text": "{\n    \"answer\": \"R forward, E forward\"\n}",
+      "output_parsed": {
+        "answer": "R forward, E forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0004",
+      "output_text": "{\n  \"answer\": \"A forward, C backward, E forward\"\n}",
+      "output_parsed": {
+        "answer": "A forward, C backward, E forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0005",
+      "output_text": "{\n  \"answer\": \"R forward\"\n}",
+      "output_parsed": {
+        "answer": "R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0006",
+      "output_text": "{\n  \"answer\": \"A backward, C forward, E forward\"\n}",
+      "output_parsed": {
+        "answer": "A backward, C forward, E forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0007",
+      "output_text": "{\"answer\": \"C backward, B forward, E forward, R forward\"}",
+      "output_parsed": {
+        "answer": "C backward, B forward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0008",
+      "output_text": "{\n  \"answer\": \"C backward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "C backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0009",
+      "output_text": "{\"answer\": \"A forward, E backward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, E backward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0010",
+      "output_text": "{\"answer\": \"A forward, C backward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, C backward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0011",
+      "output_text": "{\n    \"answer\": \"B forward, D backward, F forward, C backward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "B forward, D backward, F forward, C backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0012",
+      "output_text": "```json\n{\n  \"answer\": \"A forward, C backward, E forward\"\n}\n```",
+      "output_parsed": {
+        "answer": "A forward, C backward, E forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0013",
+      "output_text": "{\n  \"answer\": \"A backward, B backward, D forward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "A backward, B backward, D forward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0014",
+      "output_text": "{\n  \"answer\": \"C backward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "C backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0015",
+      "output_text": "{\n  \"answer\": \"A forward, B backward, C forward, D forward, E backward, F forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "A forward, B backward, C forward, D forward, E backward, F forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0016",
+      "output_text": "{\n  \"answer\": \"A forward, C backward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "A forward, C backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0017",
+      "output_text": "{\n  \"answer\": \"C backward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "C backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0018",
+      "output_text": "{\n    \"answer\": \"A backward, C forward, B forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "A backward, C forward, B forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0019",
+      "output_text": "{\"answer\": \"A forward, C backward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, C backward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0020",
+      "output_text": "{\"answer\": \"A forward, C backward, E forward, R forward\"}",
+      "output_parsed": {
+        "answer": "A forward, C backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0021",
+      "output_text": "To solve this problem, we need to carefully maneuver the vehicles to create a clear path for the red vehicle (R) to exit the parking lot. Here is the step-by-step sequence of moves:\n\n1. **Move the yellow vehicle (B) backward.**\n2. **Move the blue vehicle (A) backward.**\n3. **Move the purple vehicle (E) forward.**\n4. **Move the red vehicle (R) forward.**\n\nThis sequence allows each vehicle to clear the way for the red vehicle to reach the exit. Here is the JSON format for the answer:\n\n```json\n{\n  \"answer\": \"B backward, A backward, E forward, R forward\"\n}\n```\n\nEach pair specifies the vehicle label and the direction of its move, ensuring the red car can exit the parking lot.To solve this problem, we need to carefully maneuver the vehicles to create a clear path for the red vehicle (R) to exit the parking lot. Here is the step-by-step sequence of moves:\n\n1. **Move the yellow vehicle (B) backward.**\n2. **Move the blue vehicle (A) backward.**\n3. **Move the purple vehicle (E) forward.**\n4. **Move the red vehicle (R) forward.**\n\nThis sequence allows each vehicle to clear the way for the red vehicle to reach the exit. Here is the JSON format for the answer:\n\n```json\n{\n  \"answer\": \"B backward, A backward, E forward, R forward\"\n}\n```",
+      "output_parsed": {
+        "answer": "B backward, A backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0022",
+      "output_text": "{\n  \"answer\": \"C backward, A forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "C backward, A forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0023",
+      "output_text": "{\n  \"answer\": \"B backward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "B backward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0024",
+      "output_text": "{\n  \"answer\": \"A backward, C forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "A backward, C forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0025",
+      "output_text": "{\n  \"answer\": \"A forward, C forward, B forward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "A forward, C forward, B forward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0026",
+      "output_text": "```json\n{\n  \"answer\": \"A backward, E backward, R forward, D forward\"\n}\n```",
+      "output_parsed": {
+        "answer": "A backward, E backward, R forward, D forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0027",
+      "output_text": "```json\n{\n  \"answer\": \"R forward, E backward, C backward, A forward, B forward, R forward\"\n}\n```",
+      "output_parsed": {
+        "answer": "R forward, E backward, C backward, A forward, B forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0028",
+      "output_text": "{\n  \"answer\": \"A backward, C forward, E forward, R forward\"\n}",
+      "output_parsed": {
+        "answer": "A backward, C forward, E forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0029",
+      "output_text": "{\"answer\": \"A backward, D forward, R forward\"}",
+      "output_parsed": {
+        "answer": "A backward, D forward, R forward"
+      },
+      "generated_images": [],
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/rushhour/output/level_03/puzzle_0030",
+      "output_text": "{\n  \"answer\": \"A forward, C backward, E forward\"\n}",
+      "output_parsed": {
+        "answer": "A forward, C backward, E forward"
+      },
+      "generated_images": [],
+      "error": null
+    }
+  ]
+}

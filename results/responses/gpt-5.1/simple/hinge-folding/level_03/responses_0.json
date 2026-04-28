@@ -1,0 +1,243 @@
+{
+  "task": "hinge-folding",
+  "model": "gpt-5.1",
+  "num_samples": 30,
+  "num_errors": 3,
+  "responses": [
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0001",
+      "output_text": "{\"answer\": \"A 270, B 90, C 90\"}",
+      "output_parsed": {
+        "answer": "A 270, B 90, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0002",
+      "output_text": "{\"answer\": \"A 90, B 270, C 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0003",
+      "output_text": "{\"answer\": \"A 90, B 90, C 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0004",
+      "output_text": "{\"answer\": \"A 90, B 270, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0005",
+      "output_text": "{\"answer\": \"\", \"note\": \"I\u2019m unable to reliably determine the hinge rotation angles from the given image. The target shape\u2019s exact geometry (relative to the initial configuration) is not clear enough for me to infer a unique folding sequence of 90\u00b0-multiples for hinges A, B, and C.\"}",
+      "output_parsed": {
+        "answer": "",
+        "note": "I\u2019m unable to reliably determine the hinge rotation angles from the given image. The target shape\u2019s exact geometry (relative to the initial configuration) is not clear enough for me to infer a unique folding sequence of 90\u00b0-multiples for hinges A, B, and C."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0006",
+      "output_text": "{\"answer\": \"A 270, B 90, C 180\"}",
+      "output_parsed": {
+        "answer": "A 270, B 90, C 180"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0007",
+      "output_text": "{\"answer\": \"A 270, B 90, C 270\"}",
+      "output_parsed": {
+        "answer": "A 270, B 90, C 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0008",
+      "output_text": "I\u2019m not able to reliably determine the exact sequence of hinge rotations from the provided image alone without effectively guessing, so I can\u2019t give a trustworthy set of angles for hinges A, B, and C.\n\n```json\n{\"answer\": \"unknown\"}\n```",
+      "output_parsed": {
+        "answer": "unknown"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0009",
+      "output_text": "{\"answer\": \"I\u2019m not able to determine a reliable set of hinge rotations (angles for A, B, and C) from this image alone without additional geometric information, so any specific angles I gave would just be a guess.\"}",
+      "output_parsed": {
+        "answer": "I\u2019m not able to determine a reliable set of hinge rotations (angles for A, B, and C) from this image alone without additional geometric information, so any specific angles I gave would just be a guess."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0010",
+      "output_text": "{\"answer\": \"A 90, B 270, C 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0011",
+      "output_text": "{\"answer\": \"A 90, B 270, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0012",
+      "output_text": "{\"answer\": \"A 90, B 90, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0013",
+      "output_text": "{\"answer\": \"A 0, B 0, C 90\"}",
+      "output_parsed": {
+        "answer": "A 0, B 0, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0014",
+      "output_text": "{\"answer\": \"A 90, B 90, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0015",
+      "output_text": "{\"answer\": \"A 90, B 270, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0016",
+      "output_text": "{\"answer\": \"Approximate solution: A 270, B 90, C 270\"}",
+      "output_parsed": {
+        "answer": "Approximate solution: A 270, B 90, C 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0017",
+      "output_text": "{\"answer\": \"I'm not certain from the image alone, but a plausible sequence is: A 90, B 90, C 270.\"}",
+      "output_parsed": {
+        "answer": "I'm not certain from the image alone, but a plausible sequence is: A 90, B 90, C 270."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0018",
+      "output_text": "{\"answer\": \"A 90, B 270, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0019",
+      "output_text": "{\"answer\": \"A 90, B 90, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 90, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0020",
+      "output_text": "{\"answer\": \"I\u2019m not able to determine the hinge rotations from the provided image with enough certainty to give specific angles.\"}",
+      "output_parsed": {
+        "answer": "I\u2019m not able to determine the hinge rotations from the provided image with enough certainty to give specific angles."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0021",
+      "output_text": "{\"answer\": \"Unable to determine uniquely from the given information.\"}",
+      "output_parsed": {
+        "answer": "Unable to determine uniquely from the given information."
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0022",
+      "output_text": "{\"answer\": \"A 90, B 270, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0023",
+      "output_text": "{\"answer\": \"A 270, B 90, C 90\"}",
+      "output_parsed": {
+        "answer": "A 270, B 90, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0024",
+      "output_text": "{\"answer\": \"A 90, B 270, C 90\"}",
+      "output_parsed": {
+        "answer": "A 90, B 270, C 90"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0025",
+      "output_text": "{\"answer\": \"A 90, B 0, C 270\"}",
+      "output_parsed": {
+        "answer": "A 90, B 0, C 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0026",
+      "output_text": null,
+      "output_parsed": null,
+      "error": "Request timed out."
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0027",
+      "output_text": "{\"answer\": \"A 270, B 270, C 270\"}",
+      "output_parsed": {
+        "answer": "A 270, B 270, C 270"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0028",
+      "output_text": "{\"answer\": \"insufficient information from the provided image to determine unique hinge rotations\"}",
+      "output_parsed": {
+        "answer": "insufficient information from the provided image to determine unique hinge rotations"
+      },
+      "error": null
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0029",
+      "output_text": null,
+      "output_parsed": null,
+      "error": "Request timed out."
+    },
+    {
+      "puzzle_dir": "../../../../../../datasets/hinge-folding/output/level_03/puzzle_0030",
+      "output_text": null,
+      "output_parsed": null,
+      "error": "Request timed out."
+    }
+  ]
+}
