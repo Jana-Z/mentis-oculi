@@ -407,7 +407,6 @@ def find_and_read_text_file(puzzle_dir: Path, filename_pattern: str) -> str:
 
 def save_responses(responses, output_path, task, model, dataset_path, meta_data: dict = None, num_runs: int = 1):
     """Save responses to JSON file (used for intermediate caching)"""
-    # Count unique puzzles (for pass@k, num_samples is total responses / num_runs)
     unique_puzzles = len(set(r.get("puzzle_id") for r in responses if r.get("puzzle_id")))
     
     output_data = {
@@ -479,7 +478,6 @@ def normalize_answer(answer: Any, task_name: str) -> Any:
     Returns:
         Normalized answer
     """
-    # TODO: Implement task-specific normalization
     if isinstance(answer, str):
         return answer.strip().upper()
     return answer
@@ -497,7 +495,6 @@ def compare_answers(predicted: Any, ground_truth: Any, task_name: str) -> bool:
     Returns:
         True if answers match
     """
-    # TODO: Implement task-specific comparison logic
     pred_norm = normalize_answer(predicted, task_name)
     gt_norm = normalize_answer(ground_truth, task_name)
     
@@ -517,10 +514,7 @@ def get_image_paths_for_task(sample: Dict[str, Any], task_name: str) -> List[Pat
     """
     puzzle_dir = Path(sample['puzzle_dir'])
     images = []
-    
-    # TODO: Implement task-specific image selection
-    # This is a placeholder
-    
+
     if task_name == "form-board":
         # Form board needs silhouette and combined
         if 'silhouette_image' in sample:

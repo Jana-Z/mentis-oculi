@@ -10,8 +10,6 @@ from typing import Dict, List, Optional
 
 from tqdm import tqdm
 
-# Add parent directory to path for imports when run directly
-
 from utils import (
     encode_image_base64,
     load_prompt,

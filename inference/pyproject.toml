@@ -1,0 +1,10 @@
+[project]
+name = "mentis-oculi-inference"
+version = "0.1.0"
+description = "Inference scripts for the MentisOculi benchmark"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=1.0.0",
+    "openai>=1.0.0",
+    "tqdm>=4.66.0",
+]

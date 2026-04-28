@@ -1,28 +1,20 @@
 #!/usr/bin/env python3
 """
-Wrapper CLI for querying either OpenAI or Google models based on the model name.
+Wrapper CLI for querying OpenAI, Google Gemini/Veo, or OpenRouter models against the benchmark.
 
-If the model name starts with ``gpt`` the request is forwarded to
-``query_openai_model.run``. If it starts with ``gemini`` or ``veo`` it is forwarded to
-``query_google_model.run``.
+The model name prefix determines the provider:
+- gpt-*      → query_openai_model.py
+- gemini-* / veo-* → query_google_model.py
+- everything else  → query_openrouter.py
 
-Supports both:
-- Legacy difficulty bins (easy/medium/hard)
-- New level-based structure (level_01, level_02, ..., level_05)
-
-For pass@k evaluation, use --num-runs to query each instance multiple times.
-Results are saved as responses_0.json, responses_1.json, etc. in the same folder.
-
-If responses_0.json already exists, indexing starts from the next available index.
-This allows incremental pass@k evaluation (e.g., if you have 1 run and want 10,
-you only need to query 9 additional times).
+Results are saved as responses_0.json in the output directory.
+If the file already exists and contains errors, failed samples are re-queried automatically.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-import re
 from pathlib import Path
 from typing import Optional, List, Tuple
 
@@ -114,26 +106,11 @@ def check_response_file_errors(
 def discover_levels(dataset_path: Path) -> List[Path]:
     """
     Discover level directories in a dataset.
-    Returns sorted list of level_XX directories, or empty if using legacy structure.
+    Returns sorted list of level_XX directories found under dataset_path.
     """
     level_dirs = sorted(dataset_path.glob("level_*"))
     return level_dirs
 
-
-def discover_existing_responses(output_dir: Path) -> List[int]:
-    """
-    Discover existing response files (responses_0.json, responses_1.json, etc.)
-    Returns sorted list of existing indices.
-    """
-    pattern = re.compile(r"responses_(\d+)\.json$")
-    indices = []
-    if output_dir.exists():
-        for f in output_dir.iterdir():
-            if f.is_file():
-                match = pattern.match(f.name)
-                if match:
-                    indices.append(int(match.group(1)))
-    return sorted(indices)
 
 
 def main(argv: Optional[list[str]] = None) -> None:
@@ -205,19 +182,6 @@ def main(argv: Optional[list[str]] = None) -> None:
         help="Explicit Gemini API key (overrides --api-key when querying Gemini models).",
     )
     parser.add_argument(
-        "--num-runs",
-        type=int,
-        default=1,
-        help="Number of times to query each instance (for pass@k evaluation). Default: 1.",
-    )
-    parser.add_argument(
-        "--run-index",
-        type=int,
-        default=None,
-        help="Specific run index to execute (0-based). If set, only this single run is executed. "
-             "Useful for parallel execution. Overrides --num-runs behavior.",
-    )
-    parser.add_argument(
         "--reasoning-effort",
         type=str,
         default="high",
@@ -262,8 +226,6 @@ def main(argv: Optional[list[str]] = None) -> None:
     cache_interval = args.cache_interval
     prompt_file = args.prompt_file if args.prompt_file.endswith(".txt") else args.prompt_file + ".txt"
 
-    num_runs = args.num_runs
-    run_index = args.run_index  # Specific run index for parallel execution
     reasoning_effort = args.reasoning_effort
     tool_use = args.tool_use
     max_no_image_attempts = args.max_no_image_attempts
@@ -366,258 +328,82 @@ def main(argv: Optional[list[str]] = None) -> None:
         # Query each level
         for level_dir in level_dirs:
             level_num = int(level_dir.name.split("_")[1])
-            
-            # Create level subfolder: output/task/level_XX/responses.json
+
             level_output_dir = output.parent / f"level_{level_num:02d}"
             level_output_dir.mkdir(parents=True, exist_ok=True)
-            
-            # Use samples_per_level if specified, otherwise num_samples
+            level_output = level_output_dir / "responses_0.json"
+
             effective_samples = samples_per_level if samples_per_level else num_samples
-            
-            # If --run-index is specified, only execute that specific run
-            if run_index is not None:
-                level_output = level_output_dir / f"responses_{run_index}.json"
-                
-                # Check if this specific run has errors that need requerying
-                has_errors, num_errors = check_response_file_errors(
-                    level_output,
-                    effective_samples,
-                    require_images=require_images,
-                )
-                
-                if level_output.exists() and not has_errors:
-                    print(f"\n✅ Level {level_num}, Run index {run_index}: Already complete with no errors. Skipping.")
-                    continue  # Move to next level
-                
-                if has_errors:
-                    print(f"\n🔄 Level {level_num}, Run index {run_index}: Found {num_errors} errors. Requerying failed samples...")
-                else:
-                    print(f"\n{'='*60}")
-                    print(f"Querying Level {level_num}, Run index {run_index} (parallel mode)")
-                
-                print(f"Output: {level_output}")
-                print(f"{'='*60}")
-                
-                run_fn(
-                    task=task,
-                    dataset=level_dir,
-                    model=model,
-                    output=level_output,
-                    api_key=api_key,
-                    num_samples=effective_samples,
-                    cache_interval=cache_interval,
-                    prompt_file=prompt_file,
-                    reasoning_effort=reasoning_effort,
-                    tool_use=tool_use,
-                    max_no_image_attempts=max_no_image_attempts,
-                )
-                continue  # Move to next level
-            
-            # Default behavior: check existing and fill in missing runs
-            existing_indices = discover_existing_responses(level_output_dir)
-            if existing_indices:
-                start_idx = max(existing_indices) + 1
-                existing_count = len(existing_indices)
-                print(f"\n📁 Found {existing_count} existing response file(s) in {level_output_dir.name}")
-                print(f"   Existing indices: {existing_indices}")
-                print(f"   Will start from index {start_idx}")
-            else:
-                start_idx = 0
-                existing_count = 0
-            
-            # Check existing files for errors that need requerying
-            files_with_errors = []
-            for idx in existing_indices:
-                response_file = level_output_dir / f"responses_{idx}.json"
-                has_errors, num_errors = check_response_file_errors(
-                    response_file,
-                    effective_samples,
-                    require_images=require_images,
-                )
-                if has_errors:
-                    files_with_errors.append((idx, num_errors, response_file))
-            
-            # Requery files with errors first
-            if files_with_errors:
-                print(f"   ⚠️  Found {len(files_with_errors)} file(s) with errors:")
-                for idx, num_errors, response_file in files_with_errors:
-                    print(f"      - responses_{idx}.json: {num_errors} errors")
-                
-                for idx, num_errors, response_file in files_with_errors:
-                    print(f"\n🔄 Level {level_num}: Requerying {num_errors} failed samples in responses_{idx}.json...")
-                    print(f"Output: {response_file}")
-                    print(f"{'='*60}")
-                    
-                    run_fn(
-                        task=task,
-                        dataset=level_dir,
-                        model=model,
-                        output=response_file,
-                        api_key=api_key,
-                        num_samples=effective_samples,
-                        cache_interval=cache_interval,
-                        prompt_file=prompt_file,
-                        reasoning_effort=reasoning_effort,
-                        tool_use=tool_use,
-                        max_no_image_attempts=max_no_image_attempts,
-                    )
-            
-            # Calculate how many more runs we need
-            # num_runs is the TOTAL desired runs (including existing)
-            runs_needed = max(0, num_runs - existing_count)
-            
-            if runs_needed == 0:
-                if not files_with_errors:
-                    print(f"\n✅ Level {level_num}: Already have {existing_count} runs (>= {num_runs} requested) with no errors. Skipping.")
-                continue
-            
-            print(f"   Requesting {runs_needed} additional run(s) to reach {num_runs} total")
-            
-            # Run queries (starting from start_idx)
-            for i in range(runs_needed):
-                run_idx = start_idx + i
-                total_after_this = existing_count + i + 1
-                
-                level_output = level_output_dir / f"responses_{run_idx}.json"
-                print(f"\n{'='*60}")
-                print(f"Querying Level {level_num}, Run {total_after_this}/{num_runs} (index {run_idx})")
-                print(f"Output: {level_output}")
-                print(f"{'='*60}")
-                
-                run_fn(
-                    task=task,
-                    dataset=level_dir,
-                    model=model,
-                    output=level_output,
-                    api_key=api_key,
-                    num_samples=effective_samples,
-                    cache_interval=cache_interval,
-                    prompt_file=prompt_file,
-                    reasoning_effort=reasoning_effort,
-                    max_no_image_attempts=max_no_image_attempts,
-                )
-    else:
-        # Legacy structure (easy/medium/hard or flat)
-        print("Using legacy dataset structure")
-        
-        # If --run-index is specified, only execute that specific run
-        if run_index is not None:
-            run_output = output.parent / f"{output.stem}_{run_index}.json"
-            
-            # Check if this specific run has errors that need requerying
+
             has_errors, num_errors = check_response_file_errors(
-                run_output,
-                num_samples,
+                level_output,
+                effective_samples,
                 require_images=require_images,
             )
-            
-            if run_output.exists() and not has_errors:
-                print(f"\n✅ Run index {run_index}: Already complete with no errors. Skipping.")
+
+            if level_output.exists() and not has_errors:
+                print(f"\n✅ Level {level_num}: Already complete with no errors. Skipping.")
+                continue
+
+            if has_errors:
+                print(f"\n🔄 Level {level_num}: Found {num_errors} errors. Requerying failed samples...")
             else:
-                if has_errors:
-                    print(f"\n🔄 Run index {run_index}: Found {num_errors} errors. Requerying failed samples...")
-                else:
-                    print(f"\n{'='*60}")
-                    print(f"Run index {run_index} (parallel mode)")
-                
-                print(f"Output: {run_output}")
-                print(f"{'='*60}")
-                
-                run_fn(
-                    task=task,
-                    dataset=dataset,
-                    model=model,
-                    output=run_output,
-                    api_key=api_key,
-                    num_samples=num_samples,
-                    cache_interval=cache_interval,
-                    prompt_file=prompt_file,
-                    reasoning_effort=reasoning_effort,
-                    tool_use=tool_use,
-                    max_no_image_attempts=max_no_image_attempts,
-                )
+                print(f"\n{'='*60}")
+                print(f"Querying Level {level_num}")
+
+            print(f"Output: {level_output}")
+            print(f"{'='*60}")
+
+            run_fn(
+                task=task,
+                dataset=level_dir,
+                model=model,
+                output=level_output,
+                api_key=api_key,
+                num_samples=effective_samples,
+                cache_interval=cache_interval,
+                prompt_file=prompt_file,
+                reasoning_effort=reasoning_effort,
+                tool_use=tool_use,
+                max_no_image_attempts=max_no_image_attempts,
+            )
+    else:
+        # Flat dataset structure (no level subdirectories)
+        print("Using flat dataset structure")
+
+        run_output = output.parent / "responses_0.json"
+
+        has_errors, num_errors = check_response_file_errors(
+            run_output,
+            num_samples,
+            require_images=require_images,
+        )
+
+        if run_output.exists() and not has_errors:
+            print(f"\n✅ Already complete with no errors. Skipping.")
         else:
-            # Default behavior: check existing and fill in missing runs
-            existing_indices = discover_existing_responses(output.parent)
-            if existing_indices:
-                start_idx = max(existing_indices) + 1
-                existing_count = len(existing_indices)
-                print(f"\n📁 Found {existing_count} existing response file(s)")
-                print(f"   Existing indices: {existing_indices}")
-                print(f"   Will start from index {start_idx}")
+            if has_errors:
+                print(f"\n🔄 Found {num_errors} errors. Requerying failed samples...")
             else:
-                start_idx = 0
-                existing_count = 0
-            
-            # Check existing files for errors that need requerying
-            files_with_errors = []
-            for idx in existing_indices:
-                response_file = output.parent / f"{output.stem}_{idx}.json"
-                has_errors, num_errors = check_response_file_errors(
-                    response_file,
-                    num_samples,
-                    require_images=require_images,
-                )
-                if has_errors:
-                    files_with_errors.append((idx, num_errors, response_file))
-            
-            # Requery files with errors first
-            if files_with_errors:
-                print(f"   ⚠️  Found {len(files_with_errors)} file(s) with errors:")
-                for idx, num_errors, response_file in files_with_errors:
-                    print(f"      - {response_file.name}: {num_errors} errors")
-                
-                for idx, num_errors, response_file in files_with_errors:
-                    print(f"\n🔄 Requerying {num_errors} failed samples in {response_file.name}...")
-                    print(f"Output: {response_file}")
-                    print(f"{'='*60}")
-                    
-                    run_fn(
-                        task=task,
-                        dataset=dataset,
-                        model=model,
-                        output=response_file,
-                        api_key=api_key,
-                        num_samples=num_samples,
-                        cache_interval=cache_interval,
-                        prompt_file=prompt_file,
-                        reasoning_effort=reasoning_effort,
-                        tool_use=tool_use,
-                        max_no_image_attempts=max_no_image_attempts,
-                    )
-            
-            # Calculate how many more runs we need
-            runs_needed = max(0, num_runs - existing_count)
-            
-            if runs_needed == 0:
-                if not files_with_errors:
-                    print(f"\n✅ Already have {existing_count} runs (>= {num_runs} requested) with no errors. Skipping.")
-            else:
-                print(f"   Requesting {runs_needed} additional run(s) to reach {num_runs} total")
-                
-                for i in range(runs_needed):
-                    run_idx = start_idx + i
-                    total_after_this = existing_count + i + 1
-                    
-                    # For pass@k: responses_0.json, responses_1.json, etc.
-                    run_output = output.parent / f"{output.stem}_{run_idx}.json"
-                    print(f"\n{'='*60}")
-                    print(f"Run {total_after_this}/{num_runs} (index {run_idx})")
-                    print(f"Output: {run_output}")
-                    print(f"{'='*60}")
-                    
-                    run_fn(
-                        task=task,
-                        dataset=dataset,
-                        model=model,
-                        output=run_output,
-                        api_key=api_key,
-                        num_samples=num_samples,
-                        cache_interval=cache_interval,
-                        prompt_file=prompt_file,
-                        reasoning_effort=reasoning_effort,
-                        max_no_image_attempts=max_no_image_attempts,
-                    )
+                print(f"\n{'='*60}")
+                print("Querying dataset")
+
+            print(f"Output: {run_output}")
+            print(f"{'='*60}")
+
+            run_fn(
+                task=task,
+                dataset=dataset,
+                model=model,
+                output=run_output,
+                api_key=api_key,
+                num_samples=num_samples,
+                cache_interval=cache_interval,
+                prompt_file=prompt_file,
+                reasoning_effort=reasoning_effort,
+                tool_use=tool_use,
+                max_no_image_attempts=max_no_image_attempts,
+            )
 
 
 if __name__ == "__main__":
