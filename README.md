@@ -104,8 +104,11 @@ mentis-oculi/
 │   ├── paper-fold/             # Paper Fold puzzle generator
 │   ├── rushhour/               # Rush Hour puzzle generator
 │   ├── sliding-puzzle/         # Sliding Puzzle generator
-│   ├── generate_all_datasets.sh # Generate all datasets
-│   └── README.md               # Dataset documentation
+│   └── generate_all_datasets.sh # Generate all datasets
+├── inference/                   # Scripts for querying models via API
+├── results/                     # Baseline results and raw model responses
+│   ├── results_table.csv       # Per-model × strategy × task × level accuracies
+│   └── responses/              # Raw model outputs for all baselines
 ├── docs/                        # Project website
 └── README.md                    # This file
 ```
@@ -130,7 +133,7 @@ Each dataset can be generated independently:
 
 ```bash
 cd datasets/<task-name>
-uv sync  # or: pip install -r requirements.txt
+uv sync
 uv run main.py --help
 ```
 
@@ -141,15 +144,37 @@ cd datasets
 ./generate_all_datasets.sh
 ```
 
+### Run Inference
+
+Query a model on a task using the inference scripts:
+
+```bash
+cd inference
+uv sync
+python query_model.py \
+  --task rushhour \
+  --dataset ../datasets/rushhour/output \
+  --model gpt-4o \
+  --output ../my_responses/gpt-4o/simple/rushhour \
+  --openai-api-key $OPENAI_API_KEY
+```
+
+See [inference/README.md](inference/README.md) for the full list of arguments and supported models.
+
 ### Evaluate Model Responses
 
 Each dataset includes an evaluation script:
 
 ```bash
-uv run evaluate_responses.py --responses path/to/responses.json
+python datasets/<task>/evaluate_responses.py \
+  --responses my_responses/<model>/<strategy>/<task>/<level>/responses_0.json
 ```
 
 See [datasets/README.md](datasets/README.md) for the expected input format.
+
+## Results
+
+Baseline results for all models and strategies reported in the paper are in [`results/results_table.csv`](results/results_table.csv). Raw model responses are in [`results/responses/`](results/responses/), organised as `responses/<model>/<strategy>/<task>/<level>/responses_0.json`. See [results/README.md](results/README.md) for column descriptions and notes on sample counts.
 
 ## Citation
 
