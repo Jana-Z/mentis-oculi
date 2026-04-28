@@ -60,9 +60,11 @@ The prompt, raw API response, and per-puzzle metadata (available in the dataset 
 
 ### Generated images and videos
 
-For `generate_images` runs, intermediate images are stored alongside the response file under `generated_images/` and referenced via relative paths in the `generated_images` field. These directories are excluded from version control (`.gitignore`) due to their size — they are available upon request.
+For `generate_images` runs, intermediate images are stored alongside the response file under `generated_images/` and referenced via relative paths in the `generated_images` field. These directories are excluded from version control (`.gitignore`) due to their size.
 
-For video models (`veo-3.1-generate-preview`, `wan-2.6`), responses are not included as the generated videos cannot be hosted here. Both are available upon request.
+For video models (`veo-3.1-generate-preview`, `wan-2.6`), responses are not included as the generated videos cannot be hosted here.
+
+To request generated images or videos, please contact jana.zeller@tuebingen.mpg.de.
 
 ## Notes on `n_samples`
 
