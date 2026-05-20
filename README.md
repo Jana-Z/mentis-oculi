@@ -179,6 +179,21 @@ Baseline results for all models and strategies reported in the paper are in [`re
 
 Intermediate images (generate_images strategy) and generated videos (Veo, Wan) are not included in this repository due to their size. To request them, please contact [jana.zeller@tuebingen.mpg.de](mailto:jana.zeller@tuebingen.mpg.de).
 
+
+## License
+
+Unless otherwise noted, the code, scripts, prompts, evaluation tooling, documentation,
+and original non-ImageNet assets in this repository are licensed under the Apache
+License 2.0. See `LICENSE`.
+
+The Sliding Puzzle task can be generated from ImageNet images. ImageNet is not licensed under the Apache License 2.0.
+Users who generate or use Sliding Puzzle instances based on ImageNet are responsible
+for obtaining ImageNet access and complying with the ImageNet terms of access and
+any downstream restrictions.
+
+In particular, ImageNet-derived images and datasets are not covered by this
+repository's Apache-2.0 license.
+
 ## Citation
 
 If you use MentisOculi in your research, please cite our paper:
