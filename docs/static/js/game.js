@@ -333,15 +333,15 @@
         if (o.generated && o.generated.length) {
             const g = document.createElement("div");
             g.className = "score-generated";
-            g.appendChild(el(`<div class="score-mini-label">Images it generated while reasoning</div>`));
+            g.appendChild(el(`<div class="score-mini-label">What EMU&nbsp;3.5 drew as its solution</div>`));
             o.generated.forEach((src) => {
                 const im = document.createElement("img");
-                im.src = src; im.loading = "lazy"; im.alt = "model-generated image";
+                im.src = src; im.loading = "lazy"; im.alt = "EMU 3.5 generated image";
                 g.appendChild(im);
             });
             body.appendChild(g);
         } else if (o.umm_note) {
-            body.appendChild(el(`<p class="score-umm-note">EMU&nbsp;3.5 is a <strong>unified multimodal model</strong> that tries to <em>draw</em> its intermediate steps as images. (Those generations aren’t bundled in this demo.)</p>`));
+            body.appendChild(el(`<p class="score-umm-note">EMU&nbsp;3.5 is a <strong>unified multimodal model</strong> that tries to <em>draw</em> its solution as an image — but for this puzzle it failed to produce one after several attempts.</p>`));
         }
 
         if (o.reasoning) {

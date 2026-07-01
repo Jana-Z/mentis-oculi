@@ -9,7 +9,9 @@ needed images into docs/static/game/puzzles/, and writes game_data.json.
 Run from anywhere:  python3 docs/static/game/build_game_data.py
 """
 import json
+import os
 import shutil
+import subprocess
 from pathlib import Path
 
 # ---------------------------------------------------------------- paths
@@ -29,7 +31,49 @@ MODELS = [
 ]
 
 LEVELS = ["01", "02", "03", "04", "05"]
-CANDIDATE_IDS = range(1, 16)   # puzzles 1..15 have recorded responses (30 per level)
+CANDIDATE_IDS = range(1, 31)   # puzzles 1..30 have recorded model responses per level
+
+# EMU's generate_images run references PNGs relative to each level's response
+# folder. Those files are gitignored / not in the repo, so point EMU_IMAGES_ROOT
+# at wherever they actually live (env var). The resolver also tries the in-repo
+# location in case they've been dropped there.
+EMU_VARIANT_DIR = RESULTS / "emu3.5" / "generate_images" / "sliding-puzzle"
+EMU_IMAGES_ROOT = os.environ.get("EMU_IMAGES_ROOT", "")
+
+
+def resolve_emu_image(level, rel):
+    """Find an EMU-generated image on disk given its JSON-relative path."""
+    bases = [EMU_VARIANT_DIR / f"level_{level}"]
+    if EMU_IMAGES_ROOT:
+        root = Path(EMU_IMAGES_ROOT).expanduser()
+        bases += [
+            root / f"level_{level}",
+            root / "sliding-puzzle" / f"level_{level}",
+            root / "emu3.5" / "generate_images" / "sliding-puzzle" / f"level_{level}",
+            root,
+        ]
+    for b in bases:
+        cand = b / rel
+        if cand.is_file():
+            return cand
+    return None
+
+
+def bundle_emu_image(src, dst_dir, k):
+    """Copy an EMU image into the bundle, downscaled to a small JPEG (they're
+    720px photographic PNGs shown ~96px tall). Falls back to a raw copy."""
+    if shutil.which("sips"):
+        out = dst_dir / f"emu_{k}.jpg"
+        subprocess.run(
+            ["sips", "-Z", "360", "-s", "format", "jpeg", "-s", "formatOptions", "80",
+             str(src), "--out", str(out)],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=False,
+        )
+        if out.is_file():
+            return out.name
+    out = dst_dir / f"emu_{k}{src.suffix.lower()}"
+    shutil.copy(src, out)
+    return out.name
 
 # ---------------------------------------------------------------- helpers
 DELTA = {"up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1)}
@@ -133,7 +177,12 @@ def main():
             if responded < len(MODELS):
                 continue
             all_answered = nonempty == len(MODELS)
-            score = (all_answered, nonempty, wrong, any_right, -i)
+            emu = per_model.get("emu-3.5", {})
+            emu_has_images = 1 if emu.get("generated_images") else 0
+            # Feature the UMM's generated images first (so every level shows one),
+            # then prefer instances where all models answered and the outcome is
+            # interesting (some wrong, at least one right), tie-break lowest id.
+            score = (emu_has_images, all_answered, nonempty, wrong, any_right, -i)
             candidates.append((score, pid, meta, per_model))
 
         if not candidates:
@@ -149,6 +198,19 @@ def main():
             if src.exists():
                 shutil.copy(src, dst / img)
 
+        # Copy EMU's generated images (if we can find them) into the bundle and
+        # rewrite the paths to static/ so the page can display them directly.
+        emu = per_model.get("emu-3.5")
+        if emu:
+            copied = []
+            for k, rel in enumerate(emu.get("generated_images", [])):
+                src = resolve_emu_image(lvl, rel)
+                if src is None:
+                    continue
+                out_name = bundle_emu_image(src, dst, k)
+                copied.append(f"static/game/puzzles/level{lvl}_{pid}/{out_name}")
+            emu["generated_images"] = copied
+
         game["puzzles"].append({
             "id": f"level{lvl}_{pid}",
             "level": int(lvl),
@@ -161,7 +223,8 @@ def main():
             "models": per_model,
         })
         summary = ", ".join(f"{k}={'OK' if v['correct'] else 'X'}" for k, v in per_model.items())
-        print(f"level_{lvl}: chose {pid} ({meta['num_solution_moves']} moves) -> {summary}")
+        n_emu = len((per_model.get("emu-3.5") or {}).get("generated_images", []))
+        print(f"level_{lvl}: chose {pid} ({meta['num_solution_moves']} moves) -> {summary} | emu_imgs={n_emu}")
 
     json.dump(game, open(OUT_JSON, "w"), indent=2)
     # Also emit a JS global so the page works when opened via file:// (where
