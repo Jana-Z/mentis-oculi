@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Can you beat the AI? — MentisOculi Sliding-Puzzle Challenge</title>
+    <meta name="description"
+        content="Solve five sliding-tile puzzles on your phone and see whether you can beat frontier models like Gemini 3 Pro, GPT-5.1 and EMU 3.5 — an interactive demo from the MentisOculi paper.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Can you beat the AI? — MentisOculi Sliding-Puzzle Challenge">
+    <meta property="og:description"
+        content="Solve five sliding-tile puzzles and see whether you can beat frontier models. Interactive demo from the MentisOculi paper.">
+    <meta property="og:url" content="https://jana-z.github.io/mentis-oculis/game.html">
+
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/game.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main id="main-content">
+        <section class="hero game-hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop has-text-centered">
+                    <p class="game-eyebrow"><a href="index.html">&larr; MentisOculi</a></p>
+                    <h1 class="title is-2 publication-title">Can you beat the AI?</h1>
+                    <p class="subtitle is-5 game-subtitle">
+                        Frontier models struggle with simple visual puzzles. Solve these five sliding-tile puzzles,
+                        then see how <strong>Gemini&nbsp;3&nbsp;Pro</strong>, <strong>GPT-5.1</strong> and the unified
+                        model <strong>EMU&nbsp;3.5</strong> did on the exact same puzzles.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section game-section">
+            <div class="container is-max-desktop">
+                <!-- Progress -->
+                <div id="game-progress" class="game-progress" aria-hidden="true"></div>
+
+                <!-- App root: populated by game.js -->
+                <div id="game-app">
+                    <div id="game-loading" class="has-text-centered game-muted">Loading puzzles…</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8 has-text-centered content">
+                        <p>
+                            Puzzles and model responses are from the
+                            <a href="index.html">MentisOculi</a> benchmark. Model answers shown here are the
+                            actual recorded responses reported in the paper.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="static/js/game.js" defer></script>
+</body>
+
+</html>

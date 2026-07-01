@@ -1,0 +1,444 @@
+/* "Can you beat the AI?" sliding-puzzle game styles.
+ * Builds on the site theme variables defined in index.css. */
+
+.game-hero {
+    background: var(--gradient-primary);
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.game-hero .publication-title,
+.game-hero .game-subtitle {
+    color: #fff;
+}
+
+.game-hero .game-subtitle strong {
+    color: #fff;
+}
+
+.game-eyebrow {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.game-eyebrow a {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.game-eyebrow a:hover {
+    color: #fff;
+}
+
+.game-subtitle {
+    max-width: 640px;
+    margin: 0.75rem auto 0;
+}
+
+.game-section {
+    padding-top: 2rem;
+}
+
+.game-muted {
+    color: var(--text-light);
+}
+
+/* ---- progress dots ---- */
+.game-progress {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.game-dot {
+    width: 26px;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--border-color);
+    transition: var(--transition);
+}
+
+.game-dot.is-current {
+    background: var(--primary-color);
+}
+
+.game-dot.is-solved {
+    background: #16a34a;
+}
+
+.game-dot.is-done {
+    background: #f59e0b;
+}
+
+/* ---- card ---- */
+.game-card {
+    background: var(--background-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 1.75rem;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.game-card-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+}
+
+.game-pill {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+}
+
+.game-pill--ghost {
+    background: var(--background-accent);
+    color: var(--text-secondary);
+}
+
+.game-hint {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-left: auto;
+}
+
+.game-instructions {
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+}
+
+/* ---- boards ---- */
+.sp-boards {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.sp-col {
+    text-align: center;
+}
+
+.sp-col-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.sp-board {
+    --n: 2;
+    display: grid;
+    grid-template-columns: repeat(var(--n), 1fr);
+    gap: 3px;
+    width: min(72vw, 300px);
+    aspect-ratio: 1 / 1;
+    padding: 6px;
+    background: var(--background-accent);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px var(--border-color);
+}
+
+.sp-board--small {
+    width: min(40vw, 150px);
+    gap: 2px;
+    padding: 4px;
+}
+
+.sp-tile {
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    aspect-ratio: 1 / 1;
+    background-color: #e2e8f0;
+    transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.sp-board--small .sp-tile {
+    border-radius: 4px;
+}
+
+.sp-tile--blank {
+    background: #0f172a;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.sp-tile--movable {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.sp-tile--movable:hover {
+    transform: scale(0.96);
+}
+
+.sp-tile--movable:active {
+    transform: scale(0.92);
+}
+
+/* ---- banners & controls ---- */
+.game-banner {
+    margin: 1.25rem 0 0;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.game-banner.is-win {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.game-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.game-controls--end {
+    justify-content: flex-end;
+}
+
+.game-moves {
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-right: auto;
+}
+
+.game-btn {
+    min-width: 120px;
+}
+
+/* ---- scoreboard ---- */
+.score-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.score-row {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 0.9rem 1rem;
+    background: var(--background-secondary);
+}
+
+.score-row--you {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+    background: #eff6ff;
+}
+
+.score-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.score-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.tag-umm {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    background: #fce7f3;
+    color: #be185d;
+    padding: 2px 6px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.chip {
+    font-weight: 700;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.chip--ok {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.chip--no {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.score-body {
+    margin-top: 0.6rem;
+}
+
+.score-answer {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+}
+
+.score-answer code {
+    background: var(--background-accent);
+    color: var(--text-primary);
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.score-mini,
+.score-generated {
+    margin-top: 0.75rem;
+}
+
+.score-mini-label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-light);
+    margin-bottom: 0.35rem;
+    font-weight: 700;
+}
+
+.score-generated img {
+    height: 96px;
+    width: auto;
+    border-radius: 6px;
+    margin-right: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.score-umm-note {
+    margin-top: 0.75rem;
+    font-size: 0.86rem;
+    color: var(--text-secondary);
+    background: #fdf2f8;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+}
+
+.score-reasoning {
+    margin-top: 0.75rem;
+}
+
+.score-reasoning summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.score-reasoning pre {
+    margin-top: 0.5rem;
+    max-height: 260px;
+    overflow: auto;
+    background: var(--background-accent);
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* ---- summary ---- */
+.game-summary .game-verdict {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+
+.summary-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.summary-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.summary-name {
+    width: 120px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.summary-row.is-you .summary-name {
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.summary-track {
+    flex: 1;
+    height: 18px;
+    background: var(--background-accent);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.summary-fill {
+    height: 100%;
+    background: var(--secondary-color);
+    border-radius: 999px;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.summary-row.is-you .summary-fill {
+    background: var(--primary-color);
+}
+
+.summary-score {
+    width: 44px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 540px) {
+    .game-card {
+        padding: 1.15rem;
+    }
+
+    .sp-boards {
+        gap: 1rem;
+    }
+
+    .sp-board {
+        width: min(60vw, 260px);
+    }
+
+    .sp-board--small {
+        width: min(30vw, 120px);
+    }
+
+    .game-hint {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .summary-name {
+        width: 84px;
+    }
+}
