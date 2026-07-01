@@ -45,7 +45,7 @@ Our findings suggest that despite their inherent appeal, visual thoughts do not 
 ### Finding 1: MentisOculi is far from saturated
 
 <p align="center">
-  <img src="docs/static/images/all_tasks_135.jpg" alt="Performance across all tasks" width="85%">
+  <img src="docs/static/images/all_tasks_135.png" alt="Performance across all tasks" width="85%">
 </p>
 
 MLLMs and UMMs display similar failure patterns. Performance degrades consistently with difficulty and falls below chance at Level 5, highlighting fundamental limitations of current state-of-the-art models in solving multi-step visual reasoning tasks.
@@ -55,7 +55,7 @@ MLLMs and UMMs display similar failure patterns. Performance degrades consistent
 ### Finding 2: Explicit visual thought is currently ineffective
 
 <p align="center">
-  <img src="docs/static/images/model_families.jpg" alt="Comparison of model families" width="85%">
+  <img src="docs/static/images/model_families.png" alt="Comparison of model families" width="85%">
 </p>
 
 We find no evidence that self-generated imagery improves text-only reasoning. Latent visual reasoning (Mirage) offers only brittle gains, while UMMs often underperform their text-only counterparts. Video models fail rapidly as complexity increases.
@@ -65,7 +65,7 @@ We find no evidence that self-generated imagery improves text-only reasoning. La
 ### Finding 3: Models possess the *competence* to solve the tasks
 
 <p align="center">
-  <img src="docs/static/images/text_vs_image_input.jpg" alt="Text transcription vs Image input" width="85%">
+  <img src="docs/static/images/text_vs_image_input.png" alt="Text transcription vs Image input" width="85%">
 </p>
 
 When prompted with a precise text transcription rather than an image, MLLMs like Gemini 3 and GPT-5 can solve RushHour on par with humans. This proves that the failure stems from visual processing and planning, not a lack of logical reasoning capacity.
@@ -75,7 +75,7 @@ When prompted with a precise text transcription rather than an image, MLLMs like
 ### Why do UMMs fail? A dual issue
 
 <p align="center">
-  <img src="docs/static/images/interleaved-all-tasks-135.jpg" alt="UMM Generation and Interpretation errors" width="85%">
+  <img src="docs/static/images/interleaved-all-tasks-l3.png" alt="UMM Generation and Interpretation errors" width="85%">
 </p>
 
 Visual reasoning suffers from *generation errors* (producing incorrect images) and *interpretation errors* (failing to use correct images). Even when provided with correct "oracle" visuals, models often fail to use them as actionable evidence. This suggests current architectures cannot yet effectively bridge the gap between generation and reasoning.
@@ -199,11 +199,12 @@ repository's Apache-2.0 license.
 If you use MentisOculi in your research, please cite our paper:
 
 ```bibtex
-@article{zeller2026mentisoculi,
+@inproceedings{zeller2026mentisoculi,
   title={{MENTISOCULI}: Revealing the Limits of Reasoning with Mental Imagery},
   author={Zeller, Jana and Wiedemer, Thadd{\"a}us and Li, Fanfei and Klein, Thomas and Mayilvahanan, Prasanna and Bethge, Matthias and Wichmann, Felix and Cotterell, Ryan and Brendel, Wieland},
-  journal={arXiv preprint arXiv:2602.02465},
-  year={2026}
+  booktitle={Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  year={2026},
+  url={https://jana-z.github.io/mentis-oculis}
 }
 ```
 
