@@ -2,9 +2,13 @@
 """Build the static data bundle for the "Can you beat the AI?" sliding-puzzle game.
 
 Reads puzzle instances from ../../../datasets and recorded model responses from
-../../../results, selects a handful of instances (one per difficulty level),
-computes whether each model's answer actually solves the puzzle, copies the
-needed images into docs/static/game/puzzles/, and writes game_data.json.
+../../../results, selects one instance per difficulty level, computes whether each
+model's answer actually solves the puzzle, copies the needed images (including
+models' generated images) into docs/static/game/puzzles/, and writes the bundle.
+
+Model-generated image PNGs are gitignored / not in this repo. Point them in via:
+    RESULTS_IMAGES_ROOT=/path/to/mentis-oculi/results/responses \\
+        python3 docs/static/game/build_game_data.py
 
 Run from anywhere:  python3 docs/static/game/build_game_data.py
 """
@@ -23,47 +27,46 @@ OUT_DIR = HERE / "puzzles"
 OUT_JSON = HERE / "game_data.json"
 OUT_JS = HERE / "game_data.js"
 
-# Models to pit the user against. `variant` is the response sub-folder.
+# `primary` models are the headline contest (always shown). `secondary` models
+# appear behind a "show more" dropdown. `variant` is the response sub-folder;
+# generate_images variants also carry the model's own generated images.
 MODELS = [
-    {"key": "gemini-3-pro", "label": "Gemini 3 Pro", "dir": "gemini-3-pro-preview", "variant": "simple", "umm": False},
-    {"key": "gpt-5.1", "label": "GPT-5.1", "dir": "gpt-5.1", "variant": "simple", "umm": False},
-    {"key": "emu-3.5", "label": "EMU 3.5", "dir": "emu3.5", "variant": "generate_images", "umm": True},
+    {"key": "gemini-3-pro", "label": "Gemini 3 Pro", "dir": "gemini-3-pro-preview", "variant": "simple", "umm": False, "primary": True},
+    {"key": "gpt-5.1", "label": "GPT-5.1", "dir": "gpt-5.1", "variant": "simple", "umm": False, "primary": True},
+    {"key": "emu-3.5", "label": "EMU 3.5", "dir": "emu3.5", "variant": "generate_images", "umm": True, "primary": True},
+    {"key": "gemini-2.5-flash", "label": "Gemini 2.5 Flash", "dir": "gemini-2.5-flash", "variant": "simple", "umm": False, "primary": False},
+    {"key": "qwen3-vl", "label": "Qwen3-VL", "dir": "qwen3-vl-235b-a22b-thinking", "variant": "simple", "umm": False, "primary": False},
+    {"key": "mirage", "label": "Mirage", "dir": "mirage", "variant": "simple", "umm": False, "primary": False},
+    {"key": "gemini-2.5-flash-image", "label": "Gemini 2.5 Flash Image", "dir": "gemini-2.5-flash-image", "variant": "generate_images", "umm": True, "primary": False},
+    {"key": "gemini-3-pro-image", "label": "Gemini 3 Pro Image", "dir": "gemini-3-pro-image-preview", "variant": "generate_images", "umm": True, "primary": False},
 ]
+PRIMARY_KEYS = [m["key"] for m in MODELS if m["primary"]]
 
 LEVELS = ["01", "02", "03", "04", "05"]
 CANDIDATE_IDS = range(1, 31)   # puzzles 1..30 have recorded model responses per level
+MAX_IMAGES = 6                 # cap generated images shown per model per puzzle
 
-# EMU's generate_images run references PNGs relative to each level's response
-# folder. Those files are gitignored / not in the repo, so point EMU_IMAGES_ROOT
-# at wherever they actually live (env var). The resolver also tries the in-repo
-# location in case they've been dropped there.
-EMU_VARIANT_DIR = RESULTS / "emu3.5" / "generate_images" / "sliding-puzzle"
-EMU_IMAGES_ROOT = os.environ.get("EMU_IMAGES_ROOT", "")
+# Where model-generated image PNGs live (responses root of the sibling repo).
+IMAGES_ROOT = os.environ.get("RESULTS_IMAGES_ROOT", "")
 
 
-def resolve_emu_image(level, rel):
-    """Find an EMU-generated image on disk given its JSON-relative path."""
-    bases = [EMU_VARIANT_DIR / f"level_{level}"]
-    if EMU_IMAGES_ROOT:
-        root = Path(EMU_IMAGES_ROOT).expanduser()
-        bases += [
-            root / f"level_{level}",
-            root / "sliding-puzzle" / f"level_{level}",
-            root / "emu3.5" / "generate_images" / "sliding-puzzle" / f"level_{level}",
-            root,
-        ]
+def resolve_image(model, level, rel):
+    """Find a model-generated image on disk given its JSON-relative path."""
+    subpath = Path(model["dir"]) / model["variant"] / "sliding-puzzle" / f"level_{level}" / rel
+    bases = [RESULTS / subpath]
+    if IMAGES_ROOT:
+        bases.append(Path(IMAGES_ROOT).expanduser() / subpath)
     for b in bases:
-        cand = b / rel
-        if cand.is_file():
-            return cand
+        if b.is_file():
+            return b
     return None
 
 
-def bundle_emu_image(src, dst_dir, k):
-    """Copy an EMU image into the bundle, downscaled to a small JPEG (they're
-    720px photographic PNGs shown ~96px tall). Falls back to a raw copy."""
+def bundle_image(src, dst_dir, prefix, k):
+    """Copy a generated image into the bundle, downscaled to a small JPEG (they're
+    ~720px photographic PNGs shown ~96px tall). Falls back to a raw copy."""
     if shutil.which("sips"):
-        out = dst_dir / f"emu_{k}.jpg"
+        out = dst_dir / f"{prefix}_{k}.jpg"
         subprocess.run(
             ["sips", "-Z", "360", "-s", "format", "jpeg", "-s", "formatOptions", "80",
              str(src), "--out", str(out)],
@@ -71,9 +74,10 @@ def bundle_emu_image(src, dst_dir, k):
         )
         if out.is_file():
             return out.name
-    out = dst_dir / f"emu_{k}{src.suffix.lower()}"
+    out = dst_dir / f"{prefix}_{k}{src.suffix.lower()}"
     shutil.copy(src, out)
     return out.name
+
 
 # ---------------------------------------------------------------- helpers
 DELTA = {"up": (-1, 0), "down": (1, 0), "left": (0, -1), "right": (0, 1)}
@@ -134,17 +138,19 @@ def main():
         shutil.rmtree(OUT_DIR)
     OUT_DIR.mkdir(parents=True)
 
-    # Pre-load model responses per level.
     responses = {lvl: {m["key"]: load_responses(m, lvl) for m in MODELS} for lvl in LEVELS}
 
-    game = {"task": "sliding-puzzle", "models": [{"key": m["key"], "label": m["label"], "umm": m["umm"]} for m in MODELS], "puzzles": []}
+    game = {
+        "task": "sliding-puzzle",
+        "models": [{"key": m["key"], "label": m["label"], "umm": m["umm"], "primary": m["primary"]} for m in MODELS],
+        "puzzles": [],
+    }
 
     for lvl in LEVELS:
-        # Pick the most compelling instance for this level. We want puzzles where
-        # every model actually *attempted* an answer (non-empty move sequence) so the
-        # reveal shows confident-but-wrong AI reasoning rather than blank responses.
-        # Score = (all three answered, number wrong, at least one model right),
-        # tie-broken by lowest id. "At least one right" keeps it a real contest.
+        # Selection is driven by the PRIMARY models (the headline contest). We want
+        # instances where every primary model answered, the UMM produced images (so
+        # every level shows one), and the outcome is interesting (some wrong, at
+        # least one right), tie-broken by lowest id.
         candidates = []
         for i in CANDIDATE_IDS:
             pid = f"puzzle_{i:04d}"
@@ -152,36 +158,26 @@ def main():
             if meta is None:
                 continue
             per_model = {}
-            responded = 0
-            nonempty = 0
-            wrong = 0
-            any_right = False
             for m in MODELS:
                 r = responses[lvl][m["key"]].get(pid)
                 if not r:
                     continue
-                responded += 1
                 ans = (r.get("output_parsed") or {}).get("answer", "") or ""
-                if ans:
-                    nonempty += 1
-                ok = bool(ans) and solves(meta["initial_state"], meta["target_state"], ans)
-                any_right = any_right or ok
-                if not ok:
-                    wrong += 1
                 per_model[m["key"]] = {
                     "answer": ans,
-                    "correct": ok,
+                    "correct": bool(ans) and solves(meta["initial_state"], meta["target_state"], ans),
                     "reasoning": r.get("output_text", "") or "",
                     "generated_images": r.get("generated_images", []) or [],
                 }
-            if responded < len(MODELS):
-                continue
-            all_answered = nonempty == len(MODELS)
-            emu = per_model.get("emu-3.5", {})
-            emu_has_images = 1 if emu.get("generated_images") else 0
-            # Feature the UMM's generated images first (so every level shows one),
-            # then prefer instances where all models answered and the outcome is
-            # interesting (some wrong, at least one right), tie-break lowest id.
+
+            prim = [per_model[k] for k in PRIMARY_KEYS if k in per_model]
+            if len(prim) < len(PRIMARY_KEYS):
+                continue  # need all primary models to have responded
+            nonempty = sum(1 for p in prim if p["answer"])
+            wrong = sum(1 for p in prim if not p["correct"])
+            any_right = any(p["correct"] for p in prim)
+            all_answered = nonempty == len(PRIMARY_KEYS)
+            emu_has_images = 1 if per_model.get("emu-3.5", {}).get("generated_images") else 0
             score = (emu_has_images, all_answered, nonempty, wrong, any_right, -i)
             candidates.append((score, pid, meta, per_model))
 
@@ -190,7 +186,6 @@ def main():
             continue
 
         _, pid, meta, per_model = max(candidates, key=lambda t: t[0])
-        # Copy the two reference images for this instance.
         dst = OUT_DIR / f"level{lvl}_{pid}"
         dst.mkdir()
         for img in ("target.png", "initial.png"):
@@ -198,18 +193,20 @@ def main():
             if src.exists():
                 shutil.copy(src, dst / img)
 
-        # Copy EMU's generated images (if we can find them) into the bundle and
-        # rewrite the paths to static/ so the page can display them directly.
-        emu = per_model.get("emu-3.5")
-        if emu:
+        # Copy each model's generated images into the bundle and rewrite the paths
+        # to static/ so the page can display them directly.
+        for m in MODELS:
+            entry = per_model.get(m["key"])
+            if not entry:
+                continue
             copied = []
-            for k, rel in enumerate(emu.get("generated_images", [])):
-                src = resolve_emu_image(lvl, rel)
+            for k, rel in enumerate(entry.get("generated_images", [])[:MAX_IMAGES]):
+                src = resolve_image(m, lvl, rel)
                 if src is None:
                     continue
-                out_name = bundle_emu_image(src, dst, k)
+                out_name = bundle_image(src, dst, m["key"], k)
                 copied.append(f"static/game/puzzles/level{lvl}_{pid}/{out_name}")
-            emu["generated_images"] = copied
+            entry["generated_images"] = copied
 
         game["puzzles"].append({
             "id": f"level{lvl}_{pid}",
@@ -222,9 +219,9 @@ def main():
             "target_image": f"static/game/puzzles/level{lvl}_{pid}/target.png",
             "models": per_model,
         })
-        summary = ", ".join(f"{k}={'OK' if v['correct'] else 'X'}" for k, v in per_model.items())
-        n_emu = len((per_model.get("emu-3.5") or {}).get("generated_images", []))
-        print(f"level_{lvl}: chose {pid} ({meta['num_solution_moves']} moves) -> {summary} | emu_imgs={n_emu}")
+        summary = ", ".join(f"{k}={'OK' if per_model[k]['correct'] else 'X'}" for k in PRIMARY_KEYS if k in per_model)
+        n_imgs = sum(len(v.get("generated_images", [])) for v in per_model.values())
+        print(f"level_{lvl}: chose {pid} ({meta['num_solution_moves']} moves) -> {summary} | gen_imgs={n_imgs}")
 
     json.dump(game, open(OUT_JSON, "w"), indent=2)
     # Also emit a JS global so the page works when opened via file:// (where

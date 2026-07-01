@@ -378,6 +378,46 @@
     word-break: break-word;
 }
 
+/* ---- more-models dropdown ---- */
+.more-models {
+    margin-top: 12px;
+}
+
+.more-models > summary {
+    cursor: pointer;
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    padding: 0.6rem 1rem;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--background-secondary);
+    transition: var(--transition);
+}
+
+.more-models > summary::-webkit-details-marker {
+    display: none;
+}
+
+.more-models > summary::before {
+    content: "▾ ";
+}
+
+.more-models[open] > summary::before {
+    content: "▴ ";
+}
+
+.more-models > summary:hover {
+    background: var(--background-accent);
+}
+
+.more-models .score-list,
+.more-models .summary-bars {
+    margin-top: 12px;
+}
+
 /* ---- summary ---- */
 .game-summary .game-verdict {
     font-size: 1.15rem;

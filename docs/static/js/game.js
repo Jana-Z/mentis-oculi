@@ -279,19 +279,34 @@
                 : `Did not match the original image`,
         }));
 
-        DATA.models.forEach((m) => {
+        const makeRow = (m) => {
             const md = puzzle.models[m.key] || {};
             const finalGrid = applyMoves(puzzle.initial_state, md.answer || "");
-            board.appendChild(scoreRow({
+            return scoreRow({
                 name: m.label, ok: !!md.correct, umm: m.umm,
                 answerHtml: prettyAnswer(md.answer),
                 reasoning: md.reasoning,
                 mini: miniBoardFor(finalGrid, puzzle),
                 generated: (md.generated_images || []).filter((p) => String(p).startsWith("static/")),
                 umm_note: m.umm,
-            }));
-        });
+            });
+        };
+
+        DATA.models.filter((m) => m.primary).forEach((m) => board.appendChild(makeRow(m)));
         card.appendChild(board);
+
+        // Secondary models tucked behind a dropdown so the reveal stays compact.
+        const secondary = DATA.models.filter((m) => !m.primary && puzzle.models[m.key]);
+        if (secondary.length) {
+            const det = document.createElement("details");
+            det.className = "more-models";
+            det.innerHTML = `<summary>Show ${secondary.length} more models</summary>`;
+            const sub = document.createElement("div");
+            sub.className = "score-list";
+            secondary.forEach((m) => sub.appendChild(makeRow(m)));
+            det.appendChild(sub);
+            card.appendChild(det);
+        }
 
         // Next / finish
         const controls = document.createElement("div");
@@ -367,6 +382,7 @@
         DATA.puzzles.forEach((p) => DATA.models.forEach((m) => {
             if (p.models[m.key] && p.models[m.key].correct) modelScore[m.key] += 1;
         }));
+        const total = DATA.models.length;
         const beaten = DATA.models.filter((m) => you > modelScore[m.key]).length;
         const tied = DATA.models.filter((m) => you === modelScore[m.key]).length;
 
@@ -375,16 +391,18 @@
         card.appendChild(el(`<h2 class="title is-3 has-text-centered">You solved ${you} / ${n}</h2>`));
 
         let verdict;
-        if (beaten === DATA.models.length) verdict = `You beat <strong>all ${DATA.models.length} models</strong>! 🏆`;
-        else if (beaten > 0) verdict = `You beat <strong>${beaten}</strong> of ${DATA.models.length} models${tied ? ` and tied ${tied}` : ""}.`;
-        else if (tied) verdict = `You tied ${tied} of ${DATA.models.length} models.`;
+        if (beaten === total) verdict = `You beat <strong>all ${total} models</strong>! 🏆`;
+        else if (beaten > 0) verdict = `You beat <strong>${beaten}</strong> of ${total} models${tied ? ` and tied ${tied}` : ""}.`;
+        else if (tied) verdict = `You tied ${tied} of ${total} models.`;
         else verdict = `The models edged you out this time.`;
         card.appendChild(el(`<p class="game-verdict has-text-centered">${verdict}</p>`));
 
+        // Final comparison shows every model, primary ones first.
+        const ordered = DATA.models.slice().sort((a, b) => (b.primary === true) - (a.primary === true));
         const list = document.createElement("div");
         list.className = "summary-bars";
         list.appendChild(summaryBar("You", you, n, true));
-        DATA.models.forEach((m) => list.appendChild(summaryBar(m.label, modelScore[m.key], n, false, m.umm)));
+        ordered.forEach((m) => list.appendChild(summaryBar(m.label, modelScore[m.key], n, false, m.umm)));
         card.appendChild(list);
 
         const controls = document.createElement("div");
