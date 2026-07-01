@@ -19,6 +19,7 @@ DATASETS = REPO / "datasets" / "sliding-puzzle" / "output"
 RESULTS = REPO / "results" / "responses"
 OUT_DIR = HERE / "puzzles"
 OUT_JSON = HERE / "game_data.json"
+OUT_JS = HERE / "game_data.js"
 
 # Models to pit the user against. `variant` is the response sub-folder.
 MODELS = [
@@ -163,7 +164,13 @@ def main():
         print(f"level_{lvl}: chose {pid} ({meta['num_solution_moves']} moves) -> {summary}")
 
     json.dump(game, open(OUT_JSON, "w"), indent=2)
-    print(f"\nWrote {OUT_JSON} with {len(game['puzzles'])} puzzles.")
+    # Also emit a JS global so the page works when opened via file:// (where
+    # fetch() is blocked by the browser's same-origin policy).
+    with open(OUT_JS, "w") as f:
+        f.write("window.GAME_DATA = ")
+        json.dump(game, f, indent=2)
+        f.write(";\n")
+    print(f"\nWrote {OUT_JSON} and {OUT_JS} with {len(game['puzzles'])} puzzles.")
 
 
 if __name__ == "__main__":

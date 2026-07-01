@@ -385,16 +385,26 @@
         }));
     }
 
-    fetch("static/game/game_data.json")
-        .then((r) => r.json())
-        .then((data) => {
-            DATA = data;
-            if (!DATA.puzzles || !DATA.puzzles.length) throw new Error("no puzzles");
-            initState();
-            renderPuzzle();
-        })
-        .catch((err) => {
-            document.getElementById("game-app").innerHTML =
-                `<div class="notification is-warning">Could not load the puzzles. (${escapeHtml(err.message)})</div>`;
-        });
+    function start(data) {
+        DATA = data;
+        if (!DATA || !DATA.puzzles || !DATA.puzzles.length) throw new Error("no puzzles");
+        initState();
+        renderPuzzle();
+    }
+
+    // Prefer the inlined global (works over file://); fall back to fetch (HTTP).
+    if (window.GAME_DATA) {
+        try { start(window.GAME_DATA); }
+        catch (err) { showLoadError(err); }
+    } else {
+        fetch("static/game/game_data.json")
+            .then((r) => r.json())
+            .then(start)
+            .catch(showLoadError);
+    }
+
+    function showLoadError(err) {
+        document.getElementById("game-app").innerHTML =
+            `<div class="notification is-warning">Could not load the puzzles. (${escapeHtml(err.message)})</div>`;
+    }
 })();
