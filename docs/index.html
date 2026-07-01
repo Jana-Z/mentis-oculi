@@ -75,9 +75,10 @@
     <meta name="citation_author" content="Wichmann, Felix">
     <meta name="citation_author" content="Cotterell, Ryan">
     <meta name="citation_author" content="Brendel, Wieland">
-    <!-- <meta name="citation_publication_date" content="2026">
-  <meta name="citation_conference_title" content="ICML"> -->
-    <!-- <meta name="citation_pdf_url" content="https://openreview.net/pdf?id=q66P8XD3L4"> -->
+    <meta name="citation_publication_date" content="2026">
+    <meta name="citation_conference_title"
+        content="Proceedings of the 43rd International Conference on Machine Learning (ICML)">
+    <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2602.02465.pdf">
 
     <!-- Additional SEO -->
     <meta name="theme-color" content="#2563eb">
@@ -217,12 +218,11 @@
     "keywords": ["mental imagery", "visual reasoning", "reasoning", "llms", "mllms", "umms", "video models"],
     "abstract": "Frontier models are transitioning from multimodal large language models (MLLMs) that merely ingest visual information to unified multimodal models (UMMs) capable of native interleaved generation. This shift has sparked interest in using intermediate visualizations as a reasoning aid, akin to human mental imagery. Central to this idea is the ability to form, maintain, and manipulate visual representations in a goal-oriented manner. To evaluate and probe this capability, we develop MentisOculi, a procedural, stratified suite of multi-step reasoning problems amenable to visual solution, tuned to challenge frontier models. Evaluating visual strategies ranging from latent tokens to explicit generated imagery, we find they generally fail to improve performance. Analysis of UMMs specifically exposes a critical limitation: While they possess the textual reasoning capacity to solve a task and can sometimes generate correct visuals, they suffer from compounding generation errors and fail to leverage even ground-truth visualizations. Our findings suggest that despite their inherent appeal, visual thoughts do not yet benefit model reasoning. MentisOculi establishes the necessary foundation to analyze and close this gap across diverse model families.",
     "citation": "{
-        "@article{zeller2026mentisoculi,
+        "@inproceedings{zeller2026mentisoculi,
             title={{MENTISOCULI}: Revealing the Limits of Reasoning with Mental Imagery},
             author={Zeller, Jana and Wiedemer, Thadd{\"a}us and Li, Fanfei and Klein, Thomas and Mayilvahanan, Prasanna and Bethge, Matthias and Wichmann, Felix and Cotterell, Ryan and Brendel, Wieland},
-            journal={arXiv preprint arXiv:2602.02465},
-            year={2026},
-            note={Preprint. January 31, 2026}
+            booktitle={Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+            year={2026}
         }
     }",
     "isAccessibleForFree": true,
@@ -468,7 +468,7 @@
                     <div id="results-carousel" class="carousel results-carousel">
 
                         <div class="item">
-                            <img src="static/images/all_tasks_135.jpg" alt="Performance across all tasks"
+                            <img src="static/images/all_tasks_135.png" alt="Performance across all tasks"
                                 loading="lazy" />
                             <h2 class="subtitle has-text-centered">
                                 <strong>
@@ -486,7 +486,7 @@
                         </div>
 
                         <div class="item">
-                            <img src="static/images/model_families.jpg" alt="Comparison of model families"
+                            <img src="static/images/model_families.png" alt="Comparison of model families"
                                 loading="lazy" />
                             <h2 class="subtitle has-text-centered">
                                 <strong>
@@ -494,17 +494,19 @@
                                 </strong>
                                 <br>
                                 We find no evidence that self-generated imagery improves text-only reasoning.
-                                <span style="color:#C46A2E; font-weight:bold;">Latent visual reasoning</span> (Mirage)
+                                <span style="color:#C46A2E; font-weight:bold;">Latent visual reasoning</span> (Mirage,
+                                LS)
                                 offers only brittle gains, while
                                 <span style="color:#E85D75; font-weight:bold;">UMMs</span> often underperform their
                                 text-only counterparts.
-                                <span style="color:#C42E88; font-weight:bold;">Video models</span> (Veo-3) fail rapidly
+                                <span style="color:#C42E88; font-weight:bold;">Video models</span> (Veo-3, Wan 2.6) fail
+                                rapidly
                                 as complexity increases.
                             </h2>
                         </div>
 
                         <div class="item">
-                            <img src="static/images/text_vs_image_input.jpg" alt="Text transcription vs Image input"
+                            <img src="static/images/text_vs_image_input.png" alt="Text transcription vs Image input"
                                 loading="lazy" />
                             <h2 class="subtitle has-text-centered">
                                 <strong>
@@ -520,7 +522,37 @@
                         </div>
 
                         <div class="item">
-                            <img src="static/images/interleaved-all-tasks-135.jpg"
+                            <img src="static/images/text_vs_image_per_level_agreement.png"
+                                alt="Agreement between text and image input per level" loading="lazy" />
+                            <h2 class="subtitle has-text-centered">
+                                <strong>
+                                    Text and image outputs disagree
+                                </strong>
+                                <br>
+                                Solution rates in the text and image output traces differs a lot.
+                                This means, that the actions presented in the text output are often not the same as the
+                                actions presented in the image output.
+                            </h2>
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/no-help.png"
+                                alt="In-context learning, prompt optimization, reasoning budget, and tool use ablations"
+                                loading="lazy" />
+                            <h2 class="subtitle has-text-centered">
+                                <strong>
+                                    No standard reasoning boost closes the gap
+                                </strong>
+                                <br>
+                                Interventions that reliably help text reasoning &mdash; in-context learning, prompt
+                                optimization, larger reasoning budgets, and tool use &mdash; bring no systematic gains
+                                on RushHour. GPT-5.1 spends up to 13&times; more reasoning tokens under a high budget
+                                with performance essentially unchanged.
+                            </h2>
+                        </div>
+
+                        <div class="item">
+                            <img src="static/images/interleaved-all-tasks-l3.png"
                                 alt="UMM Generation and Interpretation errors" loading="lazy" />
                             <h2 class="subtitle has-text-centered">
                                 <strong>
@@ -554,12 +586,11 @@
                         <span class="copy-text">Copy</span>
                     </button>
                 </div>
-                <pre id="bibtex-code"><code>@article{zeller2026mentisoculi,
+                <pre id="bibtex-code"><code>@inproceedings{zeller2026mentisoculi,
                     title={{MENTISOCULI}: Revealing the Limits of Reasoning with Mental Imagery},
                     author={Zeller, Jana and Wiedemer, Thadd{\"a}us and Li, Fanfei and Klein, Thomas and Mayilvahanan, Prasanna and Bethge, Matthias and Wichmann, Felix and Cotterell, Ryan and Brendel, Wieland},
-                    journal={arXiv preprint arXiv:2602.02465},
+                    booktitle={Proceedings of the 43rd International Conference on Machine Learning (ICML)},
                     year={2026},
-                    note={Preprint. January 31, 2026},
                     url={https://jana-z.github.io/mentis-oculis}
                   }
                 </code></pre>
