@@ -1,6 +1,7 @@
 # MentisOculi: Revealing the Limits of Reasoning with Mental Imagery
 
 <p align="center">
+  <a href="https://icml.cc/virtual/2026/poster/61181"><img src="https://img.shields.io/badge/ICML-2026-8b5cf6.svg" alt="ICML 2026"></a>
   <a href="https://arxiv.org/abs/2602.02465"><img src="https://img.shields.io/badge/arXiv-2602.02465-b31b1b.svg" alt="arXiv"></a>
   <a href="https://jana-z.github.io/mentis-oculi"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project Page"></a>
 </p>
