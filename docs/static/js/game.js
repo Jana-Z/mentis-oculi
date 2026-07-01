@@ -182,7 +182,7 @@
         card.appendChild(el(`<p class="game-instructions">Drag a tile into the empty space to slide it, and rebuild the original coherent image.${showGoal ? " This first one shows you the finished picture." : ""}</p>`));
 
         if (showGoal) {
-            card.appendChild(el(`<div class="game-note">Heads up — from the next puzzle on, the goal is <strong>hidden</strong>. And unlike you, the models got no visual feedback: they had to solve it entirely in their &ldquo;head&rdquo;. The moving tiles here are just for ease of use.</div>`));
+            card.appendChild(el(`<div class="game-note">From the next puzzle on, the goal is <strong>hidden</strong>. Want a fair fight with the AI? Solve the whole puzzle in your head first, then just execute your moves — that's all the models got, with no visual feedback to correct them.</div>`));
         }
 
         const boards = document.createElement("div");
