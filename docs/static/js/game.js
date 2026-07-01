@@ -78,12 +78,54 @@
                 const adj = blank && Math.abs(blank[0] - r) + Math.abs(blank[1] - c) === 1;
                 if (adj && v !== -1) {
                     tile.classList.add("sp-tile--movable");
-                    tile.addEventListener("click", () => move(r, c));
+                    enableDrag(tile, board, r, c);
                 }
             }
             board.appendChild(tile);
         }));
         return board;
+    }
+
+    // Drag a tile toward the empty space: it follows the pointer along the axis
+    // to the gap and snaps in when dragged past halfway. A plain tap also moves it.
+    function enableDrag(tile, board, r, c) {
+        tile.addEventListener("pointerdown", (e) => {
+            if (state[idx].submitted) return;
+            const blankEl = board.querySelector(".sp-tile--blank");
+            if (!blankEl) return;
+            e.preventDefault();
+
+            const tr = tile.getBoundingClientRect();
+            const br = blankEl.getBoundingClientRect();
+            const vx = br.left - tr.left, vy = br.top - tr.top; // vector into the gap
+            const vlen2 = vx * vx + vy * vy || 1;
+            const startX = e.clientX, startY = e.clientY;
+            let moved = 0;
+
+            try { tile.setPointerCapture(e.pointerId); } catch (_) { /* capture optional */ }
+            tile.classList.add("sp-tile--dragging");
+
+            const onMove = (ev) => {
+                const dx = ev.clientX - startX, dy = ev.clientY - startY;
+                moved = Math.hypot(dx, dy);
+                let f = (dx * vx + dy * vy) / vlen2;   // projection onto gap vector
+                f = Math.max(0, Math.min(1, f));
+                tile.style.transform = `translate(${f * vx}px, ${f * vy}px)`;
+            };
+            const onUp = (ev) => {
+                tile.removeEventListener("pointermove", onMove);
+                tile.removeEventListener("pointerup", onUp);
+                tile.removeEventListener("pointercancel", onUp);
+                tile.classList.remove("sp-tile--dragging");
+                const dx = ev.clientX - startX, dy = ev.clientY - startY;
+                const f = (dx * vx + dy * vy) / vlen2;
+                if (moved < 6 || f > 0.5) move(r, c);  // tap or dragged past halfway
+                else tile.style.transform = "";        // snap back
+            };
+            tile.addEventListener("pointermove", onMove);
+            tile.addEventListener("pointerup", onUp);
+            tile.addEventListener("pointercancel", onUp);
+        });
     }
 
     function move(r, c) {
@@ -132,21 +174,31 @@
                 <span class="game-hint">Shortest solution: ${puzzle.num_moves} move${puzzle.num_moves > 1 ? "s" : ""}</span>
             </div>`));
 
-        card.appendChild(el(`<p class="game-instructions">Tap the highlighted tiles to slide them into the empty space and rebuild the <strong>goal</strong> image.</p>`));
+        // The models were only shown the scrambled tiles and asked to reconstruct
+        // the original coherent image — they never saw a goal. So we reveal the goal
+        // only on the first puzzle (to teach the task), then hide it afterwards.
+        const showGoal = idx === 0;
 
-        // Boards: goal + interactive.
+        card.appendChild(el(`<p class="game-instructions">Drag a tile into the empty space to slide it, and rebuild the original coherent image.${showGoal ? " This first one shows you the finished picture." : ""}</p>`));
+
+        if (showGoal) {
+            card.appendChild(el(`<div class="game-note">Heads up: from the next puzzle on, the goal is <strong>hidden</strong> — you'll rebuild the image from the scrambled tiles alone, exactly as the AI models had to.</div>`));
+        }
+
         const boards = document.createElement("div");
         boards.className = "sp-boards";
 
-        const goalCol = document.createElement("div");
-        goalCol.className = "sp-col";
-        goalCol.appendChild(el(`<div class="sp-col-label">Goal</div>`));
-        goalCol.appendChild(renderBoard(puzzle.target_state, puzzle, { small: true }));
-        boards.appendChild(goalCol);
+        if (showGoal) {
+            const goalCol = document.createElement("div");
+            goalCol.className = "sp-col";
+            goalCol.appendChild(el(`<div class="sp-col-label">Goal</div>`));
+            goalCol.appendChild(renderBoard(puzzle.target_state, puzzle, { small: true }));
+            boards.appendChild(goalCol);
+        }
 
         const yourCol = document.createElement("div");
         yourCol.className = "sp-col";
-        yourCol.appendChild(el(`<div class="sp-col-label">Your puzzle</div>`));
+        yourCol.appendChild(el(`<div class="sp-col-label">${showGoal ? "Your puzzle" : "Rebuild the image"}</div>`));
         yourCol.appendChild(renderBoard(st.board, puzzle, { interactive: !st.submitted }));
         boards.appendChild(yourCol);
 
@@ -209,6 +261,13 @@
                 <span class="game-pill game-pill--ghost">Level ${puzzle.level}</span>
             </div>`));
 
+        // Reveal the original image (the goal was hidden while solving).
+        const orig = document.createElement("div");
+        orig.className = "result-original";
+        orig.appendChild(el(`<div class="score-mini-label">The original image</div>`));
+        orig.appendChild(renderBoard(puzzle.target_state, puzzle, { small: true }));
+        card.appendChild(orig);
+
         // Scoreboard rows: You first, then models.
         const board = document.createElement("div");
         board.className = "score-list";
@@ -216,8 +275,8 @@
         board.appendChild(scoreRow({
             name: "You", ok: st.userCorrect, isYou: true,
             answerHtml: st.userCorrect
-                ? `Rebuilt the image in ${st.moves} move${st.moves === 1 ? "" : "s"}`
-                : `Did not match the goal`,
+                ? `Rebuilt the original image in ${st.moves} move${st.moves === 1 ? "" : "s"}`
+                : `Did not match the original image`,
         }));
 
         DATA.models.forEach((m) => {

@@ -117,6 +117,25 @@
     margin-bottom: 1.25rem;
 }
 
+.game-note {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    color: #1e40af;
+    border-radius: 10px;
+    padding: 0.6rem 0.85rem;
+    font-size: 0.86rem;
+    margin-bottom: 1.25rem;
+}
+
+.result-original {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.result-original .sp-board {
+    margin: 0 auto;
+}
+
 /* ---- boards ---- */
 .sp-boards {
     display: flex;
@@ -176,16 +195,17 @@
 }
 
 .sp-tile--movable {
-    cursor: pointer;
+    cursor: grab;
+    touch-action: none;
     box-shadow: 0 0 0 2px var(--primary-color);
+    z-index: 1;
 }
 
-.sp-tile--movable:hover {
-    transform: scale(0.96);
-}
-
-.sp-tile--movable:active {
-    transform: scale(0.92);
+.sp-tile--dragging {
+    cursor: grabbing;
+    transition: none !important;
+    z-index: 2;
+    box-shadow: 0 0 0 2px var(--primary-color), var(--shadow-lg);
 }
 
 /* ---- banners & controls ---- */
