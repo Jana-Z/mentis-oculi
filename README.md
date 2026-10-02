@@ -30,6 +30,8 @@
   <img src="docs/static/images/mentis-oculi-teaser.png" alt="MentisOculi Teaser" width="100%">
 </p>
 
+> 🌐 **[Explore the project page → jana-z.github.io/mentis-oculi](https://jana-z.github.io/mentis-oculi/)** — interactive results, the new **GPT-6 Astra** update, and the *"Can you beat the AI?"* game.
+
 **MentisOculi** is a procedural, stratified benchmark suite designed to evaluate visual reasoning capabilities in frontier AI models. The benchmark comprises five visual reasoning tasks that are best solved with mental imagery, requiring models to form, maintain, and manipulate visual representations in a goal-oriented manner.
 
 ## Abstract
@@ -178,6 +180,12 @@ See [datasets/README.md](datasets/README.md) for the expected input format.
 Baseline results for all models and strategies reported in the paper are in [`results/results_table.csv`](results/results_table.csv). Raw model responses are in [`results/responses/`](results/responses/), organised as `responses/<model>/<strategy>/<task>/<level>/responses_0.json`. See [results/README.md](results/README.md) for column descriptions and notes on sample counts.
 
 Intermediate images (generate_images strategy) and generated videos (Veo, Wan) are not included in this repository due to their size. To request them, please contact [jana.zeller@tuebingen.mpg.de](mailto:jana.zeller@tuebingen.mpg.de).
+
+### Update: GPT-6 Astra
+
+We evaluated **GPT-6 Astra** on MentisOculi. On **Rush Hour**, Astra is the first model to solve *every* difficulty level perfectly — 100% at all five levels (30 instances each) — matching or exceeding the human average, while all prior models collapse toward chance as difficulty grows. Its reasoning works by extracting **pixel coordinates** from the board, and it does so with roughly a quarter of the output tokens of the best prior frontier model (Gemini 3), while its reasoning effort tracks human solve-time almost perfectly (R² = 0.94). The one task where it is not perfect, the sliding puzzle, reflects a **blank-position prior** rather than a reasoning gap.
+
+Astra's Rush Hour responses (all five levels) are included under [`results/responses/gpt-6-astra/`](results/responses/gpt-6-astra/). See the [**GPT-6 Astra update page**](https://jana-z.github.io/mentis-oculi/astra.html) for figures and details.
 
 ## Citation
 
