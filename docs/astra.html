@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>GPT-6 Astra on MentisOculi</title>
+    <meta name="description"
+        content="An update to MentisOculi: GPT-6 Astra solves Rush Hour at every difficulty level, matching or exceeding human performance, and we add its answers to the repository.">
+
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="apple-touch-icon" href="static/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="preload" href="static/css/fontawesome.all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    </noscript>
+</head>
+
+<body>
+    <main id="main-content">
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">GPT-6 Astra on
+                                <span style="font-variant: small-caps;">MentisOculi</span>
+                            </h1>
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <span class="link-block">
+                                        <a href="index.html" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                                            <span>Back to <span
+                                                    style="font-variant: small-caps;">MentisOculi</span></span>
+                                        </a>
+                                    </span>
+                                    <span class="link-block">
+                                        <a href="https://github.com/Jana-Z/mentis-oculis" target="_blank"
+                                            class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon"><i class="fab fa-github"></i></span>
+                                            <span>Code &amp; responses</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TL;DR -->
+        <section class="section hero">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">TL;DR</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                <strong>GPT-6 Astra</strong> basically solves <span
+                                    style="font-variant: small-caps;">MentisOculi</span>.
+                                Astra is the first model to solve <em>every</em> instance at the highest difficulty of
+                                Form Board, Rush Hour, Hinge Folding and Paper Fold and beats all other models on
+                                Sliding Puzzle.
+                                On Rush Hour it is even exceeding the human average, while all prior models
+                                collapse toward chance. It does so by reading <strong>pixel coordinates</strong> off the
+                                board, and solving the underlying mathematical problem.
+                                All answers are available in the <a href="https://github.com/Jana-Z/mentis-oculis"
+                                    target="_blank">repository</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview: all tasks at highest difficulty -->
+        <section class="section hero is-light">
+            <div class="container is-max-desktop content">
+                <h2 class="title is-3 has-text-centered">Astra vs. frontier models at the highest difficulty</h2>
+                <img src="static/images/astra_all_tasks_l5.png"
+                    alt="GPT-6 Astra versus frontier models at level 5 across all five tasks" loading="lazy" />
+                <p class="has-text-justified">
+                    At the hardest level of every task, Astra (dotted bars) is at or near 100% on Form Board, Hinge
+                    Folding, Paper Fold and Rush Hour, and far ahead of every frontier model on Sliding Puzzle.
+                    On Sliding Puzzle Astra does not reach 100% accuracy, since it assumes the blank tile to be in the
+                    bottom right corner in the final configuration.
+                    If we adjust for this wrong prior, Astra reaches 100% accuracy on Sliding Puzzle as well.
+                </p>
+            </div>
+        </section>
+
+        <!-- Rush Hour -->
+        <section class="section">
+            <div class="container is-max-desktop content">
+                <h2 class="title is-3 has-text-centered">Rush Hour: solved at every level</h2>
+                <img src="static/images/astra_rushhour.png" alt="Rush Hour accuracy by difficulty level, all models"
+                    loading="lazy" />
+                <p class="has-text-justified">
+                    Astra reaches <strong>100% accuracy at all five difficulty levels</strong> (30 instances each). For
+                    reference, the <span style="color:#0090C1; font-weight:bold;">human average</span> falls from 98% at
+                    level&nbsp;2 to 56% at level&nbsp;5 &mdash; so at the hardest levels <strong>Astra exceeds human
+                        performance</strong>. Every other model &mdash; frontier MLLMs, native image-generation models,
+                    video models, and trained baselines &mdash; drops sharply as the number of required moves grows.
+                </p>
+            </div>
+        </section>
+
+        <!-- How: pixel coordinates -->
+        <section class="section hero is-light">
+            <div class="container is-max-desktop content">
+                <h2 class="title is-3 has-text-centered">How: it reads pixel coordinates</h2>
+                <div class="columns is-vcentered">
+                    <div class="column is-half has-text-centered">
+                        <img src="static/images/marked_coordinates.png"
+                            alt="Rush Hour board annotated with pixel coordinates extracted by Astra" loading="lazy" />
+                    </div>
+                    <div class="column is-half">
+                        <p class="has-text-justified">
+                            In Rush Hour, Astra's reasoning repeatedly locates each vehicle by its <strong>pixel
+                                coordinates and
+                                orientation</strong> before planning any moves &mdash; effectively reconstructing the
+                            grid from the image. In its own words:
+                        </p>
+                        <blockquote>&ldquo;I'm evaluating the coordinates for various cars and their boundaries,
+                            detailed positions and orientations. [...] C is moving northwest from coordinates 876,731 to
+                            170,542. &rdquo;</blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Efficiency -->
+        <section class="section">
+            <div class="container is-max-desktop content">
+                <h2 class="title is-3 has-text-centered">Reasoning effort tracks human difficulty</h2>
+                <img src="static/images/astra_tokens_vs_human.png"
+                    alt="Model output tokens versus average human response time on Rush Hour" loading="lazy" />
+                <p class="has-text-justified">
+                    Astra's reasoning effort tracks human-perceived difficulty almost perfectly
+                    (<strong>R&sup2;&nbsp;=&nbsp;0.94</strong>); it
+                    spends more tokens exactly where humans also require more time to solve the instance. It uses
+                    roughly
+                    <strong>a quarter</strong> of the tokens of the best prior frontier model, Gemini&nbsp;3
+                    (R&sup2;&nbsp;=&nbsp;0.68). Astra is both better aligned with human difficulty and markedly more
+                    token-efficient.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="section hero is-light">
+            <div class="container is-max-desktop content">
+                <h2 class="title is-3 has-text-centered">It generalizes to real photographs</h2>
+                <p class="has-text-justified">
+                    The result is not limited to our rendered boards: Astra also solves photographs of physical Rush
+                    Hour sets. It is not infallible &mdash; when it misreads the scene, the plan fails.
+                </p>
+                <div class="columns is-centered" style="margin-top: 1rem;">
+                    <div class="column has-text-centered">
+                        <img src="static/images/astra_realworld_correct.png" alt="Real-world Rush Hour, solved"
+                            loading="lazy" style="max-height: 320px; width:auto; margin: 0 auto;" />
+                        <p><strong style="color:#1e8449;">&#10003; Correct.</strong> A photo of a physical board; Astra
+                            returns a clean, valid solution.</p>
+                    </div>
+                    <div class="column has-text-centered">
+                        <img src="static/images/astra_realworld_failed.png" alt="Real-world Rush Hour, failed"
+                            loading="lazy" style="max-height: 320px; width:auto; margin: 0 auto;" />
+                        <p><strong style="color:#c0392b;">&#10007; Failure.</strong> Here Astra <strong>wrongly extracts
+                                the orientation of the orange car</strong>, and its plan does not solve the board.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

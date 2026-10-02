@@ -1,0 +1,148 @@
+{
+  "total_responses": 5,
+  "valid_responses": 5,
+  "invalid_responses": 0,
+  "validity_breakdown": {
+    "parse_failed": 0,
+    "completely_valid": 5
+  },
+  "accuracy_lenient": {
+    "description": "Exact-match accuracy over valid responses.",
+    "accuracy": 1.0,
+    "correct_count": 5,
+    "total_count": 5,
+    "confidence_interval_95": {
+      "lower": 0.5655175352168251,
+      "upper": 1.0
+    },
+    "random_baseline": {
+      "description": "Chance accuracy for exact set selection assuming uniform random choice over all ground-truth set sizes.",
+      "accuracy": 0.03225806451612903,
+      "confidence_interval_95": {
+        "lower": 0.0012528197320118561,
+        "upper": 0.46971464732321616
+      }
+    }
+  },
+  "accuracy_strict": {
+    "description": "Exact-match accuracy over valid responses.",
+    "accuracy": 1.0,
+    "correct_count": 5,
+    "total_count": 5,
+    "confidence_interval_95": {
+      "lower": 0.5655175352168251,
+      "upper": 1.0
+    },
+    "random_baseline": {
+      "description": "Chance accuracy for exact set selection assuming uniform random choice over all ground-truth set sizes.",
+      "accuracy": 0.03225806451612903,
+      "confidence_interval_95": {
+        "lower": 0.0012528197320118561,
+        "upper": 0.46971464732321616
+      }
+    }
+  },
+  "per_piece_accuracy": {
+    "average": 1.0,
+    "random_baseline": 0.5,
+    "by_choice": {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 1.0,
+      "E": 1.0
+    },
+    "precision_by_choice": {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 1.0,
+      "E": 1.0
+    },
+    "recall_by_choice": {
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "D": 1.0,
+      "E": 1.0
+    },
+    "stats_by_choice": {
+      "A": {
+        "tp": 5,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      },
+      "B": {
+        "tp": 5,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      },
+      "C": {
+        "tp": 5,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      },
+      "D": {
+        "tp": 5,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      },
+      "E": {
+        "tp": 5,
+        "fp": 0,
+        "tn": 0,
+        "fn": 0
+      }
+    },
+    "confidence_interval_95_per_piece": {
+      "lower": 0.5655175352168251,
+      "upper": 1.0
+    },
+    "confidence_interval_95_random_baseline": {
+      "lower": 0.17042358064358776,
+      "upper": 0.8295764193564122
+    }
+  },
+  "selection_bias": {
+    "predicted_counts": {
+      "A": 5,
+      "B": 5,
+      "C": 5,
+      "D": 5,
+      "E": 5
+    },
+    "ground_truth_counts": {
+      "A": 5,
+      "B": 5,
+      "C": 5,
+      "D": 5,
+      "E": 5
+    },
+    "difference": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0,
+      "E": 0
+    }
+  },
+  "per_response_correct": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true
+  },
+  "random_baseline": {
+    "description": "Chance accuracy for exact set selection assuming uniform random choice over all ground-truth set sizes.",
+    "accuracy": 0.03225806451612903,
+    "confidence_interval_95": {
+      "lower": 0.0012528197320118561,
+      "upper": 0.46971464732321616
+    }
+  }
+}

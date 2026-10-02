@@ -1,0 +1,151 @@
+{
+  "total_responses": 30,
+  "validity_breakdown": {
+    "parse_failed": 1,
+    "invalid_moves": 0,
+    "out_of_bounds": 0,
+    "completely_valid": 29
+  },
+  "accuracy_lenient": {
+    "description": "Accuracy where invalid moves are skipped and evaluation continues",
+    "accuracy": 0.7333333333333333,
+    "correct_count": 22,
+    "total_count": 30,
+    "confidence_interval_95": {
+      "lower": 0.555520383048111,
+      "upper": 0.8581733668040368
+    },
+    "random_baseline": {
+      "description": "Chance performance assuming random valid moves (max 6 moves).",
+      "accuracy": 0.1845703125,
+      "confidence_interval_95": {
+        "lower": 0.08485360964321947,
+        "upper": 0.35589800362863966
+      }
+    }
+  },
+  "accuracy_strict": {
+    "description": "Accuracy where invalid moves mark response as wrong, always calculated with 50 samples if available",
+    "accuracy": 0.7333333333333333,
+    "correct_count": 22,
+    "total_count": 30,
+    "actual_correct_count": 22,
+    "actual_total_count": 30,
+    "confidence_interval_95": {
+      "lower": 0.555520383048111,
+      "upper": 0.8581733668040368
+    },
+    "random_baseline": {
+      "description": "Chance performance assuming random valid moves (max 6 moves).",
+      "accuracy": 0.1845703125,
+      "confidence_interval_95": {
+        "lower": 0.08485360964321947,
+        "upper": 0.35589800362863966
+      }
+    }
+  },
+  "predicted_actions": [
+    5,
+    1,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    3,
+    5,
+    5,
+    5,
+    5,
+    5,
+    6,
+    5,
+    5,
+    5,
+    5,
+    5,
+    6,
+    5,
+    5,
+    1,
+    5,
+    0,
+    5,
+    5,
+    6
+  ],
+  "required_actions": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "per_response_correct": {
+    "1": true,
+    "2": false,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": false,
+    "10": false,
+    "11": true,
+    "12": true,
+    "13": true,
+    "14": true,
+    "15": true,
+    "16": false,
+    "17": true,
+    "18": true,
+    "19": true,
+    "20": true,
+    "21": true,
+    "22": false,
+    "23": true,
+    "24": true,
+    "25": false,
+    "26": true,
+    "27": false,
+    "28": true,
+    "29": true,
+    "30": false
+  },
+  "random_baseline": {
+    "description": "Chance performance assuming random valid moves (max 6 moves).",
+    "accuracy": 0.1845703125,
+    "confidence_interval_95": {
+      "lower": 0.08485360964321947,
+      "upper": 0.35589800362863966
+    }
+  }
+}

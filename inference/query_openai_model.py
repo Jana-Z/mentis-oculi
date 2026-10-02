@@ -28,6 +28,8 @@ COST_PER_OUTPUT_TOKEN = {
     'gpt-5-mini': 2 / 1000000,
     'gpt-5-nano': 0.4 / 1000000,
     'gpt-5.1': 10 / 1000000,
+    'gpt-6-astra': 50 / 1000000,
+    'gpt-6.1-sol': 50 / 1000000,
     'qwen/qwen3-vl-235b-a22b-thinking': 1.2 / 1000000,
 }
 
@@ -325,7 +327,7 @@ def run(
                         
             effective_config = openai_config or {
                 "model": model,
-                "reasoning": {"effort": reasoning_effort},
+                "reasoning": {"effort": reasoning_effort, "summary": "detailed"},
                 "tools": tools
             }
             print(f'Querying {model} with {effective_config}')
